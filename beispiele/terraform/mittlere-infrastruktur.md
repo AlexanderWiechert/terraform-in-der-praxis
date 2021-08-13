@@ -1,4 +1,4 @@
-# Medium-size infrastructure with Terraform
+# Mittelgroße Infrastruktur mit Terraform
 
 Source: [https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/medium-terraform](https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/medium-terraform)
 
@@ -19,6 +19,4 @@ This example contains code as an example of structuring Terraform configurations
 {% hint style="warning" %}
 As project grows, it will be harder to keep these environments up-to-date between each other. Consider using of infrastructure modules \(off-the-shelf or internal\) for repeatable tasks.
 {% endhint %}
-
-## 
 

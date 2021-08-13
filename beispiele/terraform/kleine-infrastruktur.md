@@ -1,4 +1,4 @@
-# Small-size infrastructure with Terraform
+# Small-size-Infrastruktur mit Terraform
 
 Source: [https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/small-terraform](https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/small-terraform)
 
@@ -14,6 +14,4 @@ This example contains code as an example of structuring Terraform configurations
 {% hint style="warning" %}
 Single state file for all resources can make process of working with Terraform slow, if number of resources is growing \(consider using `-target` argument to limit number of resources\)
 {% endhint %}
-
-
 

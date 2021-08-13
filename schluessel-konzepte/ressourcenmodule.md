@@ -1,2 +1,2 @@
-# Resource modules
+# Ressourcenmodule
 

@@ -1,4 +1,4 @@
-# Codestruktur
+# index
 
 Fragen zur Terraform-Codestruktur sind in der Community bei weitem am häufigsten. Über die beste Codestruktur hat sich wahrscheinlich auch jeder Gedanken gemacht.
 
@@ -14,14 +14,14 @@ Dies ist eine der Fragen, für die es viele Lösungen gibt und es sehr schwierig
   * **An** kontinuierlich \(jedes Mal, wenn es einen neuen Commit gibt\)
 * Initiatoren der Codeänderung? _Lassen Sie den CI-Server das Repository aktualisieren, wenn ein neues Artefakt erstellt wird?_
   * Nur Entwickler können zum Infrastruktur-Repository pushen
-  * Jeder kann Änderungen vorschlagen, indem er einen PR öffnet \ (einschließlich automatisierter Aufgaben, die auf dem CI-Server ausgeführt werden\)
+  * Jeder kann Änderungen vorschlagen, indem er einen PR öffnet  \(einschließlich automatisierter Aufgaben, die auf dem CI-Server ausgeführt werden\)
 * Welche Bereitstellungsplattform oder Bereitstellungsdienst verwenden Sie?
   * AWS CodeDeploy, Kubernetes oder OpenShift erfordern einen etwas anderen Ansatz
 * Wie werden Umgebungen gruppiert?
   * Nach Umgebung, Region, Projekt
 
 {% hint style="info" %}
-_Logische Anbieter_ arbeiten vollständig innerhalb der Logik von Terraform und interagieren nicht mit anderen Diensten, sodass wir uns ihre Komplexität als O\(1\) vorstellen können. Zu den gängigsten logischen Anbietern gehören [random](https://www.terraform.io/docs/providers/random/index.html), [template](https://www.terraform.io/docs/providers/template/ index.html), [terraform](https://www.terraform.io/docs/providers/terraform/index.html), [null](https://www.terraform.io/docs/providers/null/ index.html).
+_Logische Anbieter_ arbeiten vollständig innerhalb der Logik von Terraform und interagieren nicht mit anderen Diensten, sodass wir uns ihre Komplexität als O\(1\) vorstellen können. Zu den gängigsten logischen Anbietern gehören [random](https://www.terraform.io/docs/providers/random/index.html), [template](https://www.terraform.io/docs/providers/template/%20index.html), [terraform](https://www.terraform.io/docs/providers/terraform/index.html), [null](https://www.terraform.io/docs/providers/null/%20index.html).
 {% endhint %}
 
 ## Erste Schritte mit der Strukturierung von Terraform-Konfigurationen
@@ -37,7 +37,7 @@ Den gesamten Code in `main.tf` abzulegen ist eine gute Idee, wenn Sie anfangen o
 ## Wie ist die Struktur von Terraform-Konfigurationen zu denken?
 
 {% hint style="info" %}
-Bitte stellen Sie sicher, dass Sie die wichtigsten Konzepte verstehen - [Ressourcenmodul](key-concepts.md#resource-module), [infrastructure module](key-concepts.md#infrastructure-module) und [composition](key-concepts.md #composition), wie sie in den folgenden Beispielen verwendet werden.
+Bitte stellen Sie sicher, dass Sie die wichtigsten Konzepte verstehen - [Ressourcenmodul](key-concepts.md#resource-module), [infrastructure module](key-concepts.md#infrastructure-module) und [composition](key-concepts.md%20#composition), wie sie in den folgenden Beispielen verwendet werden.
 {% endhint %}
 
 ### Gemeinsame Empfehlungen für die Strukturierung von Code
@@ -61,7 +61,7 @@ Bitte stellen Sie sicher, dass Sie die wichtigsten Konzepte verstehen - [Ressour
 
 Wir gruppieren Beispielprojekte nach der _Komplexität_ - von kleinen bis zu sehr großen Infrastrukturen. Diese Trennung ist nicht streng, also überprüfen Sie auch andere Strukturen.
 
-###Orchestrierung von Infrastrukturmodulen und Kompositionen
+### Orchestrierung von Infrastrukturmodulen und Kompositionen
 
 Eine kleine Infrastruktur bedeutet, dass es eine geringe Anzahl von Abhängigkeiten und wenige Ressourcen gibt. Wenn das Projekt wächst, wird die Notwendigkeit sichtbar, die Ausführung von Terraform-Konfigurationen zu verketten, verschiedene Infrastrukturmodule zu verbinden und Werte innerhalb einer Komposition zu übergeben.
 
@@ -75,3 +75,4 @@ Es gibt mindestens 4 verschiedene Gruppen von Orchestrierungslösungen, die Entw
 Vor diesem Hintergrund werden wir die ersten beiden dieser Projektstrukturen überprüfen, Terraform only und Terragrunt.
 
 Siehe Beispiele für Codestrukturen für [Terraform](examples/terraform.md) oder [Terragrunt](examples/terragrunt.md) im nächsten Kapitel.
+

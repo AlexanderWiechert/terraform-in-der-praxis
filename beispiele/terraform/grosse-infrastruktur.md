@@ -1,4 +1,4 @@
-# Large-size infrastructure with Terraform
+# Große Infrastruktur mit Terraform
 
 Source: [https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/large-terraform](https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/large-terraform)
 
@@ -11,10 +11,8 @@ This example contains code as an example of structuring Terraform configurations
 * Each environment uses the same version of internal module `modules/network` since it is sourced from a local directory.
 
 {% hint style="info" %}
-In a large project like described here the benefits of using Terragrunt becomes very visible. See [Code Structures examples with Terragrunt](../terragrunt.md).
+In a large project like described here the benefits of using Terragrunt becomes very visible. See [Code Structures examples with Terragrunt](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/beispiele/terragrunt.md).
 {% endhint %}
-
-
 
 {% hint style="success" %}
 * Perfect for projects where infrastructure is logically separated \(separate AWS accounts\)
@@ -26,8 +24,4 @@ In a large project like described here the benefits of using Terragrunt becomes 
 {% hint style="warning" %}
 As project grows, it will be harder to keep these environments up-to-date between each other. Consider using of infrastructure modules \(off-the-shelf or internal\) for repeatable tasks.
 {% endhint %}
-
-## 
-
-
 
