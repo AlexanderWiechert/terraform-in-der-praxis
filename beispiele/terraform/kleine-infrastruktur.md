@@ -1,10 +1,10 @@
 # kleine Infrastruktur mit Terraform
 
-Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/small-terraform](https://github.com/elastic2ls-awiechert/terraform-in- der-praxis/tree/master/examples/small-terraform)
+Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/small-terraform](https://github.com/elastic2ls-awiechert/terraform-in-%20der-praxis/tree/master/examples/small-terraform)
 
 Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform-Konfigurationen für eine kleine Infrastruktur, bei der keine externen Abhängigkeiten verwendet werden.
 
-{% hint style="Erfolg" %}
+{% hint style="info" %}
 * Perfekt, um loszulegen und unterwegs umzugestalten
 * Perfekt für kleine Ressourcenmodule
 * Gut für kleine und lineare Infrastrukturmodule \(zB [terraform-aws-atlantis](https://github.com/terraform-aws-modules/terraform-aws-atlantis)\)
@@ -14,3 +14,4 @@ Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform
 {% hint style="warning" %}
 Eine einzelne Zustandsdatei für alle Ressourcen kann die Arbeit mit Terraform verlangsamen, wenn die Anzahl der Ressourcen wächst \(erwägen Sie die Verwendung des `-target`-Arguments, um die Anzahl der Ressourcen zu begrenzen\)
 {% endhint %}
+
