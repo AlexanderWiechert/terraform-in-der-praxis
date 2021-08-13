@@ -18,4 +18,4 @@
   * [Ungewöhnliche Anwendungsfälle](unvollstaendig-keine-best-practices-was-man-nicht-tun-sollte-readme.md/ungewoehnliche-anwendungsfaelle.md)
   * [FAQ](unvollstaendig-keine-best-practices-was-man-nicht-tun-sollte-readme.md/faq.md)
 * [Schreiben von Terraform-Konfigurationen](schreiben-von-terraform-konfigurationen.md)
-
+* [Verhaltenscodex für Mitwirkende](verhaltenskodex-fuer-mitwirkenden.md)
