@@ -9,7 +9,7 @@
 * [Beispiele für die Codestruktur](beispiele/README.md)
   * [Terragrunt](beispiele/terragrunt.md)
   * [Terraform](beispiele/terraform/README.md)
-    * [Small-size-Infrastruktur mit Terraform](beispiele/terraform/kleine-infrastruktur.md)
+    * [kleine Infrastruktur mit Terraform](beispiele/terraform/kleine-infrastruktur.md)
     * [Mittelgroße Infrastruktur mit Terraform](beispiele/terraform/mittlere-infrastruktur.md)
     * [Große Infrastruktur mit Terraform](beispiele/terraform/grosse-infrastruktur.md)
 * [Namenskonventionen](namenskonventionen.md)
