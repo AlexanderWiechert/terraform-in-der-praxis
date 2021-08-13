@@ -1,27 +1,26 @@
 # Große Infrastruktur mit Terraform
 
-Source: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/large-terraform](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/large-terraform)
+Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/large-terraform](https://github.com/elastic2ls-awiechert/terraform-in- der-praxis/tree/master/examples/large-terraform)
 
-This example contains code as an example of structuring Terraform configurations for a large-size infrastructure which uses:
+Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform-Konfigurationen für eine große Infrastruktur, die Folgendes verwendet:
 
-* 2 AWS accounts
-* 2 regions
-* 2 separate environments \(`prod` and `stage` which share nothing\). Each environment lives in separate AWS account and span resources between 2 regions
-* Each environment uses different version of off-the-shelf infrastructure module \(`alb`\) sourced from [Terraform Registry](https://registry.terraform.io/)
-* Each environment uses the same version of internal module `modules/network` since it is sourced from a local directory.
+* 2 AWS-Konten
+* 2 Regionen
+* 2 separate Umgebungen \(`prod` und `stage` die nichts gemeinsam haben\). Jede Umgebung lebt in einem separaten AWS-Konto und umfasst Ressourcen zwischen 2 Regionen
+* Jede Umgebung verwendet eine andere Version des Standard-Infrastrukturmoduls \(`alb`\) aus der [Terraform Registry](https://registry.terraform.io/)
+* Jede Umgebung verwendet die gleiche Version des internen Moduls `modules/network`, da es aus einem lokalen Verzeichnis stammt.
 
 {% hint style="info" %}
-In a large project like described here the benefits of using Terragrunt becomes very visible. See [Code Structures examples with Terragrunt](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/beispiele/terragrunt.md).
+In einem großen Projekt wie hier beschrieben werden die Vorteile des Einsatzes von Terragrunt sehr deutlich. Siehe [Beispiele für Codestrukturen mit Terragrunt](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/beispiele/terragrunt.md).
 {% endhint %}
 
-{% hint style="success" %}
-* Perfect for projects where infrastructure is logically separated \(separate AWS accounts\)
-* Good when there is no is need to modify resources shared between AWS accounts \(one environment = one AWS account = one state file\)
-* Good when there is no need in orchestration of changes between environment
-* Good when infrastructure resources are different per environment on purpose and can't be generalised \(eg, some resources are absent on one environment or in some regions\)
+{% hint style="Erfolg" %}
+* Perfekt für Projekte, bei denen die Infrastruktur logisch getrennt ist \(separate AWS-Konten\)
+* Gut, wenn es nicht erforderlich ist, Ressourcen zu ändern, die zwischen AWS-Konten geteilt werden \(eine Umgebung = ein AWS-Konto = eine Statusdatei\)
+* Gut, wenn keine Orchestrierung von Änderungen zwischen Umgebungen erforderlich ist
+* Gut, wenn die Infrastrukturressourcen absichtlich je nach Umgebung unterschiedlich sind und nicht verallgemeinert werden können (z. B. fehlen einige Ressourcen in einer Umgebung oder in einigen Regionen)
 {% endhint %}
 
 {% hint style="warning" %}
-As project grows, it will be harder to keep these environments up-to-date between each other. Consider using of infrastructure modules \(off-the-shelf or internal\) for repeatable tasks.
+Wenn das Projekt wächst, wird es schwieriger, diese Umgebungen untereinander auf dem neuesten Stand zu halten. Ziehen Sie die Verwendung von Infrastrukturmodulen \(von der Stange oder intern\) für wiederholbare Aufgaben in Betracht.
 {% endhint %}
-
