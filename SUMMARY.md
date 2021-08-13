@@ -5,7 +5,7 @@
   * [Ressourcenmodule](schluessel-konzepte/ressourcenmodule.md)
   * [Infrastrukturmodule](schluessel-konzepte/infrastrukturmodule.md)
   * [Kompositionen](schluessel-konzepte/kompositionen.md)
-* [index](codestruktur.md)
+* [Codestruktur](codestruktur.md)
 * [Beispiele für die Codestruktur](beispiele/README.md)
   * [Terragrunt](beispiele/terragrunt.md)
   * [Terraform](beispiele/terraform/README.md)

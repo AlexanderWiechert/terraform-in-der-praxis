@@ -1,4 +1,4 @@
-# index
+# Codestruktur
 
 Fragen zur Terraform-Codestruktur sind in der Community bei weitem am häufigsten. Über die beste Codestruktur hat sich wahrscheinlich auch jeder Gedanken gemacht.
 
