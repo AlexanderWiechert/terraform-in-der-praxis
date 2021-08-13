@@ -23,7 +23,7 @@ Dieses Buch sollte schließlich die meisten Best Practices und Empfehlungen für
 
 Ich möchte Feedback erhalten und dieses Dokument aktualisieren, wenn die Community ausgereift ist und neue Ideen implementiert und überprüft werden. Ich schreibe über Themen, die am beliebtesten sind.
 
-Wenn Sie an bestimmten Themen interessiert sind, [öffnen Sie eine Ausgabe](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/issues) oder geben Sie einen Daumen hoch zu einem Thema, das Sie am meisten behandeln möchten . Wenn Sie der Meinung sind, dass Sie **Inhalte** haben, die Sie einschließen möchten, schreiben Sie einen Entwurf und senden Sie eine Pull-Anfrage \(mach dir jetzt keine Sorgen, guten Text zu schreiben!\)
+Wenn Sie an bestimmten Themen interessiert sind, [öffnen Sie ein Issue](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/issues) oder geben Sie einen Daumen hoch zu einem Thema, das Sie am meisten behandeln möchten . Wenn Sie der Meinung sind, dass Sie **Inhalte** haben, die Sie einschließen möchten, schreiben Sie einen Entwurf und senden Sie eine Pull-Anfrage \(mach dir jetzt keine Sorgen, guten Text zu schreiben!\)
 
 ## Autoren
 
