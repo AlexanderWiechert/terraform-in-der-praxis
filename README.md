@@ -39,3 +39,5 @@ Wenn Sie Hilfe oder kommerzielle Unterstützung für Terraform, AWS oder Jenkins
 Dieses Werk ist unter der Apache 2-Lizenz lizenziert. Ausführliche Informationen finden Sie unter LIZENZ.
 
 Die Autoren und Mitwirkenden dieser Inhalte können die Aktualität der hier enthaltenen Informationen nicht garantieren. Bitte vergewissern Sie sich, dass die hier bereitgestellten Informationen frei zur Verfügung gestellt werden und keine Art von Vereinbarung oder Vertrag zwischen Ihnen und Personen zustande kommt, die mit diesem Inhalt oder Projekt verbunden sind. Die Autoren und Mitwirkenden übernehmen hiermit keine Haftung für Verluste, Schäden oder Störungen, die durch Fehler oder Auslassungen in den in diesen Inhalten enthaltenen, mit diesen verknüpften oder von diesen verlinkten Informationen verursacht werden, unabhängig davon, ob diese Fehler oder Auslassungen auf Fahrlässigkeit, Unfall oder andere Ursachen.
+
+Copyright © 2018 Anton Babenko.
