@@ -1,4 +1,4 @@
-# todo
+# Weitere Informationen
 
 ## Beschreiben:
 * Monorepo vs. mehrere Repos (mbt, http get, size) für Terraform-Code
