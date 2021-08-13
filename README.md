@@ -28,10 +28,11 @@ Wenn Sie an bestimmten Themen interessiert sind, [öffnen Sie eine Ausgabe](http
 ## Autoren
 
 Dieses Buch wird von [Anton Babenko](https://github.com/antonbabenko) mit Hilfe verschiedener Mitwirkender gepflegt.
+Übersetzt ins Deutsche von [Alexander Wiechert](https://github.com/elastic2ls-awiechert).
 
 ## Brauchen Sie Hilfe?
 
-Wenn Sie Hilfe oder kommerzielle Unterstützung für Terraform und AWS benötigen, senden Sie eine E-Mail an [anton@antonbabenko.com](mailto:anton@antonbabenko.com).
+Wenn Sie Hilfe oder kommerzielle Unterstützung für Terraform und AWS benötigen, senden Sie eine E-Mail an [awiechert@elastic2ls.com](mailto:awiechert@elastic2ls.com).
 
 ## Lizenz
 
