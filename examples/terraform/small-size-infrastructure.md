@@ -1,6 +1,6 @@
 # Small-size infrastructure with Terraform
 
-Source: [https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/small-terraform](https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/small-terraform)
+Source: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/small-terraform](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/small-terraform)
 
 This example contains code as an example of structuring Terraform configurations for a small-size infrastructure, where no external dependencies are used.
 

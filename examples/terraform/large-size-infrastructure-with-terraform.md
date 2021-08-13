@@ -1,6 +1,6 @@
 # Large-size infrastructure with Terraform
 
-Source: [https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/large-terraform](https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/large-terraform)
+Source: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/large-terraform](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/large-terraform)
 
 This example contains code as an example of structuring Terraform configurations for a large-size infrastructure which uses:
 

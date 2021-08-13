@@ -1,6 +1,6 @@
 # Medium-size infrastructure with Terraform
 
-Source: [https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/medium-terraform](https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/medium-terraform)
+Source: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/medium-terraform](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/medium-terraform)
 
 This example contains code as an example of structuring Terraform configurations for a medium-size infrastructure which uses:
 

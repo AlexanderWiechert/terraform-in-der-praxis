@@ -23,7 +23,7 @@ This book eventually should contain most of best-practices and recommendations f
 
 I want to get feedback and update this document as community mature and new ideas are implemented and verified. I write about topics which are the most popular.
 
-If you are interested in certain topics please [open an issue](https://github.com/antonbabenko/terraform-best-practices/issues), or thumb-up on an issue you want to be covered most. If you feel that **you have content** which you want to include - write a draft and submit a pull-request \(don't worry about writing good text at this point!\)
+If you are interested in certain topics please [open an issue](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/issues), or thumb-up on an issue you want to be covered most. If you feel that **you have content** which you want to include - write a draft and submit a pull-request \(don't worry about writing good text at this point!\)
 
 ## Authors
 
