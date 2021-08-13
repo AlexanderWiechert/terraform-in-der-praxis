@@ -1,23 +1,22 @@
-# Code structure examples
+# Beispiele für die Codestruktur
 
-## Terraform code structures
+## Terraform-Codestrukturen
 
 {% hint style="info" %}
-These examples are showing AWS provider but the majority of principles showed in the examples can be applied to other public cloud providers as well as other kind of providers \(DNS, DB, Monitoring, etc\)
+Diese Beispiele zeigen AWS-Anbieter, aber die meisten der in den Beispielen gezeigten Prinzipien können auf andere öffentliche Cloud-Anbieter sowie andere Arten von Anbietern angewendet werden \(DNS, DB, Überwachung usw.).
 {% endhint %}
 
-| Type | Description | Readiness |
+| Typ | Beschreibung | Bereitschaft |
 | :--- | :--- | :--- |
-| [small](terraform/small-size-infrastructure.md) | Few resources, no external dependencies. Single AWS account. Single region. Single environment. | Yes |
-| [medium](terraform/medium-size-infrastructure.md) | Several AWS accounts and environments, off-the-shelf infrastructure modules using Terraform. | Yes |
-| [large](terraform/large-size-infrastructure-with-terraform.md) | Many AWS accounts, many regions, urgent need to reduce copy-paste, custom infrastructure modules, heavy usage of compositions. Using Terraform. | WIP |
-| very-large | Several providers \(AWS, GCP, Azure\). Multi-cloud deployments. Using Terraform. | No |
+| [small](terraform/small-size-infrastructure.md) | Wenig Ressourcen, keine externen Abhängigkeiten. Einzelnes AWS-Konto. Einzelne Region. Einzelne Umgebung. | Ja |
+| [medium](terraform/medium-size-infrastructure.md) | Mehrere AWS-Konten und -Umgebungen, Standard-Infrastrukturmodule mit Terraform. | Ja |
+| [groß](terraform/große-infrastruktur-mit-terraform.md) | Viele AWS-Konten, viele Regionen müssen dringend das Kopieren und Einfügen, benutzerdefinierte Infrastrukturmodule und die starke Nutzung von Kompositionen reduzieren. Verwenden von Terraform. | WIP |
+| sehr groß | Mehrere Anbieter \(AWS, GCP, Azure\). Multi-Cloud-Bereitstellungen. Verwenden von Terraform. | Nein |
 
-## Terragrunt code structures
+## Terragrunt-Codestrukturen
 
-| Type | Description | Readiness |
+| Typ | Beschreibung | Bereitschaft |
 | :--- | :--- | :--- |
-| medium | Several AWS accounts and environments, off-the-shelf infrastructure modules, composition pattern using Terragrunt. | No |
-| large | Many AWS accounts, many regions, urgent need to reduce copy-paste, custom infrastructure modules, heavy usage of compositions. Using Terragrunt. | No |
-| very-large | Several providers \(AWS, GCP, Azure\). Multi-cloud deployments. Using Terragrunt. | No |
-
+| mittel | Mehrere AWS-Konten und -Umgebungen, Standard-Infrastrukturmodule, Kompositionsmuster mit Terragrunt. | Nein |
+| groß | Viele AWS-Konten, viele Regionen müssen dringend das Kopieren und Einfügen, benutzerdefinierte Infrastrukturmodule und die starke Nutzung von Kompositionen reduzieren. Terragrunt verwenden. | Nein |
+| sehr groß | Mehrere Anbieter \(AWS, GCP, Azure\). Multi-Cloud-Bereitstellungen. Terragrunt verwenden. | Nein |
