@@ -1,43 +1,42 @@
 ---
-description: >-
-  This document is an attempt to systematically describe best practices using
-  Terraform and provide recommendations for the most frequent problems Terraform
-  users experience.
+Beschreibung: >-
+  Dieses Dokument ist ein Versuch, Best Practices unter Verwendung von
+  Terraform und geben Empfehlungen für die häufigsten Probleme Terraform
+  Benutzererfahrung.
 ---
 
-# Welcome
+# Willkommen
 
-[Terraform](https://www.terraform.io/) is a fairly new project \(as most of DevOps tools actually\) which was started in 2014.
+[Terraform](https://www.terraform.io/) ist ein ziemlich neues Projekt \(wie die meisten DevOps-Tools eigentlich\), das 2014 gestartet wurde.
 
-Terraform is powerful \(if not the most powerful out there now\) and one of the most used tool which allows to manage infrastructure as code. It allows developers to do a lot of things and does not restrict them from doing things in ways which will be hard to support or integrate with.
+Terraform ist mächtig \ (wenn nicht das mächtigste auf dem Markt\) und eines der am häufigsten verwendeten Tools, mit dem die Infrastruktur als Code verwaltet werden kann. Es ermöglicht Entwicklern, viele Dinge zu tun, und hindert sie nicht daran, Dinge auf eine Weise zu tun, die schwer zu unterstützen oder zu integrieren ist.
 
-Some information described in this book may not seem like the best practices. I know this, and to help reader to separate what are established best practices and what is just another opinionated way of doing things, I sometimes use hints to provide some context and icons to specify the level of maturity on each subsection related to best practices.
+Einige der in diesem Buch beschriebenen Informationen erscheinen möglicherweise nicht als bewährte Vorgehensweisen. Ich weiß das, und um dem Leser zu helfen, zu unterscheiden, was etablierte Best Practices sind und was nur eine andere meinungsvolle Vorgehensweise ist, verwende ich manchmal Hinweise, um Kontext und Symbole bereitzustellen, um den Reifegrad jedes Unterabschnitts in Bezug auf Best Practices anzugeben.
 
-The book is available for free here - [https://www.terraform-best-practices.com/](https://www.terraform-best-practices.com/)
+Das Buch ist hier kostenlos erhältlich - [https://www.terraform-best-practices.com/](https://www.terraform-best-practices.com/)
 
-## Status
+##Status
 
-This book eventually should contain most of best-practices and recommendations for Terraform users, but nobody knows when exactly it will happen. I aim to make it mostly ready by the end of 2018.
+Dieses Buch sollte schließlich die meisten Best Practices und Empfehlungen für Terraform-Benutzer enthalten, aber niemand weiß, wann genau es passieren wird. Ich habe vor, es bis Ende 2018 weitestgehend fertig zu stellen.
 
-## Contributions
+## Beiträge
 
-I want to get feedback and update this document as community mature and new ideas are implemented and verified. I write about topics which are the most popular.
+Ich möchte Feedback erhalten und dieses Dokument aktualisieren, wenn die Community ausgereift ist und neue Ideen implementiert und überprüft werden. Ich schreibe über Themen, die am beliebtesten sind.
 
-If you are interested in certain topics please [open an issue](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/issues), or thumb-up on an issue you want to be covered most. If you feel that **you have content** which you want to include - write a draft and submit a pull-request \(don't worry about writing good text at this point!\)
+Wenn Sie an bestimmten Themen interessiert sind, [öffnen Sie eine Ausgabe](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/issues) oder geben Sie einen Daumen hoch zu einem Thema, das Sie am meisten behandeln möchten . Wenn Sie der Meinung sind, dass Sie **Inhalte** haben, die Sie einschließen möchten, schreiben Sie einen Entwurf und senden Sie eine Pull-Anfrage \(mach dir jetzt keine Sorgen, guten Text zu schreiben!\)
 
-## Authors
+## Autoren
 
-This book is maintained by [Anton Babenko](https://github.com/antonbabenko) with the help of different contributors.
+Dieses Buch wird von [Anton Babenko](https://github.com/antonbabenko) mit Hilfe verschiedener Mitwirkender gepflegt.
 
-## Need help?
+## Brauchen Sie Hilfe?
 
-If you're looking for help or commercial support for Terraform and AWS, send an email to [anton@antonbabenko.com](mailto:anton@antonbabenko.com).
+Wenn Sie Hilfe oder kommerzielle Unterstützung für Terraform und AWS benötigen, senden Sie eine E-Mail an [anton@antonbabenko.com](mailto:anton@antonbabenko.com).
 
-## License
+## Lizenz
 
-This work is licensed under Apache 2 License. See LICENSE for full details.
+Dieses Werk ist unter der Apache 2-Lizenz lizenziert. Ausführliche Informationen finden Sie unter LIZENZ.
 
-The authors and contributors to this content cannot guarantee the validity of the information found here. Please make sure that you understand that the information provided here is being provided freely, and that no kind of agreement or contract is created between you and any persons associated with this content or project. The authors and contributors do not assume and hereby disclaim any liability to any party for any loss, damage, or disruption caused by errors or omissions in the information contained in, associated with, or linked from this content, whether such errors or omissions result from negligence, accident, or any other cause.
+Die Autoren und Mitwirkenden dieser Inhalte können die Aktualität der hier enthaltenen Informationen nicht garantieren. Bitte vergewissern Sie sich, dass die hier bereitgestellten Informationen frei zur Verfügung gestellt werden und keine Art von Vereinbarung oder Vertrag zwischen Ihnen und Personen zustande kommt, die mit diesem Inhalt oder Projekt verbunden sind. Die Autoren und Mitwirkenden übernehmen hiermit keine Haftung für Verluste, Schäden oder Störungen, die durch Fehler oder Auslassungen in den in diesen Inhalten enthaltenen, mit diesen verknüpften oder von diesen verlinkten Informationen verursacht werden, unabhängig davon, ob diese Fehler oder Auslassungen auf Fahrlässigkeit, Unfall oder andere Ursachen.
 
 Copyright © 2018 Anton Babenko.
-
