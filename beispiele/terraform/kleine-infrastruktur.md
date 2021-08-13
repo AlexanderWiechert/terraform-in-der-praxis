@@ -1,4 +1,4 @@
-# Small-size-Infrastruktur mit Terraform
+# kleine Infrastruktur mit Terraform
 
 Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/small-terraform](https://github.com/elastic2ls-awiechert/terraform-in- der-praxis/tree/master/examples/small-terraform)
 
