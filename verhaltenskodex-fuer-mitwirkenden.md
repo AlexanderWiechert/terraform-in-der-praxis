@@ -34,7 +34,7 @@ Dieser Verhaltenskodex gilt sowohl innerhalb von Projekträumen als auch im öff
 
 ##Durchsetzung
 
-Fälle von missbräuchlichem, belästigendem oder anderweitig inakzeptablem Verhalten können durch Kontaktaufnahme mit dem Projektbetreuer unter anton@antonbabenko.com gemeldet werden. Der Projektbetreuer wird alle Beschwerden prüfen und untersuchen und auf eine Weise reagieren, die er den Umständen entsprechend für angemessen hält. Der Projektleiter ist gegenüber dem Melder eines Vorfalls zur Verschwiegenheit verpflichtet. Weitere Einzelheiten zu bestimmten Durchsetzungsrichtlinien können separat veröffentlicht werden.
+Fälle von missbräuchlichem, belästigendem oder anderweitig inakzeptablem Verhalten können durch Kontaktaufnahme mit dem Projektbetreuer unter anton@antonbabenko.com oder awiechert@elastic2ls.com gemeldet werden. Der Projektbetreuer wird alle Beschwerden prüfen und untersuchen und auf eine Weise reagieren, die er den Umständen entsprechend für angemessen hält. Der Projektleiter ist gegenüber dem Melder eines Vorfalls zur Verschwiegenheit verpflichtet. Weitere Einzelheiten zu bestimmten Durchsetzungsrichtlinien können separat veröffentlicht werden.
 
 Projektmitarbeiter, die den Verhaltenskodex nicht in gutem Glauben befolgen oder durchsetzen, können vorübergehende oder dauerhafte Auswirkungen haben, die von anderen Mitgliedern der Projektleitung festgelegt werden.
 
