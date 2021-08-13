@@ -15,7 +15,7 @@ Einige der in diesem Buch beschriebenen Informationen erscheinen möglicherweise
 
 Das Buch ist hier kostenlos erhältlich - [https://www.terraform-in-der-praxis.de/](https://www.terraform-in-der-praxis.de/)
 
-##Status
+## Status
 
 Dieses Buch sollte schließlich die meisten Best Practices und Empfehlungen für Terraform-Benutzer enthalten, aber niemand weiß, wann genau es passieren wird. Ich habe vor, es bis Ende 2018 weitestgehend fertig zu stellen.
 
