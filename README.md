@@ -32,7 +32,7 @@ Dieses Buch wird von [Anton Babenko](https://github.com/antonbabenko) mit Hilfe 
 
 ## Brauchen Sie Hilfe?
 
-Wenn Sie Hilfe oder kommerzielle Unterstützung für Terraform, AWS oder Jenkins CI benötigen, senden Sie eine E-Mail an [awiechert@elastic2ls.com](mailto:awiechert@elastic2ls.com) oder besuche sie unsere Webseite [www.elastic2ls.com/](https://www.elastic2ls.com/)
+Wenn Sie Hilfe oder kommerzielle Unterstützung für Terraform, AWS oder Jenkins CI benötigen, senden Sie eine E-Mail an [awiechert@elastic2ls.com](mailto:awiechert@elastic2ls.com) oder besuche sie unsere Webseite [www.elastic2ls.com](https://www.elastic2ls.com/)
 
 ## Lizenz
 
