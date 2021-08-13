@@ -1,19 +1,16 @@
-# Small-size infrastructure with Terraform
+# Kleine Infrastruktur mit Terraform
 
-Source: [https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/small-terraform](https://github.com/antonbabenko/terraform-best-practices/tree/master/examples/small-terraform)
+Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxistree/master/examples/small-terraform](https://github.com/elastic2ls-awiechert/terraform-in-der-praxistree/master/ Beispiele/Kleinterraform)
 
-This example contains code as an example of structuring Terraform configurations for a small-size infrastructure, where no external dependencies are used.
+Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform-Konfigurationen für eine kleine Infrastruktur, bei der keine externen Abhängigkeiten verwendet werden.
 
-{% hint style="success" %}
-* Perfect to get started and refactor as you go 
-* Perfect for small resource modules
-* Good for small and linear infrastructure modules \(eg, [terraform-aws-atlantis](https://github.com/terraform-aws-modules/terraform-aws-atlantis)\)
-* Good for small number of resources \(fewer than 20-30\)
+{% hint style="Erfolg" %}
+* Perfekt, um loszulegen und unterwegs umzugestalten
+* Perfekt für kleine Ressourcenmodule
+* Gut für kleine und lineare Infrastrukturmodule \(zB [terraform-aws-atlantis](https://github.com/terraform-aws-modules/terraform-aws-atlantis)\)
+* Gut für eine kleine Anzahl von Ressourcen \(weniger als 20-30\)
 {% endhint %}
 
 {% hint style="warning" %}
-Single state file for all resources can make process of working with Terraform slow, if number of resources is growing \(consider using `-target` argument to limit number of resources\)
+Eine einzelne Zustandsdatei für alle Ressourcen kann die Arbeit mit Terraform verlangsamen, wenn die Anzahl der Ressourcen wächst \(erwägen Sie die Verwendung des `-target`-Arguments, um die Anzahl der Ressourcen zu begrenzen\)
 {% endhint %}
-
-
-
