@@ -13,7 +13,7 @@ Terraform ist mächtig \ (wenn nicht das mächtigste auf dem Markt\) und eines d
 
 Einige der in diesem Buch beschriebenen Informationen erscheinen möglicherweise nicht als bewährte Vorgehensweisen. Ich weiß das, und um dem Leser zu helfen, zu unterscheiden, was etablierte Best Practices sind und was nur eine andere meinungsvolle Vorgehensweise ist, verwende ich manchmal Hinweise, um Kontext und Symbole bereitzustellen, um den Reifegrad jedes Unterabschnitts in Bezug auf Best Practices anzugeben.
 
-Das Buch ist hier kostenlos erhältlich - [https://www.terraform-best-practices.com/](https://www.terraform-best-practices.com/)
+Das Buch ist hier kostenlos erhältlich - [https://www.terraform-in-der-praxis.de/](https://www.terraform-in-der-praxis.de/)
 
 ##Status
 

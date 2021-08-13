@@ -13,4 +13,4 @@ Dieser Code veranschaulicht, wie es möglich ist:
 
 ## Siehe auch
 
-Weitere Informationen zur Benennung, zum Codestil und Tipps zu den häufigsten Problemen finden Sie unter [Terraform Best Practices](https://www.terraform-best-practices.com/).
+Weitere Informationen zur Benennung, zum Codestil und Tipps zu den häufigsten Problemen finden Sie unter [Terraform in der  Praxis](https://www.terraform-in-der-praxis.de/).

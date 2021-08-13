@@ -4,6 +4,8 @@
 * Monorepo vs. mehrere Repos (mbt, http get, size) für Terraform-Code
   - Sollen App und Infrarot zusammenleben? Wann ja und wann nein? https://apparently.me.uk/terraform-environment-application-pattern/overview.html
 * Scale-Up oder Scale-Down für Codestrukturen
+* Teil eins des Terraform tutorials https://www.elastic2ls.com/blog/terraform-tutorial-1/
+* Teil zwei des Terraform tutorials https://www.elastic2ls.com/blog/terraform-tutorial-2/
 * Umgang mit Geheimnissen in Terraform - https://tosbourn.com/hiding-secrets-terraform/
 * geteilter Terraform-Zustand für Umgebungen
   - Fügen Sie bessere und reale Beispiele für Arbeitsbereiche hinzu - https://www.terraform.io/docs/state/workspaces.html#when-to-use-multiple-workspaces
