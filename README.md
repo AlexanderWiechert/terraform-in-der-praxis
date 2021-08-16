@@ -9,7 +9,7 @@ description: >-
   entschied ich diese Seite zu erstellen.
 ---
 
-# Best Practises für Terraform
+# Terraform in der Praxis
 
 Da die Cloud-Infrastruktur für große und kleine Unternehmen immer wichtiger wird, sind verschiedene Tools entstanden, die Unternehmen bei der Verwaltung ihrer schnell wachsenden Cloudumgebung unterstützen. Die Bereitstellung und Verwaltung von Cloud-Ressourcen ist schneller und einfacher als je zuvor dank Infrastructure as Code \(IaC\). Mit IaC gehören langwierige manuelle Konfigurationen und einmalige Skripte der Vergangenheit an. Stattdessen verwalten Sie die Infrastruktur mit Code auf die gleiche Weise wie Anwendungen und Dienste. Diese Infrastruktur kann alles sein, von Servern und Datenbanken bis hin zu Netzwerken, Kubernetes-Clustern und ganzen Anwendungsstacks.
 

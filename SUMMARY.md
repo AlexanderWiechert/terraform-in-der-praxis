@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Best Practises für Terraform](README.md)
+* [Terraform in der Praxis](README.md)
 * [Schlüsselkonzepte](schluessel-konzepte/README.md)
   * [Ressourcenmodule](schluessel-konzepte/ressourcenmodule.md)
   * [Infrastrukturmodule](schluessel-konzepte/infrastrukturmodule.md)
