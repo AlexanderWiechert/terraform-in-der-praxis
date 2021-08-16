@@ -13,10 +13,7 @@
     * [Mittelgroße Infrastruktur mit Terraform](beispiele/terraform/mittlere-infrastruktur.md)
     * [Große Infrastruktur mit Terraform](beispiele/terraform/grosse-infrastruktur.md)
 * [Namenskonventionen](namenskonventionen.md)
-* [Code-Styling](codestil/README.md)
-  * [Ungewöhnliche Anwendungsfälle](codestil/ungewoehnliche-anwendungsfaelle.md)
-  * [FAQ](codestil/faq.md)
+* [Code-Styling](code-styling.md)
 * [Schreiben von Terraform-Konfigurationen](schreiben-von-terraform-konfigurationen.md)
 * [FAQ](faq.md)
 * [Weitere Links](weitere-informationen.md)
-
