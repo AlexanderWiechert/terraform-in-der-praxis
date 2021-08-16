@@ -3,7 +3,7 @@
 ## Allgemeine Konventionen
 
 {% hint style="info" %}
-Es sollte keinen Grund geben,  diesen nicht zu folgen.
+Es sollte keinen Grund geben, diesen nicht zu folgen.
 {% endhint %}
 
 1. Verwenden Sie `_` \(Unterstrich\) anstelle von `-` \(Bindestrich\) in allen: Ressourcennamen, Datenquellennamen, Variablennamen, Ausgaben.
@@ -121,9 +121,9 @@ Der Name für die Outputs ist wichtig, um sie außerhalb ihres Geltungsbereichs 
    1. `{name}` ist ein Ressourcen- oder Datenquellenname ohne Anbieterpräfix. `{name}` für `aws_subnet` ist `subnet`, für`aws_vpc` ist es `vpc`.
    2. `{type}` ist ein Typ einer Ressourcenquelle
    3. `{attribute}` ist ein Attribut, das von der Ausgabe zurückgegeben wird
-   4. [Siehe Beispiele](#codebeispiele-fuer-ausgabe).
-3. Wenn die Ausgabe einen Wert mit Interpolationsfunktionen und mehreren Ressourcen zurückgibt, sollten die `{name}` und `{type}` dort so generisch wie möglich sein \(`this` ist oft die generischste und sollte bevorzugt werden\) . [Siehe Beispiel](#codebeispiele-fuer-ausgabe).
-4. Wenn der zurückgegebene Wert eine Liste ist, sollte der Name im Plurar stehen. [Siehe Beispiel](#verwenden-sie-pluralnamen-wenn-der-rueckgabewert-eine-liste-ist).
+   4. [Siehe Beispiele](namenskonventionen.md#codebeispiele-fuer-ausgabe).
+3. Wenn die Ausgabe einen Wert mit Interpolationsfunktionen und mehreren Ressourcen zurückgibt, sollten die `{name}` und `{type}` dort so generisch wie möglich sein \(`this` ist oft die generischste und sollte bevorzugt werden\) . [Siehe Beispiel](namenskonventionen.md#codebeispiele-fuer-ausgabe).
+4. Wenn der zurückgegebene Wert eine Liste ist, sollte der Name im Plurar stehen. [Siehe Beispiel](namenskonventionen.md#verwenden-sie-pluralnamen-wenn-der-rueckgabewert-eine-liste-ist).
 5. Geben Sie immer eine `Beschreibung` für alle Ausgaben an, auch wenn Sie denken, dass es offensichtlich ist.
 
 ### Codebeispiele für `Output`
