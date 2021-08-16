@@ -32,12 +32,12 @@ Den gesamten Code in `main.tf` abzulegen ist eine gute Idee, wenn Sie anfangen o
 * `variables.tf` - enthält Deklarationen von Variablen, die in `main.tf` . verwendet werden
 * `outputs.tf` - enthält Ausgaben der in `main.tf` erstellten Ressourcen
 
-`terraform.tfvars` sollte nirgendwo außer in [composition](schluessel-konzepte#kompositionen) verwendet werden.
+`terraform.tfvars` sollte nirgendwo außer in [composition](schluessel-konzepte#komposition) verwendet werden.
 
 ## Wie ist die Struktur von Terraform-Konfigurationen zu denken?
 
 {% hint style="info" %}
-Bitte stellen Sie sicher, dass Sie die wichtigsten Konzepte verstehen - [Ressourcenmodul](schluessel-konzepte#kompositionen) und [composition](schluessel-konzepte#kompositionen), wie sie in den folgenden Beispielen verwendet werden.
+Bitte stellen Sie sicher, dass Sie die wichtigsten Konzepte verstehen - [Ressourcenmodul](schluessel-konzepte#komposition) und [composition](schluessel-konzepte#komposition), wie sie in den folgenden Beispielen verwendet werden.
 {% endhint %}
 
 ### Gemeinsame Empfehlungen für die Strukturierung von Code
