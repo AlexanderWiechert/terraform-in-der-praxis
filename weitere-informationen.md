@@ -3,11 +3,14 @@
 ## Beschreiben:
 
 * Monorepo vs. mehrere Repos \(mbt, http get, size\) für Terraform-Code
-  * Sollen App und Infrarot zusammenleben? Wann ja und wann nein? [https://apparently.me.uk/terraform-environment-application-pattern/overview.html](https://apparently.me.uk/terraform-environment-application-pattern/overview.html)
+  * Sollen App und Infrastruktur Code in einem Repository gespeichert werden? Wann ja und wann nein? [https://apparently.me.uk/terraform-environment-application-pattern/overview.html](https://apparently.me.uk/terraform-environment-application-pattern/overview.html)
 * Scale-Up oder Scale-Down für Codestrukturen
-* Teil eins des Terraform tutorials [https://www.elastic2ls.com/blog/terraform-tutorial-1/](https://www.elastic2ls.com/blog/terraform-tutorial-1/)
-* Teil zwei des Terraform tutorials [https://www.elastic2ls.com/blog/terraform-tutorial-2/](https://www.elastic2ls.com/blog/terraform-tutorial-2/)
-* Umgang mit Geheimnissen in Terraform - [https://tosbourn.com/hiding-secrets-terraform/](https://tosbourn.com/hiding-secrets-terraform/)
+* Terraform Tutorial
+- [https://www.elastic2ls.com/blog/terraform-tutorial-1/](https://www.elastic2ls.com/blog/terraform-tutorial-1/)
+- [https://www.elastic2ls.com/blog/terraform-tutorial-2/](https://www.elastic2ls.com/blog/terraform-tutorial-2/)
+* Umgang mit Geheimnissen in Terraform
+  - [https://tosbourn.com/hiding-secrets-terraform/](https://tosbourn.com/hiding-secrets-terraform/)
+  - [https://blog.gruntwork.io/a-comprehensive-guide-to-managing-secrets-in-your-terraform-code-1d586955ace1#3073](https://blog.gruntwork.io/a-comprehensive-guide-to-managing-secrets-in-your-terraform-code-1d586955ace1#3073)
 * geteilter Terraform-Zustand für Umgebungen
   * Fügen Sie bessere und reale Beispiele für Arbeitsbereiche hinzu - [https://www.terraform.io/docs/state/workspaces.html\#when-to-use-multiple-workspaces](https://www.terraform.io/docs/state/workspaces.html#when-to-use-multiple-workspaces)
 * Integration mit Ansible \(über dynamisches Inventar\) im Vergleich zu den user\_data der AWS-Startkonfiguration
@@ -33,4 +36,3 @@
 * Module detailliert mit Beispielen beschreiben - Infrastrukturmodule und Ressourcenmodule
 
 Stackoverflow-Fragen dazu:[https://stackoverflow.com/questions/50737880/terraform-folder-structure-modules-vs-fileshttps://stackoverflow.com/questions/43201497/terraform-state-management-for-multi-tenancy](https://stackoverflow.com/questions/50737880/terraform-folder-structure-modules-vs-fileshttps://stackoverflow.com/questions/43201497/terraform-state-management-for-multi-tenancy)
-
