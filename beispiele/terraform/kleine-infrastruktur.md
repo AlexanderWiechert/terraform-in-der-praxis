@@ -7,7 +7,7 @@ Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform
 {% hint style="info" %}
 * Perfekt, um loszulegen und unterwegs umzugestalten
 * Perfekt für kleine Ressourcenmodule
-* Gut für kleine und lineare Infrastrukturmodule \(zB [terraform-aws-atlantis](https://github.com/terraform-aws-modules/terraform-aws-atlantis)\)
+* Gut für kleine und lineare Infrastrukturmodule \(z.B. [terraform-aws-atlantis](https://github.com/terraform-aws-modules/terraform-aws-atlantis)\)
 * Gut für eine kleine Anzahl von Ressourcen \(weniger als 20-30\)
 {% endhint %}
 

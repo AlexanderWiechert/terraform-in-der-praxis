@@ -30,6 +30,6 @@ Wenn Sie Hilfe oder kommerzielle Unterstützung für Terraform, AWS oder Jenkins
 
 ## Lizenz
 
-Dieses Werk ist unter der Apache 2-Lizenz lizenziert. Ausführliche Informationen finden Sie unter LIZENZ.
+Dieses Werk ist unter der Apache 2-Lizenz lizenziert. Ausführliche Informationen finden Sie unter LICENCE.
 
 Copyright © 2018 Anton Babenko. Copyright © 2021 Alexander Wiechert.

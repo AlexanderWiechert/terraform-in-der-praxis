@@ -16,7 +16,7 @@
 * Rohrleitungen \(+- Spinnaker\)
 * CI-CD allgemein
 * Änderungsprotokoll dieses Repos, gitbook
-* Arbeiten mit mehreren Instanzen derselben Anbieter in unmittelbarer Nähe \(gleiches Infrastrukturmodul\). ZB AWS VPC-Peering, Route53-Zone/-Datensätze.
+* Arbeiten mit mehreren Instanzen derselben Anbieter in unmittelbarer Nähe \(gleiches Infrastrukturmodul\). z.B. AWS VPC-Peering, Route53-Zone/-Datensätze.
 * Überprüfen Sie, wie [https://github.com/travis-ci/terraform-config](https://github.com/travis-ci/terraform-config) organisiert ist \(Haupt-Makefiles in Root, Module, Workflow\)
   * Links zu Modulsammlungen wie [https://github.com/wellcometrust/terraform-modules](https://github.com/wellcometrust/terraform-modules) und Telia-oss hinzufügen
 * Paar Sätze als Rückblick auf Projekte im Zusammenhang mit Terraform - Atlantis, terragrunt

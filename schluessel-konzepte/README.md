@@ -6,15 +6,15 @@ In diesem Abschnitt werden Schlüsselkonzepte beschrieben, die im Buch verwendet
 
 ## Ressource
 
-Ressource ist `aws_vpc`, `aws_db_instance` usw. Ressource gehört zum Provider, akzeptiert Argumente, gibt Attribute aus, hat Lebenszyklen. Ressourcen können erstellt, abgerufen, aktualisiert und gelöscht werden.
+Ein Terraform Ressource ist z.B. `aws_vpc`, `aws_db_instance` usw. Ressourcen gehört zum Provider, akzeptieren Argumente, geben Attribute aus, haben Lebenszyklen. Ressourcen können erstellt, abgerufen, aktualisiert und gelöscht werden.
 
 ## Ressourcenmodul
 
-Das Ressourcenmodul ist eine Sammlung verbundener Ressourcen, die zusammen die gemeinsame Aktion ausführen \(z. B. [AWS VPC Terraform module](https://github.com/terraform-aws-modules/terraform-aws-vpc/) erstellt VPC, Subnetze, NAT-Gateway usw.\). Dies hängt von der Provider-Konfiguration ab, die darin definiert werden kann, oder in übergeordneten Strukturen \(zB im Infrastrukturmodul\).
+Das Ressourcenmodul ist eine Sammlung verbundener Ressourcen, die zusammen eine gemeinsame Aktion ausführen \(z. B. [AWS VPC Terraform module](https://github.com/terraform-aws-modules/terraform-aws-vpc/) erstellt VPC, Subnetze, NAT-Gateway usw.\). Dies hängt von der Provider-Konfiguration ab, die darin definiert werden kann, oder in übergeordneten Strukturen \(z.B. im Infrastrukturmodul\).
 
 ## Infrastrukturmodul
 
-Infrastrukturmodul ist eine Sammlung von Ressourcenmodulen, die logischerweise nicht verbunden werden können, aber in der aktuellen Situation/Projekt/Setup denselben Zweck erfüllen. Es definiert die Konfiguration für Anbieter, die an die nachgelagerten Ressourcenmodule und an Ressourcen weitergegeben wird. Es ist normalerweise darauf beschränkt, in einer Entität pro logischem Trennzeichen \(zB AWS-Region, Google-Projekt\) zu arbeiten. Ein Beispiel ist [terraform-aws-atlantis](https://github.com/terraform-aws-modules/terraform-aws-atlantis/), das Ressourcenmodule wie [terraform-aws-vpc](https://github%20.com/terraform-aws-modules/terraform-aws-vpc/) und [terraform-aws-security-group](https://github.com/terraform-aws-modules/terraform-aws-security-group/) um eine Infrastruktur zu erstellen, die zum Ausführen von [Atlantis](https://www.runatlantis.io) auf [AWS Fargate](https://aws.amazon.com/fargate/) erforderlich ist.
+Infrastrukturmodul ist eine Sammlung von Ressourcenmodulen, die logischerweise nicht verbunden werden können, aber in der aktuellen Situation/Projekt/Setup denselben Zweck erfüllen. Es definiert die Konfiguration für Anbieter, die an die nachgelagerten Ressourcenmodule und an Ressourcen weitergegeben wird. Es ist normalerweise darauf beschränkt, in einer Entität pro logischem Trennzeichen \(z.B. AWS-Region, Google-Projekt\) zu arbeiten. Ein Beispiel ist [terraform-aws-atlantis](https://github.com/terraform-aws-modules/terraform-aws-atlantis/), das Ressourcenmodule wie [terraform-aws-vpc](https://github%20.com/terraform-aws-modules/terraform-aws-vpc/) und [terraform-aws-security-group](https://github.com/terraform-aws-modules/terraform-aws-security-group/) um eine Infrastruktur zu erstellen, die zum Ausführen von [Atlantis](https://www.runatlantis.io) auf [AWS Fargate](https://aws.amazon.com/fargate/) erforderlich ist.
 
 ## Komposition
 
@@ -44,7 +44,7 @@ Anbieter, Versorger und einige andere Begriffe sind in der offiziellen Dokumenta
 
 ## Warum so _schwierig_?
 
-Während einzelne Ressourcen wie Atome in der Infrastruktur sind, sind Ressourcenmodule Moleküle. Das Modul ist eine kleinste versionierte und gemeinsam nutzbare Einheit. Es hat eine genaue Liste von Argumenten, implementiert die grundlegende Logik für eine solche Einheit, um die erforderliche Funktion auszuführen. Z.B. [terraform-aws-security-group](https://github.com/terraform-aws-modules/terraform-aws-security-group) erstellt die Ressourcen `aws_security_group` und `aws_security_group_list` basierend auf der Eingabe. Dieses Ressourcenmodul allein kann zusammen mit anderen Modulen verwendet werden, um ein Infrastrukturmodul zu erstellen.
+Während einzelne Ressourcen wie Atome in der Infrastruktur sind, sind Ressourcenmodule Moleküle. Das Modul ist eine kleinste versionierte und gemeinsam nutz.B.are Einheit. Es hat eine genaue Liste von Argumenten, implementiert die grundlegende Logik für eine solche Einheit, um die erforderliche Funktion auszuführen. Z.B. [terraform-aws-security-group](https://github.com/terraform-aws-modules/terraform-aws-security-group) erstellt die Ressourcen `aws_security_group` und `aws_security_group_list` basierend auf der Eingabe. Dieses Ressourcenmodul allein kann zusammen mit anderen Modulen verwendet werden, um ein Infrastrukturmodul zu erstellen.
 
 Der Zugriff auf Daten über Moleküle \(Ressourcenmodule und Infrastrukturmodule\) erfolgt unter Verwendung von \(Modul-\)Ausgaben und Datenquellen.
 
