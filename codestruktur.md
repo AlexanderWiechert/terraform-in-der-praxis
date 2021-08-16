@@ -75,4 +75,3 @@ Es gibt mindestens 4 verschiedene Gruppen von Orchestrierungslösungen, die Entw
 Vor diesem Hintergrund werden wir die ersten beiden dieser Projektstrukturen überprüfen, Terraform only und Terragrunt.
 
 Siehe Beispiele für Codestrukturen für [Terraform](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/15fa1ac4a70911b36dd1de46ee2e0d515c7122b3/examples/terraform.md) oder [Terragrunt](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/15fa1ac4a70911b36dd1de46ee2e0d515c7122b3/examples/terragrunt.md) im nächsten Kapitel.
-
