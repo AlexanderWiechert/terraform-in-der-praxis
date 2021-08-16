@@ -22,7 +22,7 @@ Obwohl Terraform fast überall in der Cloud-Infrastrukturlandschaft verwendet wi
 Ich bitte um euer Feedback um dieses Dokument ständig zu aktualisieren. Wenn neue Ideen ausgereift genug sind, werden diese überprüft und hier implementiert. Wenn Sie an bestimmten Themen interessiert sind, oder mögliche neue **Inhalte** beisteuern können [öffnen Sie ein Issue](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/issues).
 
 ## Autoren
-Das Buch ist hier kostenlos erhältlich - [https://www.terraform-in-der-praxis.de/](https://www.terraform-in-der-praxis.de/) Dieses Buch wird von [Anton Babenko](https://github.com/antonbabenko) mit Hilfe verschiedener Mitwirkender gepflegt. Übersetzt ins Deutsche von [Alexander Wiechert](https://github.com/elastic2ls-awiechert).
+Das Buch ist hier kostenlos erhältlich - [https://www.terraform-in-der-praxis.de/](https://www.terraform-in-der-praxis.de/)  Übersetzt ins Deutsche von [Alexander Wiechert](https://github.com/elastic2ls-awiechert).
 
 ## Brauchen Sie Hilfe?
 
