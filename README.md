@@ -1,9 +1,19 @@
 ---
 Beschreibung: >-
+<<<<<<< HEAD
   Ich möchte hier zeigen, wie man Terraform in der Praxis einsetzt, um verschiedene Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch gibt entschied ich diese Seite zu erstellen.
+=======
+  Ich möchte euch hier zeigen, wie man Terraform in der Praxis einsetzt, um die
+  verschiedensten Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch
+  gibt habe ich mich entschieden diese Seite zu erstellen.
+description: >-
+  Ich möchte hier zeigen, wie man Terraform in der Praxis einsetzt, um
+  verschiedene Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch gibt
+  entschied ich diese Seite zu erstellen.
+>>>>>>> dae32a1a7c243b0282a8751db41258134c09f781
 ---
 
-# Best Practises für Terraform
+# Terraform in der Praxis
 
 Da die Cloud-Infrastruktur für große und kleine Unternehmen immer wichtiger wird, sind verschiedene Tools entstanden, die Unternehmen bei der Verwaltung ihrer schnell wachsenden Cloudumgebung unterstützen. Die Bereitstellung und Verwaltung von Cloud-Ressourcen ist schneller und einfacher als je zuvor dank Infrastructure as Code \(IaC\). Mit IaC gehören langwierige manuelle Konfigurationen und einmalige Skripte der Vergangenheit an. Stattdessen verwalten Sie die Infrastruktur mit Code auf die gleiche Weise wie Anwendungen und Dienste. Diese Infrastruktur kann alles sein, von Servern und Datenbanken bis hin zu Netzwerken, Kubernetes-Clustern und ganzen Anwendungsstacks.
 
@@ -34,3 +44,4 @@ Wenn Sie Hilfe oder kommerzielle Unterstützung für Terraform, AWS oder Jenkins
 Dieses Werk ist unter der Apache 2-Lizenz lizenziert. Ausführliche Informationen finden Sie unter LICENCE.
 
 Copyright © 2018 Anton Babenko. Copyright © 2021 Alexander Wiechert.
+
