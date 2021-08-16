@@ -32,12 +32,12 @@ Den gesamten Code in `main.tf` abzulegen ist eine gute Idee, wenn Sie anfangen o
 * `variables.tf` - enthält Deklarationen von Variablen, die in `main.tf` . verwendet werden
 * `outputs.tf` - enthält Ausgaben der in `main.tf` erstellten Ressourcen
 
-`terraform.tfvars` sollte nirgendwo außer in [composition](key-concepts.md#composition) verwendet werden.
+`terraform.tfvars` sollte nirgendwo außer in [composition](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/15fa1ac4a70911b36dd1de46ee2e0d515c7122b3/key-concepts.md#composition) verwendet werden.
 
 ## Wie ist die Struktur von Terraform-Konfigurationen zu denken?
 
 {% hint style="info" %}
-Bitte stellen Sie sicher, dass Sie die wichtigsten Konzepte verstehen - [Ressourcenmodul](key-concepts.md#resource-module), [infrastructure module](key-concepts.md#infrastructure-module) und [composition](key-concepts.md%20#composition), wie sie in den folgenden Beispielen verwendet werden.
+Bitte stellen Sie sicher, dass Sie die wichtigsten Konzepte verstehen - [Ressourcenmodul](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/15fa1ac4a70911b36dd1de46ee2e0d515c7122b3/key-concepts.md#resource-module), [infrastructure module](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/15fa1ac4a70911b36dd1de46ee2e0d515c7122b3/key-concepts.md#infrastructure-module) und [composition](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/15fa1ac4a70911b36dd1de46ee2e0d515c7122b3/key-concepts.md#composition), wie sie in den folgenden Beispielen verwendet werden.
 {% endhint %}
 
 ### Gemeinsame Empfehlungen für die Strukturierung von Code
@@ -51,7 +51,7 @@ Bitte stellen Sie sicher, dass Sie die wichtigsten Konzepte verstehen - [Ressour
   * Ihr Laptop ist kein Platz für Ihre Infrastruktur Quelle der Wahrheit
   * Die Verwaltung einer tfstate-Datei in Git ist ein Albtraum
   * Später, wenn Infrastrukturschichten in eine beliebige Richtung zu wachsen beginnen \(Anzahl der Abhängigkeiten oder Ressourcen\)
-* Versuchen Sie, eine konsistente Struktur und [naming](naming.md)-Konvention zu praktizieren
+* Versuchen Sie, eine konsistente Struktur und [naming](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/15fa1ac4a70911b36dd1de46ee2e0d515c7122b3/naming.md)-Konvention zu praktizieren
   * Wie prozeduraler Code sollte Terraform-Code so geschrieben werden, dass er zuerst gelesen wird. Konsistenz wird helfen, wenn Änderungen in sechs Monaten erfolgen
   * Es ist möglich, Ressourcen in der Terraform-Statusdatei zu verschieben, aber dies kann schwieriger sein, wenn Sie eine inkonsistente Struktur und Benennung haben
 * Halten Sie Ressourcenmodule so einfach wie möglich
@@ -74,5 +74,5 @@ Es gibt mindestens 4 verschiedene Gruppen von Orchestrierungslösungen, die Entw
 
 Vor diesem Hintergrund werden wir die ersten beiden dieser Projektstrukturen überprüfen, Terraform only und Terragrunt.
 
-Siehe Beispiele für Codestrukturen für [Terraform](examples/terraform.md) oder [Terragrunt](examples/terragrunt.md) im nächsten Kapitel.
+Siehe Beispiele für Codestrukturen für [Terraform](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/15fa1ac4a70911b36dd1de46ee2e0d515c7122b3/examples/terraform.md) oder [Terragrunt](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/15fa1ac4a70911b36dd1de46ee2e0d515c7122b3/examples/terragrunt.md) im nächsten Kapitel.
 
