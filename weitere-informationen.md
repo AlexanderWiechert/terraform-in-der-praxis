@@ -6,8 +6,8 @@
   * Sollen App und Infrastruktur Code in einem Repository gespeichert werden? Wann ja und wann nein? [https://apparently.me.uk/terraform-environment-application-pattern/overview.html](https://apparently.me.uk/terraform-environment-application-pattern/overview.html)
 * Scale-Up oder Scale-Down für Codestrukturen
 * Terraform Tutorial
-- [https://www.elastic2ls.com/blog/terraform-tutorial-1/](https://www.elastic2ls.com/blog/terraform-tutorial-1/)
-- [https://www.elastic2ls.com/blog/terraform-tutorial-2/](https://www.elastic2ls.com/blog/terraform-tutorial-2/)
+  - [https://www.elastic2ls.com/blog/terraform-tutorial-1/](https://www.elastic2ls.com/blog/terraform-tutorial-1/)
+  - [https://www.elastic2ls.com/blog/terraform-tutorial-2/](https://www.elastic2ls.com/blog/terraform-tutorial-2/)
 * Umgang mit Geheimnissen in Terraform
   - [https://tosbourn.com/hiding-secrets-terraform/](https://tosbourn.com/hiding-secrets-terraform/)
   - [https://blog.gruntwork.io/a-comprehensive-guide-to-managing-secrets-in-your-terraform-code-1d586955ace1#3073](https://blog.gruntwork.io/a-comprehensive-guide-to-managing-secrets-in-your-terraform-code-1d586955ace1#3073)
