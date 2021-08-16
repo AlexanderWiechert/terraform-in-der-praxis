@@ -121,9 +121,9 @@ Der Name für die Ausgaben ist wichtig, um sie außerhalb ihres Geltungsbereichs
    1. `{name}` ist ein Ressourcen- oder Datenquellenname ohne Anbieterpräfix. `{name}` für `aws_subnet` ist `subnet`, für`aws_vpc` ist es `vpc`.
    2. `{type}` ist ein Typ einer Ressourcenquelle
    3. `{attribute}` ist ein Attribut, das von der Ausgabe zurückgegeben wird
-   4. [Siehe Beispiele](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/Namensnennung.md#Code-Beispiele-der-Ausgabe).
-3. Wenn die Ausgabe einen Wert mit Interpolationsfunktionen und mehreren Ressourcen zurückgibt, sollten die `{name}` und `{type}` dort so generisch wie möglich sein \(`dies` ist oft die generischste und sollte bevorzugt werden\) . [Siehe Beispiel](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/naming.md#code-examples-of-output).
-4. Wenn der zurückgegebene Wert eine Liste ist, sollte er einen Pluralnamen haben. [Siehe Beispiel](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/naming.md#use-plural-name-if-the-returning-value-is-a-list).
+   4. [Siehe Beispiele](https://www.terraform-in-der-praxis.de/namenskonventionen#codebeispiele-fuer-ausgabe).
+3. Wenn die Ausgabe einen Wert mit Interpolationsfunktionen und mehreren Ressourcen zurückgibt, sollten die `{name}` und `{type}` dort so generisch wie möglich sein \(`dies` ist oft die generischste und sollte bevorzugt werden\) . [Siehe Beispiel](https://www.terraform-in-der-praxis.de/namenskonventionen#codebeispiele-fuer-ausgabe).
+4. Wenn der zurückgegebene Wert eine Liste ist, sollte er einen Pluralnamen haben. [Siehe Beispiel](https://www.terraform-in-der-praxis.de/namenskonventionen#verwenden-sie-pluralnamen-wenn-der-rueckgabewert-eine-liste-ist).
 5. Geben Sie immer `Beschreibung` für alle Ausgaben an, auch wenn Sie denken, dass es offensichtlich ist.
 
 ### Codebeispiele für `Ausgabe`
