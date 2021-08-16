@@ -14,18 +14,18 @@ Hilfreiche Möglichkeit, Terraform einen Hinweis zu geben, dass einige Ressource
 main.tf:
 
 ```text
-Variable "Website" {
-  Typ = Karte (Zeichenfolge)
-  Standard = {}
+variable "website" {
+  type    = map(string)
+  default = {}
 }
 
-Ressource "aws_s3_bucket" "this" {
-  # weggelassen...
+resource "aws_s3_bucket" "this" {
+  # omitted...
 
-  dynamische "Website" {
+  dynamic "website" {
     for_each = length(keys(var.website)) == 0 ? [] : [var.website]
 
-    Inhalt {
+    content {
       index_document = website.value.index_document
       error_document = lookup(website.value, "error_document", null)
     }
@@ -36,7 +36,7 @@ Ressource "aws_s3_bucket" "this" {
 terraform.tfvars:
 
 ```text
-Webseite = {
+website = {
   index_document = "index.html"
 }
 ```
