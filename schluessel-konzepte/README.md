@@ -22,7 +22,7 @@ Komposition ist eine Sammlung von Infrastrukturmodulen, die sich über mehrere l
 
 Komposition besteht aus Infrastrukturmodulen, die aus Ressourcenmodulen bestehen, die einzelne Ressourcen implementieren.
 
-![Einfache Infrastrukturzusammensetzung](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/.gitbook/assets/composition-1.png)
+![Einfache Infrastrukturzusammensetzung](drawings/composition-1.png)
 
 ## Datenquelle
 
@@ -72,4 +72,3 @@ Zusammensetzung-1 {
 
 }
 ```
-
