@@ -4,9 +4,9 @@ Beschreibung: >-
   verschiedensten Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch
   gibt habe ich mich entschieden diese Seite zu erstellen.
 description: >-
-  Ich möchte euch hier zeigen, wie man Terraform in der Praxis einsetzt, um die
-  verschiedensten Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch
-  gibt habe ich mich entschieden diese Seite zu
+  Ich möchte hier zeigen, wie man Terraform in der Praxis einsetzt, um
+  verschiedene Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch gibt
+  entschied ich diese Seite zu erstellen.
 ---
 
 # Best Practises für Terraform
