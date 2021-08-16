@@ -22,7 +22,7 @@ Komposition ist eine Sammlung von Infrastrukturmodulen, die sich über mehrere l
 
 Komposition besteht aus Infrastrukturmodulen, die aus Ressourcenmodulen bestehen, die einzelne Ressourcen implementieren.
 
-![Einfache Infrastrukturzusammensetzung](/bilder/composition-1.png)
+![Einfache Infrastrukturzusammensetzung](../.gitbook/assets/composition-1.png)
 
 ## Datenquelle
 
@@ -72,3 +72,4 @@ Zusammensetzung-1 {
 
 }
 ```
+
