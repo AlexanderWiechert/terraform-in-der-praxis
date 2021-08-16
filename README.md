@@ -1,6 +1,12 @@
 ---
 Beschreibung: >-
-  Ich möchte euch hier zeigen, wie man Terraform in der Praxis einsetzt, um die verschiedensten Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch gibt habe ich mich entschieden diese Seite zu erstellen.
+  Ich möchte euch hier zeigen, wie man Terraform in der Praxis einsetzt, um die
+  verschiedensten Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch
+  gibt habe ich mich entschieden diese Seite zu erstellen.
+description: >-
+  Ich möchte euch hier zeigen, wie man Terraform in der Praxis einsetzt, um die
+  verschiedensten Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch
+  gibt habe ich mich entschieden diese Seite zu
 ---
 
 # Best Practises für Terraform
@@ -34,3 +40,4 @@ Wenn Sie Hilfe oder kommerzielle Unterstützung für Terraform, AWS oder Jenkins
 Dieses Werk ist unter der Apache 2-Lizenz lizenziert. Ausführliche Informationen finden Sie unter LICENCE.
 
 Copyright © 2018 Anton Babenko. Copyright © 2021 Alexander Wiechert.
+

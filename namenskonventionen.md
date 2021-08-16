@@ -19,9 +19,9 @@ Es sollte keinen Grund geben, diesen nicht zu folgen.
 2. Der Ressourcenname sollte `this` heißen, wenn kein beschreibender und allgemeiner Name mehr verfügbar ist oder wenn das Ressourcenmodul eine einzelne Ressource dieses Typs erstellt \(z.B. gibt es eine einzelne Ressource des Typs `aws_nat_gateway` und mehrere Ressourcen des Typs`aws_route_table`, also sollte `aws_nat_gateway` `this` heißen und `aws_route_table` sollte aussagekräftigere Namen haben - wie `private`, `public`, `database`\).
 3. Verwenden Sie für Namen immer Nomen im Singular.
 4. Verwenden Sie `-` innerhalb von Argument und an Stellen, an denen der Wert für Andere lesbar sein soll \(z.B. innerhalb des DNS-Namens der RDS-Instanz\).
-5. Fügen Sie das Argument `count` in Ressourcenblöcke als erstes Argument oben ein und trennen Sie es durch einen Zeilenumbruch dahinter. Siehe [Beispiel](#verwendung-von-count).
-6. Fügen Sie die Kondition `tags` als letztes Argument ein, wenn es von der Ressource unterstützt wird, gefolgt von `depends_on` und `lifecycle`, falls erforderlich. All dies sollte durch eine einzelne Leerzeile getrennt werden. Siehe [Beispiel](#platzierung-von-tags).
-7. Wenn Bedingung im `count`-Argument verwendet wird, verwenden Sie einen booleschen Wert, wenn dies sinnvoll ist, andernfalls verwenden Sie `length` oder eine andere Interpolation. Siehe [Beispiel](#bedingungen-in-count).
+5. Fügen Sie das Argument `count` in Ressourcenblöcke als erstes Argument oben ein und trennen Sie es durch einen Zeilenumbruch dahinter. Siehe [Beispiel](namenskonventionen.md#verwendung-von-count).
+6. Fügen Sie die Kondition `tags` als letztes Argument ein, wenn es von der Ressource unterstützt wird, gefolgt von `depends_on` und `lifecycle`, falls erforderlich. All dies sollte durch eine einzelne Leerzeile getrennt werden. Siehe [Beispiel](namenskonventionen.md#platzierung-von-tags).
+7. Wenn Bedingung im `count`-Argument verwendet wird, verwenden Sie einen booleschen Wert, wenn dies sinnvoll ist, andernfalls verwenden Sie `length` oder eine andere Interpolation. Siehe [Beispiel](namenskonventionen.md#bedingungen-in-count).
 8. Um invertierte Bedingungen zu erstellen, führen Sie keine andere Variable ein, es sei denn, es ist wirklich notwendig, sondern verwenden stattdessen `1 - boolescher Wert`. Zum Beispiel `count = "${1 - var.create_public_subnets}"`
 
 ## Codebeispiele für `Ressource`
@@ -180,3 +180,4 @@ Ausgabe "this_db_instance_id" {
 {% endhint %}
 
 \*\*\*\*
+
