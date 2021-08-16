@@ -1,27 +1,18 @@
 ---
 Beschreibung: >-
-  Dieses Dokument ist ein Versuch, Best Practices unter Verwendung von
-  Terraform und geben Empfehlungen für die häufigsten Probleme Terraform
-  Benutzererfahrung.
+  Dieses Dokument ist ein Versuch, Best Practices, die sich in der Praxis bei der Verwendung von Terraform ergeben haben,
+  zu sammeln und dokumentieren.
 ---
 
 # Willkommen
 
-[Terraform](https://www.terraform.io/) ist ein ziemlich neues Projekt \(wie die meisten DevOps-Tools eigentlich\), das 2014 gestartet wurde.
+[Terraform](https://www.terraform.io/) ist ein  Projekt im Bereich Infrastructure-as-Code das 2014 gestartet wurde. Terraform ist eines der am häufigsten verwendeten Tools, mit dem die Infrastruktur als Code verwaltet werden kann. Das Buch ist hier kostenlos erhältlich - [https://www.terraform-in-der-praxis.de/](https://www.terraform-in-der-praxis.de/)
 
-Terraform ist mächtig \ (wenn nicht das mächtigste auf dem Markt\) und eines der am häufigsten verwendeten Tools, mit dem die Infrastruktur als Code verwaltet werden kann. Es ermöglicht Entwicklern, viele Dinge zu tun, und hindert sie nicht daran, Dinge auf eine Weise zu tun, die schwer zu unterstützen oder zu integrieren ist.
 
-Einige der in diesem Buch beschriebenen Informationen erscheinen möglicherweise nicht als bewährte Vorgehensweisen. Ich weiß das, und um dem Leser zu helfen, zu unterscheiden, was etablierte Best Practices sind und was nur eine andere meinungsvolle Vorgehensweise ist, verwende ich manchmal Hinweise, um Kontext und Symbole bereitzustellen, um den Reifegrad jedes Unterabschnitts in Bezug auf Best Practices anzugeben.
-
-Das Buch ist hier kostenlos erhältlich - [https://www.terraform-in-der-praxis.de/](https://www.terraform-in-der-praxis.de/)
-
-## Status
-
-Dieses Buch sollte schließlich die meisten Best Practices und Empfehlungen für Terraform-Benutzer enthalten, aber niemand weiß, wann genau es passieren wird. Ich habe vor, es bis Ende 2018 weitestgehend fertig zu stellen.
 
 ## Beiträge
 
-Ich möchte Feedback erhalten und dieses Dokument aktualisieren, wenn die Community ausgereift ist und neue Ideen implementiert und überprüft werden. Ich schreibe über Themen, die am beliebtesten sind.
+Ich bitte um euer Feedback um dieses Dokument ständig zu aktualisieren. Wenn neue Ideen ausgereift genug sind, werden diese überprüft und hier implementiert.
 
 Wenn Sie an bestimmten Themen interessiert sind, [öffnen Sie ein Issue](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/issues) oder geben Sie einen Daumen hoch zu einem Thema, das Sie am meisten behandeln möchten . Wenn Sie der Meinung sind, dass Sie **Inhalte** haben, die Sie einschließen möchten, schreiben Sie einen Entwurf und senden Sie eine Pull-Anfrage \(mach dir jetzt keine Sorgen, guten Text zu schreiben!\)
 
