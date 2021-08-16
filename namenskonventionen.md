@@ -3,24 +3,24 @@
 ## Allgemeine Konventionen
 
 {% hint style="info" %}
-Es sollte keinen Grund geben, zumindest diesen nicht zu folgen :\)
+Es sollte keinen Grund geben,  diesen nicht zu folgen.
 {% endhint %}
 
 1. Verwenden Sie `_` \(Unterstrich\) anstelle von `-` \(Bindestrich\) in allen: Ressourcennamen, Datenquellennamen, Variablennamen, Ausgaben.
-   * Beachten Sie, dass tatsächliche Cloud-Ressourcen viele versteckte Einschränkungen in ihren Namenskonventionen aufweisen. Einige dürfen keine Bindestriche enthalten, andere müssen in einer Kamelhülle enthalten sein. Diese Konventionen beziehen sich auf Terraform-Namen selbst.
+   * Beachten Sie, dass tatsächliche Cloud-Ressourcen viele versteckte Einschränkungen in ihren Namenskonventionen aufweisen. Einige dürfen keine Bindestriche enthalten, andere müssen am Anfang gross geschrieben werden. Diese Konventionen beziehen sich auf den Namen von Terraform Ressourcen.
 2. Verwenden Sie nur Kleinbuchstaben und Zahlen.
 
 ## Argumente für Ressourcen und Datenquellen
 
-1. Ressourcentyp im Ressourcennamen nicht wiederholen \(nicht teilweise oder vollständig\):
+1. Ressourcentyp im Ressourcennamen nicht wiederholen:
    * Gut: `Ressource "aws_route_table" "public" {}`
    * Schlecht: `Ressource "aws_route_table" "public_route_table" {}`
    * Schlecht: `Ressource "aws_route_table" "public_aws_route_table" {}`
 2. Der Ressourcenname sollte `this` heißen, wenn kein beschreibender und allgemeiner Name mehr verfügbar ist oder wenn das Ressourcenmodul eine einzelne Ressource dieses Typs erstellt \(zB gibt es eine einzelne Ressource des Typs `aws_nat_gateway` und mehrere Ressourcen des Typs`aws_route_table`, also sollte `aws_nat_gateway` `this` heißen und `aws_route_table` sollte aussagekräftigere Namen haben - wie `private`, `public`, `database`\).
 3. Verwenden Sie für Namen immer Nomen im Singular.
-4. Verwenden Sie `-` innerhalb von Argumentwerten und an Stellen, an denen der Wert einem menschlichen \(zB innerhalb des DNS-Namens der RDS-Instanz\) ausgesetzt wird.
+4. Verwenden Sie `-` innerhalb von Argument und an Stellen, an denen der Wert für Andere lesbar sein soll \(zB innerhalb des DNS-Namens der RDS-Instanz\).
 5. Fügen Sie das Argument `count` in Ressourcenblöcke als erstes Argument oben ein und trennen Sie es durch einen Zeilenumbruch dahinter. Siehe [Beispiel](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/naming.md#usage-of-count).
-6. Fügen Sie das Argument `tags` als letztes echtes Argument ein, wenn es von der Ressource unterstützt wird, gefolgt von `depends_on` und `lifecycle`, falls erforderlich. All dies sollte durch eine einzelne Leerzeile getrennt werden. Siehe [Beispiel](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/naming.md#Placement-of-Tags).
+6. Fügen Sie die Kondition `tags` als letztes Argument ein, wenn es von der Ressource unterstützt wird, gefolgt von `depends_on` und `lifecycle`, falls erforderlich. All dies sollte durch eine einzelne Leerzeile getrennt werden. Siehe [Beispiel](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/naming.md#Platzierung-von-Tags).
 7. Wenn Bedingung im `count`-Argument verwendet wird, verwenden Sie einen booleschen Wert, wenn dies sinnvoll ist, andernfalls verwenden Sie `length` oder eine andere Interpolation. Siehe [Beispiel](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/naming.md#conditions-in-count).
 8. Um invertierte Bedingungen zu erstellen, führen Sie keine andere Variable ein, es sei denn, es ist wirklich notwendig, sondern verwenden stattdessen `1 - boolescher Wert`. Zum Beispiel `count = "${1 - var.create_public_subnets}"`
 
@@ -180,4 +180,3 @@ Ausgabe "this_db_instance_id" {
 {% endhint %}
 
 \*\*\*\*
-
