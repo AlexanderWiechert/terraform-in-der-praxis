@@ -20,7 +20,7 @@ Es sollte keinen Grund geben, diesen nicht zu folgen.
 3. Verwenden Sie für Namen immer Nomen im Singular.
 4. Verwenden Sie `-` innerhalb von Argument und an Stellen, an denen der Wert für Andere lesbar sein soll \(z.B. innerhalb des DNS-Namens der RDS-Instanz\).
 <<<<<<< HEAD
-5. Fügen Sie das Argument `count` in Ressourcenblöcke als erstes Argument oben ein und trennen Sie es durch einen Zeilenumbruch dahinter. Siehe [Beispiel](#verwendung-von-count).
+5. Fügen Sie das Argument `count` in Ressourcenblöcke als erstes Argument oben ein und trennen Sie es durch einen Zeilenumbruch dahinter. Siehe [Beispiel](#verwendung-von-count verwendung-von-count).
 6. Fügen Sie die Kondition `tags` als letztes Argument ein, wenn es von der Ressource unterstützt wird, gefolgt von `depends_on` und `lifecycle`, falls erforderlich. All dies sollte durch eine einzelne Leerzeile getrennt werden. Siehe [Beispiel](#platzierung-von-tags).
 7. Wenn Bedingung im `count`-Argument verwendet wird, verwenden Sie einen booleschen Wert, wenn dies sinnvoll ist, andernfalls verwenden Sie `length` oder eine andere Interpolation. Siehe [Beispiel ](#bedingungen-in-count "bedingungen-in-count").
 =======
@@ -186,4 +186,3 @@ Ausgabe "this_db_instance_id" {
 {% endhint %}
 
 \*\*\*\*
-
