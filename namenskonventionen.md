@@ -112,23 +112,23 @@ Ressource "aws_nat_gateway" "this" {
 5. Beim Definieren von Variablen ordnen Sie die Schlüssel: `description` , `type`, `default` .
 6. Fügen Sie für alle Variablen immer eine `Beschreibung` hinzu, auch wenn Sie denken, dass es offensichtlich ist.
 
-## Ausgänge
+## Outputs
 
-Der Name für die Ausgaben ist wichtig, um sie außerhalb ihres Geltungsbereichs konsistent und verständlich zu machen \(wenn der Benutzer ein Modul verwendet, sollte offensichtlich sein, welcher Typ und welches Attribut des Werts zurückgegeben wird\).
+Der Name für die Outputs ist wichtig, um sie außerhalb ihres Geltungsbereichs konsistent und verständlich zu machen \(wenn der Benutzer ein Modul verwendet, sollte offensichtlich sein, welcher Typ und welches Attribut des Werts zurückgegeben wird\).
 
-1. Die allgemeine Empfehlung für die Namen von Ausgaben lautet, dass sie für den darin enthaltenen Wert beschreibend und weniger frei sein sollten, als Sie es normalerweise wünschen würden.
+1. Die allgemeine Empfehlung für die Namen von Outputs lautet, dass sie für den darin enthaltenen Wert beschreiben.
 2. Eine gute Struktur für Ausgabenamen sieht wie folgt aus: `{name}_{type}_{attribute}` , wobei:
    1. `{name}` ist ein Ressourcen- oder Datenquellenname ohne Anbieterpräfix. `{name}` für `aws_subnet` ist `subnet`, für`aws_vpc` ist es `vpc`.
    2. `{type}` ist ein Typ einer Ressourcenquelle
    3. `{attribute}` ist ein Attribut, das von der Ausgabe zurückgegeben wird
    4. [Siehe Beispiele](#codebeispiele-fuer-ausgabe).
-3. Wenn die Ausgabe einen Wert mit Interpolationsfunktionen und mehreren Ressourcen zurückgibt, sollten die `{name}` und `{type}` dort so generisch wie möglich sein \(`dies` ist oft die generischste und sollte bevorzugt werden\) . [Siehe Beispiel](#codebeispiele-fuer-ausgabe).
-4. Wenn der zurückgegebene Wert eine Liste ist, sollte er einen Pluralnamen haben. [Siehe Beispiel](#verwenden-sie-pluralnamen-wenn-der-rueckgabewert-eine-liste-ist).
-5. Geben Sie immer `Beschreibung` für alle Ausgaben an, auch wenn Sie denken, dass es offensichtlich ist.
+3. Wenn die Ausgabe einen Wert mit Interpolationsfunktionen und mehreren Ressourcen zurückgibt, sollten die `{name}` und `{type}` dort so generisch wie möglich sein \(`this` ist oft die generischste und sollte bevorzugt werden\) . [Siehe Beispiel](#codebeispiele-fuer-ausgabe).
+4. Wenn der zurückgegebene Wert eine Liste ist, sollte der Name im Plurar stehen. [Siehe Beispiel](#verwenden-sie-pluralnamen-wenn-der-rueckgabewert-eine-liste-ist).
+5. Geben Sie immer eine `Beschreibung` für alle Ausgaben an, auch wenn Sie denken, dass es offensichtlich ist.
 
-### Codebeispiele für `Ausgabe`
+### Codebeispiele für `Output`
 
-Geben Sie höchstens eine ID der Sicherheitsgruppe zurück:
+Gibt die ID der Sicherheitsgruppe zurück:
 
 {% hint style="info" %}
 
