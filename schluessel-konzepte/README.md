@@ -28,48 +28,47 @@ Komposition besteht aus Infrastrukturmodulen, die aus Ressourcenmodulen bestehen
 
 Die Datenquelle führt einen schreibgeschützten Vorgang aus und ist von der Providerkonfiguration abhängig. Sie wird in einem Ressourcenmodul und einem Infrastrukturmodul verwendet.
 
-Die Datenquelle `terraform_remote_state` dient als Klebstoff für höherstufige Module und Kompositionen.
+Die Datenquelle `terraform_remote_state` verbindet höherstufige Module und Kompositionen.
 
 Die Datenquelle [external](https://www.terraform.io/docs/providers/external/data_source.html) ermöglicht es einem externen Programm, als Datenquelle zu fungieren und beliebige Daten zur Verwendung an anderer Stelle in der Terraform-Konfiguration verfügbar zu machen.
 
 Die Datenquelle [http](https://www.terraform.io/docs/providers/http/data_source.html) stellt eine HTTP-GET-Anfrage an die angegebene URL und exportiert Informationen über die Antwort, die oft nützlich sind, um Informationen zu erhalten Endpunkte, auf denen kein nativer Terraform-Anbieter vorhanden ist.
 
-## Remote-Status
+## remote-state
 
 Infrastrukturmodule und -kompositionen sollten ihren Zustand an einem entfernten Standort beibehalten, der von anderen auf kontrollierbare Weise erreicht werden kann \(ACL, Versionierung, Protokollierung\).
 
-## Anbieter, Versorger usw.
+## Provider, provisioner usw.
 
-Anbieter, Versorger und einige andere Begriffe sind in der offiziellen Dokumentation sehr gut beschrieben und es macht keinen Sinn, es hier zu wiederholen. Meiner Meinung nach haben sie wenig damit zu tun, gute Terraform-Module zu schreiben. Weitere Details werden später bekannt gegeben.
+Provider, provisioner und einige andere Begriffe sind in der offiziellen Dokumentation sehr gut beschrieben und es macht keinen Sinn, es hier zu wiederholen. Meiner Meinung nach haben sie wenig damit zu tun, gute Terraform-Module zu schreiben.
 
 ## Warum so _schwierig_?
 
-Während einzelne Ressourcen wie Atome in der Infrastruktur sind, sind Ressourcenmodule Moleküle. Das Modul ist eine kleinste versionierte und gemeinsam nutz.B.are Einheit. Es hat eine genaue Liste von Argumenten, implementiert die grundlegende Logik für eine solche Einheit, um die erforderliche Funktion auszuführen. Z.B. [terraform-aws-security-group](https://github.com/terraform-aws-modules/terraform-aws-security-group) erstellt die Ressourcen `aws_security_group` und `aws_security_group_list` basierend auf der Eingabe. Dieses Ressourcenmodul allein kann zusammen mit anderen Modulen verwendet werden, um ein Infrastrukturmodul zu erstellen.
+Während einzelne Ressourcen wie Atome in der Infrastruktur sind, sind Ressourcenmodule Moleküle. Das Modul ist eine kleinste versionierte und gemeinsam nutzbare Einheit. Es hat eine genaue Liste von Argumenten, implementiert die grundlegende Logik für eine solche Einheit, um die erforderliche Funktion auszuführen. Z.B. [terraform-aws-security-group](https://github.com/terraform-aws-modules/terraform-aws-security-group) erstellt die Ressourcen `aws_security_group` und `aws_security_group_list` basierend auf der Eingabe. Dieses Ressourcenmodul allein kann zusammen mit anderen Modulen verwendet werden, um ein Infrastrukturmodul zu erstellen.
 
-Der Zugriff auf Daten über Moleküle \(Ressourcenmodule und Infrastrukturmodule\) erfolgt unter Verwendung von \(Modul-\)Ausgaben und Datenquellen.
+Der Zugriff auf Daten von Ressourcenmodulen und Infrastrukturmodulen erfolgt unter Verwendung von \(Modul-\)Ausgaben und Datenquellen.
 
-Der Zugriff zwischen Kompositionen erfolgt unter Verwendung von Datenquellen für den fernen Zustand.
+Der Zugriff zwischen Kompositionen erfolgt unter Verwendung von Datenquellen für den remote-state.
 
 Wenn man die oben beschriebenen Konzepte in Pseudo-Relationen setzt, kann das so aussehen:
 
 ```text
-Zusammensetzung-1 {
-  Infrastruktur-Modul-1 {
-    Datenquelle-1 => d1
+composition-1 {
+  infrastructure-module-1 {
+    data-source-1 => d1
 
-    Ressourcenmodul-1 {
-      Datenquelle-2 => d2
-      Ressource-1 (d1, d2)
-      Ressource-2 (d2)
+    resource-module-1 {
+      data-source-2 => d2
+      resource-1 (d1, d2)
+      resource-2 (d2)
     }
 
-    Ressourcenmodul-2 {
-      Datenquelle-3 => d3
-      Ressource-3 (d1, d3)
-      Ressource-4 (d3)
+    resource-module-2 {
+      data-source-3 => d3
+      resource-3 (d1, d3)
+      resource-4 (d3)
     }
   }
 
 }
 ```
-
