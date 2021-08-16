@@ -26,3 +26,4 @@ Sehen Sie sich das [pre-commit-terraform-Repository](https://github.com/antonbab
 1. [Pre-Commit-Framework-Homepage](https://pre-commit.com/)
 2. [Sammlung von Git-Hooks für Terraform zur Verwendung mit dem Pre-Commit-Framework](https://github.com/antonbabenko/pre-commit-terraform)
 3. Blogpost von [Dean Wilson](https://github.com/deanwilson): [pre-commit Hooks and Terraform – a safety net for your Repositorys](https://www.unixdaemon.net/tools/terraform%20-precommit-Hooks/)
+
