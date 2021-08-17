@@ -19,3 +19,4 @@ Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform
 {% hint style="warning" %}
 Wenn das Projekt wächst, wird es schwieriger, diese Umgebungen untereinander auf dem neuesten Stand zu halten. Ziehen Sie die Verwendung von Infrastrukturmodulen \(von der Stange oder intern\) für wiederholbare Aufgaben in Betracht.
 {% endhint %}
+

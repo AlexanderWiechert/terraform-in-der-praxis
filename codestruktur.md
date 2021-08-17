@@ -21,7 +21,7 @@ Dies ist eine der Fragen, für die es viele Lösungen gibt und es sehr schwierig
   * Nach Umgebung, Region, Projekt
 
 {% hint style="info" %}
-_Logische Provider arbeiten vollständig innerhalb der Logik von Terraform und interagieren nicht mit anderen Diensten, sodass wir uns ihre Komplexität als O\(1\) vorstellen können. Zu den gängigsten logischen Anbietern gehören [random](https://www.terraform.io/docs/providers/random/index.html), [template](https://www.terraform.io/docs/providers/template/%20index.html), [terraform](https://www.terraform.io/docs/providers/terraform/index.html), [null](https://www.terraform.io/docs/providers/null/%20index.html).
+\_Logische Provider arbeiten vollständig innerhalb der Logik von Terraform und interagieren nicht mit anderen Diensten, sodass wir uns ihre Komplexität als O\(1\) vorstellen können. Zu den gängigsten logischen Anbietern gehören [random](https://www.terraform.io/docs/providers/random/index.html), [template](https://www.terraform.io/docs/providers/template/%20index.html), [terraform](https://www.terraform.io/docs/providers/terraform/index.html), [null](https://www.terraform.io/docs/providers/null/%20index.html).
 {% endhint %}
 
 ## Erste Schritte mit der Strukturierung von Terraform-Konfigurationen
@@ -70,4 +70,5 @@ Es gibt mindestens 4 verschiedene Gruppen von Orchestrierungslösungen, die Entw
 
 Vor diesem Hintergrund werden wir die ersten beiden dieser Projektstrukturen überprüfen, Terraform only und Terragrunt.
 
-Siehe Beispiele für Codestrukturen für [Terraform](beispiele/terraform.md) oder [Terragrunt](beispiele/terragrunt.md) im nächsten Kapitel.
+Siehe Beispiele für Codestrukturen für [Terraform](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/e9e17ff04b97b846631e98a0982b4c9257fc30dd/beispiele/terraform.md) oder [Terragrunt](beispiele/terragrunt.md) im nächsten Kapitel.
+

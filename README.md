@@ -31,8 +31,9 @@ Wenn Sie Hilfe oder kommerzielle Unterstützung für Terraform, AWS oder Jenkins
 
 ## Lizenz
 
-Dieses Werk ist unter der Apache 2-Lizenz lizenziert. Ausführliche Informationen finden Sie unter LICENCE.
-Copyright © 2021 Alexander Wiechert.
+Dieses Werk ist unter der Apache 2-Lizenz lizenziert. Ausführliche Informationen finden Sie unter LICENCE. Copyright © 2021 Alexander Wiechert.
 
 ## Sponsoring
+
 Wenn Sie das Projekt fördern wollen, [spenden](https://www.paypal.com/paypalme/AlexanderWiechert) Sie uns doch bitte einen kleinen Betrag
+

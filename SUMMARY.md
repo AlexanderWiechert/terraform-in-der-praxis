@@ -12,7 +12,7 @@
     * [kleine Infrastruktur mit Terraform](beispiele/terraform/kleine-infrastruktur.md)
     * [Mittelgroße Infrastruktur mit Terraform](beispiele/terraform/mittlere-infrastruktur.md)
     * [Große Infrastruktur mit Terraform](beispiele/terraform/grosse-infrastruktur.md)
-* [Namenskonventionen bei der Verwendung von Terraform](namenskonventionen.md)
+* [Namenskonventionen in Terraform](namenskonventionen.md)
 * [Code-Styling](code-styling.md)
 * [Schreiben von Terraform-Konfigurationen](schreiben-von-terraform-konfigurationen.md)
 * [FAQ](faq.md)
