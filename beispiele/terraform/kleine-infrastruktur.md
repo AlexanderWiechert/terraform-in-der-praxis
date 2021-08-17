@@ -1,6 +1,6 @@
 # kleine Infrastruktur mit Terraform
 
-Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-%20der-praxis/tree/master/beispiele/kleine-umgebung](https://github.com/elastic2ls-awiechert/terraform-in-%20der-praxis/tree/master/beispiele/kleine-umgebung)
+Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-%20der-praxis/tree/master/beispiele/kleine-umgebung](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/beispiele/kleine-umgebung)
 
 Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform-Konfigurationen für eine kleine Infrastruktur, bei der keine externen Abhängigkeiten verwendet werden.
 
