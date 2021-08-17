@@ -1,11 +1,11 @@
 ---
 description: >-
   Welche Namenskonventionen bei der Verwendung von Terraform
-  haben sich bewährt. Warum es sinnvoll ist eine
-  einheitliche  Schreibweise der benannten Resourcen zu verwenden.
+  sind bewährt. Warum es sinnvoll ist eine
+  einheitliche  Schreibweise für Resourcen zu verwenden.
 ---
 
-# Namenskonventionen bei der Verwendung von Terraform
+# Namenskonventionen in Terraform
 
 ## Allgemeine Konventionen
 
