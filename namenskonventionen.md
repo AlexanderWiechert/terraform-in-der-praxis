@@ -133,7 +133,7 @@ Gibt die ID der Sicherheitsgruppe zurück:
 {% hint style="info" %}
 
 ```text
-c "this_security_group_id" {
+output "this_security_group_id" {
   description = "Die ID der Sicherheitsgruppe"
   value = "${element(concat(coalescelist(aws_security_group.this.*.id, aws_security_group.this_name_prefix.*.id), list("")), 0)}"
 }
