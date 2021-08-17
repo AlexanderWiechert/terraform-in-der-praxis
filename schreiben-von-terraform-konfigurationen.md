@@ -4,7 +4,7 @@
 
 Hilfreiche Möglichkeit, Terraform einen Hinweis zu geben, dass einige Ressourcen vorher gelöscht werden sollten, selbst wenn keine direkte Abhängigkeit in Terraform-Konfigurationen besteht.
 
-[locals.tf](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cd7aafbb66e89f53f0aec8ae0697c8fe5820653e/snippets/locals.tf)
+[locals.tf](https://github.com/AlexanderWiechert/terraform-in-der-praxis/tree/cd7aafbb66e89f53f0aec8ae0697c8fe5820653e/snippets/locals.tf)
 
 ## Terraform 0.12 - Erforderliche vs. optionale Argumente
 

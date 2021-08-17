@@ -1,6 +1,6 @@
 # Mittelgroße Infrastruktur mit Terraform
 
-Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/beispiele/mittlere-umgebung](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/beispiele/mittlere-umgebung)
+Quelle: [https://github.com/AlexanderWiechert/terraform-in-der-praxis/tree/master/beispiele/mittlere-umgebung](https://github.com/AlexanderWiechert/terraform-in-der-praxis/tree/master/beispiele/mittlere-umgebung)
 
 Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform-Konfigurationen für eine mittelgroße Infrastruktur, die Folgendes verwendet:
 
