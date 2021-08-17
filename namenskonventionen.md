@@ -1,4 +1,11 @@
-# Namenskonventionen
+---
+description: >-
+  Welche Namenskonventionen sind bei der Verwendung von Terraform sinnvoll
+  und haben sich bewährt. Warum macht es Sinn sich, bevor man loslegt, eine
+  einheitliche  Schreibweise der benannten Resourcen zu überlegen.
+---
+
+# Namenskonventionen bei der Verwendung von Terraform
 
 ## Allgemeine Konventionen
 
