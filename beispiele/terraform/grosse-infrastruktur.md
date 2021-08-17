@@ -1,6 +1,6 @@
 # Große Infrastruktur mit Terraform
 
-Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/large-terraform](https://github.com/elastic2ls-awiechert/terraform-in-%20der-praxis/tree/master/examples/large-terraform)
+Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/beispiele/grosse-umgebung](https://github.com/elastic2ls-awiechert/terraform-in-%20der-praxis/tree/master/beispiele/grosse-umgebung)
 
 Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform-Konfigurationen für eine große Infrastruktur, die Folgendes verwendet:
 
@@ -11,7 +11,7 @@ Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform
 * Jede Umgebung verwendet die gleiche Version des internen Moduls `modules/network`, da es aus einem lokalen Verzeichnis stammt.
 
 {% hint style="info" %}
-In einem großen Projekt wie hier beschrieben werden die Vorteile des Einsatzes von Terragrunt sehr deutlich. Siehe [Beispiele für Codestrukturen mit Terragrunt](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/cf49ff6b7c43b588321f54c01d131284df0a71ed/beispiele/terragrunt.md).
+In einem großen Projekt wie hier beschrieben werden die Vorteile des Einsatzes von Terragrunt sehr deutlich. Siehe [Beispiele für Codestrukturen mit Terragrunt](beispiele/terragrunt.md).
 {% endhint %}
 
 {% hint style="info" %}
@@ -24,4 +24,3 @@ In einem großen Projekt wie hier beschrieben werden die Vorteile des Einsatzes 
 {% hint style="warning" %}
 Wenn das Projekt wächst, wird es schwieriger, diese Umgebungen untereinander auf dem neuesten Stand zu halten. Ziehen Sie die Verwendung von Infrastrukturmodulen \(von der Stange oder intern\) für wiederholbare Aufgaben in Betracht.
 {% endhint %}
-

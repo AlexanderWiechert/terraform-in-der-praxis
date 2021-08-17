@@ -1,6 +1,6 @@
 # Mittelgroße Infrastruktur mit Terraform
 
-Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/examples/medium-terraform](https://github.com/elastic2ls-awiechert/terraform-in-%20der-praxis/tree/master/examples/medium-terraform)
+Quelle: [https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/master/beispiele/mittlere-umgebung](https://github.com/elastic2ls-awiechert/terraform-in-%20der-praxis/tree/master/beispiele/mittlere-umgebung)
 
 Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform-Konfigurationen für eine mittelgroße Infrastruktur, die Folgendes verwendet:
 
@@ -19,4 +19,3 @@ Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform
 {% hint style="warning" %}
 Wenn das Projekt wächst, wird es schwieriger, diese Umgebungen untereinander auf dem neuesten Stand zu halten. Ziehen Sie die Verwendung von Infrastrukturmodulen \(von der Stange oder intern\) für wiederholbare Aufgaben in Betracht.
 {% endhint %}
-
