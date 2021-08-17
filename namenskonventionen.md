@@ -1,8 +1,8 @@
 ---
 description: >-
-  Welche Namenskonventionen sind bei der Verwendung von Terraform sinnvoll und
-  haben sich bewährt. Warum macht es Sinn sich, bevor man loslegt, eine
-  einheitliche  Schreibweise der benannten Resourcen zu
+  Welche Namenskonventionen bei der Verwendung von Terraform
+  haben sich bewährt. Warum es sinnvoll ist eine
+  einheitliche  Schreibweise der benannten Resourcen zu verwenden.
 ---
 
 # Namenskonventionen bei der Verwendung von Terraform
@@ -186,4 +186,3 @@ output "this_db_instance_id" {
 }
 ```
 {% endhint %}
-
