@@ -25,9 +25,9 @@ Es sollte keinen Grund geben, diesen nicht zu folgen.
 2. Der Ressourcenname sollte `this` heißen, wenn kein beschreibender und allgemeiner Name mehr verfügbar ist oder wenn das Ressourcenmodul eine einzelne Ressource dieses Typs erstellt \(z.B. gibt es eine einzelne Ressource des Typs `aws_nat_gateway` und mehrere Ressourcen des Typs`aws_route_table`, also sollte `aws_nat_gateway` `this` heißen und `aws_route_table` sollte aussagekräftigere Namen haben - wie `private`, `public`, `database`\).
 3. Verwenden Sie für Namen immer Nomen im Singular.
 4. Verwenden Sie `-` innerhalb von Argument und an Stellen, an denen der Wert für Andere lesbar sein soll \(z.B. innerhalb des DNS-Namens der RDS-Instanz\).
-5. Fügen Sie das Argument `count` in Ressourcenblöcke als erstes Argument oben ein und trennen Sie es durch einen Zeilenumbruch dahinter. Siehe [Beispiel](namenskonventionen.md#verwendung-von-count%20verwendung-von-count).
-6. Fügen Sie die Kondition `tags` als letztes Argument ein, wenn es von der Ressource unterstützt wird, gefolgt von `depends_on` und `lifecycle`, falls erforderlich. All dies sollte durch eine einzelne Leerzeile getrennt werden. Siehe [Beispiel](namenskonventionen.md#platzierung-von-tags).
-7. Wenn Bedingung im `count`-Argument verwendet wird, verwenden Sie einen booleschen Wert, wenn dies sinnvoll ist, andernfalls verwenden Sie `length` oder eine andere Interpolation. Siehe [Beispiel ](namenskonventionen.md#bedingungen-in-count).
+5. Fügen Sie das Argument `count` in Ressourcenblöcke als erstes Argument oben ein und trennen Sie es durch einen Zeilenumbruch dahinter. Siehe [Beispiel](namenskonventionen.md#verwendung-von-count "verwendung-von-count").
+6. Fügen Sie die Kondition `tags` als letztes Argument ein, wenn es von der Ressource unterstützt wird, gefolgt von `depends_on` und `lifecycle`, falls erforderlich. All dies sollte durch eine einzelne Leerzeile getrennt werden. Siehe [Beispiel](namenskonventionen.md#platzierung-von-tags "platzierung-von-tags").
+7. Wenn Bedingung im `count`-Argument verwendet wird, verwenden Sie einen booleschen Wert, wenn dies sinnvoll ist, andernfalls verwenden Sie `length` oder eine andere Interpolation. Siehe [Beispiel ](namenskonventionen.md#bedingungen-in-count "bedingungen-in-count").
 8. Um invertierte Bedingungen zu erstellen, führen Sie keine andere Variable ein, es sei denn, es ist wirklich notwendig, sondern verwenden stattdessen `1 - boolescher Wert`. Zum Beispiel `count = "${1 - var.create_public_subnets}"`
 
 ## Codebeispiele für `Ressource`
@@ -128,9 +128,9 @@ Der Name für die Outputs ist wichtig, um sie außerhalb ihres Geltungsbereichs 
    1. `{name}` ist ein Ressourcen- oder Datenquellenname ohne Anbieterpräfix. `{name}` für `aws_subnet` ist `subnet`, für`aws_vpc` ist es `vpc`.
    2. `{type}` ist ein Typ einer Ressourcenquelle
    3. `{attribute}` ist ein Attribut, das von der Ausgabe zurückgegeben wird
-   4. [Siehe Beispiele](namenskonventionen.md#codebeispiele-fuer-ausgabe).
-3. Wenn die Ausgabe einen Wert mit Interpolationsfunktionen und mehreren Ressourcen zurückgibt, sollten die `{name}` und `{type}` dort so generisch wie möglich sein \(`this` ist oft die generischste und sollte bevorzugt werden\) . [Siehe Beispiel](namenskonventionen.md#codebeispiele-fuer-ausgabe).
-4. Wenn der zurückgegebene Wert eine Liste ist, sollte der Name im Plurar stehen. [Siehe Beispiel](namenskonventionen.md#verwenden-sie-pluralnamen-wenn-der-rueckgabewert-eine-liste-ist).
+   4. [Siehe Beispiele](namenskonventionen.md#codebeispiele-fuer-ausgabe "codebeispiele-fuer-ausgabe").
+3. Wenn die Ausgabe einen Wert mit Interpolationsfunktionen und mehreren Ressourcen zurückgibt, sollten die `{name}` und `{type}` dort so generisch wie möglich sein \(`this` ist oft die generischste und sollte bevorzugt werden\) . [Siehe Beispiel](namenskonventionen.md#codebeispiele-fuer-ausgabe "codebeispiele-fuer-ausgabe").
+4. Wenn der zurückgegebene Wert eine Liste ist, sollte der Name im Plurar stehen. [Siehe Beispiel](namenskonventionen.md#verwenden-sie-pluralnamen-wenn-der-rueckgabewert-eine-liste-ist "verwenden-sie-pluralnamen-wenn-der-rueckgabewert-eine-liste-ist").
 5. Geben Sie immer eine `Beschreibung` für alle Ausgaben an, auch wenn Sie denken, dass es offensichtlich ist.
 
 ### Codebeispiele für `Output`
@@ -185,4 +185,3 @@ output "this_db_instance_id" {
 }
 ```
 {% endhint %}
-
