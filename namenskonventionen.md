@@ -19,9 +19,9 @@ Es sollte keinen Grund geben, diesen nicht zu folgen.
 2. Der Ressourcenname sollte `this` heißen, wenn kein beschreibender und allgemeiner Name mehr verfügbar ist oder wenn das Ressourcenmodul eine einzelne Ressource dieses Typs erstellt \(z.B. gibt es eine einzelne Ressource des Typs `aws_nat_gateway` und mehrere Ressourcen des Typs`aws_route_table`, also sollte `aws_nat_gateway` `this` heißen und `aws_route_table` sollte aussagekräftigere Namen haben - wie `private`, `public`, `database`\).
 3. Verwenden Sie für Namen immer Nomen im Singular.
 4. Verwenden Sie `-` innerhalb von Argument und an Stellen, an denen der Wert für Andere lesbar sein soll \(z.B. innerhalb des DNS-Namens der RDS-Instanz\).
-5. Fügen Sie das Argument `count` in Ressourcenblöcke als erstes Argument oben ein und trennen Sie es durch einen Zeilenumbruch dahinter. Siehe [Beispiel](namenskonventionen.md#verwendung-von-count "verwendung-von-count").
-6. Fügen Sie die Kondition `tags` als letztes Argument ein, wenn es von der Ressource unterstützt wird, gefolgt von `depends_on` und `lifecycle`, falls erforderlich. All dies sollte durch eine einzelne Leerzeile getrennt werden. Siehe [Beispiel](namenskonventionen.md#platzierung-von-tags "platzierung-von-tags").
-7. Wenn Bedingung im `count`-Argument verwendet wird, verwenden Sie einen booleschen Wert, wenn dies sinnvoll ist, andernfalls verwenden Sie `length` oder eine andere Interpolation. Siehe [Beispiel](namenskonventionen.md#bedingungen-in-count "bedingungen-in-count").
+5. Fügen Sie das Argument `count` in Ressourcenblöcke als erstes Argument oben ein und trennen Sie es durch einen Zeilenumbruch dahinter. Siehe [Beispiel](#verwendung-von-count verwendung-von-count "verwendung-von-count verwendung-von-count").
+6. Fügen Sie die Kondition `tags` als letztes Argument ein, wenn es von der Ressource unterstützt wird, gefolgt von `depends_on` und `lifecycle`, falls erforderlich. All dies sollte durch eine einzelne Leerzeile getrennt werden. Siehe [Beispiel](#platzierung-von-tags "platzierung-von-tags").
+7. Wenn Bedingung im `count`-Argument verwendet wird, verwenden Sie einen booleschen Wert, wenn dies sinnvoll ist, andernfalls verwenden Sie `length` oder eine andere Interpolation. Siehe [Beispiel ](#bedingungen-in-count "bedingungen-in-count").
 8. Um invertierte Bedingungen zu erstellen, führen Sie keine andere Variable ein, es sei denn, es ist wirklich notwendig, sondern verwenden stattdessen `1 - boolescher Wert`. Zum Beispiel `count = "${1 - var.create_public_subnets}"`
 
 ## Codebeispiele für `Ressource`
@@ -31,8 +31,8 @@ Es sollte keinen Grund geben, diesen nicht zu folgen.
 {% hint style="info" %}
 
 ```text
-Ressource "aws_route_table" "öffentlich" {
-  zählen = "2"
+Ressource "aws_route_table" "public" {
+  count = "2"
 
   vpc_id = "vpc-12345678"
   # ... verbleibende Argumente weggelassen
@@ -42,9 +42,9 @@ Ressource "aws_route_table" "öffentlich" {
 {% hint style="danger" %}
 
 ```text
-Ressource "aws_route_table" "öffentlich" {
+Ressource "aws_route_table" "public" {
   vpc_id = "vpc-12345678"
-  zählen = "2"
+  count = "2"
 
   # ... verbleibende Argumente weggelassen
 }
@@ -56,19 +56,19 @@ Ressource "aws_route_table" "öffentlich" {
 
 ```text
 Ressource "aws_nat_gateway" "this" {
-  zählen = "1"
+  count = "1"
 
-  allokation_id = "..."
+  allocation_ids = "..."
   subnet_id = "..."
 
   Tags = {
     Name = "..."
   }
 
-  hängt_on = ["aws_internet_gateway.this"]
+  depends_on = ["aws_internet_gateway.this"]
 
-  Lebenszyklus {
-    create_before_destroy = wahr
+  lifecycle {
+    create_before_destroy = true
   }
 }
 ```
@@ -77,14 +77,14 @@ Ressource "aws_nat_gateway" "this" {
 
 ```text
 Ressource "aws_nat_gateway" "this" {
-  zählen = "1"
+  count = "1"
 
   Tags = "..."
 
-  hängt_on = ["aws_internet_gateway.this"]
+  depends_on = ["aws_internet_gateway.this"]
 
-  Lebenszyklus {
-    create_before_destroy = wahr
+  lifecycle {
+    create_before_destroy = true
   }
 
   allokation_id = "..."
@@ -95,10 +95,10 @@ Ressource "aws_nat_gateway" "this" {
 ### Bedingungen in `count`
 
 {% hint style="info" %}
-* ```text
+ ```text
   count = "${length(var.public_subnets) > 0 ? 1 : 0}"
   ```
-* ```text
+ ```text
   count = "${var.create_public_subnets}"
   ```
 {% endhint %}
@@ -121,9 +121,9 @@ Der Name für die Outputs ist wichtig, um sie außerhalb ihres Geltungsbereichs 
    1. `{name}` ist ein Ressourcen- oder Datenquellenname ohne Anbieterpräfix. `{name}` für `aws_subnet` ist `subnet`, für`aws_vpc` ist es `vpc`.
    2. `{type}` ist ein Typ einer Ressourcenquelle
    3. `{attribute}` ist ein Attribut, das von der Ausgabe zurückgegeben wird
-   4. [Siehe Beispiele](namenskonventionen.md#codebeispiele-fuer-ausgabe).
-3. Wenn die Ausgabe einen Wert mit Interpolationsfunktionen und mehreren Ressourcen zurückgibt, sollten die `{name}` und `{type}` dort so generisch wie möglich sein \(`this` ist oft die generischste und sollte bevorzugt werden\) . [Siehe Beispiel](namenskonventionen.md#codebeispiele-fuer-ausgabe).
-4. Wenn der zurückgegebene Wert eine Liste ist, sollte der Name im Plurar stehen. [Siehe Beispiel](namenskonventionen.md#verwenden-sie-pluralnamen-wenn-der-rueckgabewert-eine-liste-ist).
+   4. [Siehe Beispiele](#codebeispiele-fuer-ausgabe "codebeispiele-fuer-ausgabe").
+3. Wenn die Ausgabe einen Wert mit Interpolationsfunktionen und mehreren Ressourcen zurückgibt, sollten die `{name}` und `{type}` dort so generisch wie möglich sein \(`this` ist oft die generischste und sollte bevorzugt werden\) . [Siehe Beispiel](#codebeispiele-fuer-ausgabe "codebeispiele-fuer-ausgabe").
+4. Wenn der zurückgegebene Wert eine Liste ist, sollte der Name im Plurar stehen. [Siehe Beispiel](#verwenden-sie-pluralnamen-wenn-der-rueckgabewert-eine-liste-ist "verwenden-sie-pluralnamen-wenn-der-rueckgabewert-eine-liste-ist").
 5. Geben Sie immer eine `Beschreibung` für alle Ausgaben an, auch wenn Sie denken, dass es offensichtlich ist.
 
 ### Codebeispiele für `Output`
@@ -133,7 +133,7 @@ Gibt die ID der Sicherheitsgruppe zurück:
 {% hint style="info" %}
 
 ```text
-Ausgabe "this_security_group_id" {
+c "this_security_group_id" {
   description = "Die ID der Sicherheitsgruppe"
   value = "${element(concat(coalescelist(aws_security_group.this.*.id, aws_security_group.this_name_prefix.*.id), list("")), 0)}"
 }
@@ -144,12 +144,12 @@ Wenn mehrere Ressourcen des gleichen Typs vorhanden sind, sollte `this` bevorzug
 {% hint style="danger" %}
 
 ```text
-Ausgabe "security_group_id" {
+output "security_group_id" {
   description = "Die ID der Sicherheitsgruppe"
   value = "${element(concat(coalescelist(aws_security_group.this.*.id, aws_security_group.web.*.id), list("")), 0)}"
 }
 
-Ausgabe "another_security_group_id" {
+output "another_security_group_id" {
   description = "Die ID der Websicherheitsgruppe"
   value = "${element(concat(aws_security_group.web.*.id, list("")), 0)}"
 }
@@ -160,7 +160,7 @@ Ausgabe "another_security_group_id" {
 {% hint style="info" %}
 
 ```text
-Ausgabe "this_rds_cluster_instance_endpoints" {
+output "this_rds_cluster_instance_endpoints" {
   description = "Eine Liste aller Endpunkte von Clusterinstanzen"
   Wert = ["${aws_rds_cluster_instance.this.*.endpoint}"]
 }
@@ -172,11 +172,9 @@ Es gibt zwei Ressourcen vom Typ `aws_db_instance` mit den Namen `this` und `this
 
 {% hint style="info" %}
 ```text
-Ausgabe "this_db_instance_id" {
+output "this_db_instance_id" {
   description = "Die RDS-Instanz-ID"
   value = "${element(concat(coalescelist(aws_db_instance.this_mssql.*.id, aws_db_instance.this.*.id), list("")), 0)}"
 }
 ```
 {% endhint %}
-
-\*\*\*\*
