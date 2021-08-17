@@ -11,7 +11,7 @@ Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform
 * Jede Umgebung verwendet die gleiche Version des internen Moduls `modules/network`, da es aus einem lokalen Verzeichnis stammt.
 
 {% hint style="info" %}
-In einem großen Projekt wie hier beschrieben werden die Vorteile des Einsatzes von Terragrunt sehr deutlich. Siehe [Beispiele für Codestrukturen mit Terragrunt](beispiele/terragrunt.md).
+In einem großen Projekt wie hier beschrieben werden die Vorteile des Einsatzes von Terragrunt sehr deutlich. Siehe [Beispiele für Codestrukturen mit Terragrunt](/beispiele/terragrunt.md).
 {% endhint %}
 
 {% hint style="info" %}
