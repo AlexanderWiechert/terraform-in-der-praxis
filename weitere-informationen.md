@@ -1,4 +1,10 @@
-# Weitere Links
+---
+description: >-
+  Ein bunte Sammlung von Links rund um terraform. Die Liste wird ständig erweitert und aktualisiert.
+---
+
+
+ Weitere Links
 
 * Monorepo vs. mehrere Repos für Terraform-Code
   * Sollen App und Infrastruktur Code in einem Repository gespeichert werden? Wann ja und wann nein? [https://apparently.me.uk/terraform-environment-application-pattern/overview.html](https://apparently.me.uk/terraform-environment-application-pattern/overview.html)
@@ -30,4 +36,3 @@
   * Ein paar Antworten zum Thema, wie ich die Terraform Konfiguration strukturieren kann.
   * [https://stackoverflow.com/questions/50737880/terraform-folder-structure-modules-vs-files](https://stackoverflow.com/questions/50737880/terraform-folder-structure-modules-vs-files)
   * [https://stackoverflow.com/questions/43201497/terraform-state-management-for-multi-tenancy](https://stackoverflow.com/questions/43201497/terraform-state-management-for-multi-tenancy)
-

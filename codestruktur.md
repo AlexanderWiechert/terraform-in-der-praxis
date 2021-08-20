@@ -1,3 +1,14 @@
+---
+description: >-
+Fragen zur Terraform-Codestruktur sind in der Community bei weitem am häufigsten. Über die beste Codestruktur hat sich wahrscheinlich auch schon jeder Gedanken gemacht.
+Dies ist eine der Fragen, für die es viele Lösungen gibt und es sehr schwierig ist, allgemeine Ratschläge zu erteilen.
+---
+
+## Wie soll ich meine Terraform-Konfigurationen strukturieren?
+
+Dies ist eine der Fragen, für die es viele Lösungen gibt und es sehr schwierig ist, allgemeine Ratschläge zu erteilen. Beginnen wir also damit, zu verstehen, womit wir es zu tun haben.
+
+
 # Codestruktur
 
 Fragen zur Terraform-Codestruktur sind in der Community bei weitem am häufigsten. Über die beste Codestruktur hat sich wahrscheinlich auch schon jeder Gedanken gemacht.
@@ -71,4 +82,3 @@ Es gibt mindestens 4 verschiedene Gruppen von Orchestrierungslösungen, die Entw
 Vor diesem Hintergrund werden wir die ersten beiden dieser Projektstrukturen überprüfen, Terraform only und Terragrunt.
 
 Siehe Beispiele für Codestrukturen für [Terraform](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/e9e17ff04b97b846631e98a0982b4c9257fc30dd/beispiele/terraform.md) oder [Terragrunt](beispiele/terragrunt.md) im nächsten Kapitel.
-
