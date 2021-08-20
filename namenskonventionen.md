@@ -1,3 +1,5 @@
+<link rel="canonical" href="https://www.terraform-in-der-praxis.de/"/>
+
 ---
 description: >-
   Welche Namenskonventionen bei der Verwendung von Terraform sind bewährt. Warum
