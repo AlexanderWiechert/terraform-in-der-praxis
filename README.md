@@ -1,4 +1,5 @@
 ---
+title: Best practise für Terraform in der Praxis - terraform-in-der-praxis.de
 description: >-
   Ich möchte hier zeigen, wie man Terraform in der Praxis einsetzt, um
   verschiedene Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch gibt
@@ -36,4 +37,3 @@ Dieses Werk ist unter der Apache 2-Lizenz lizenziert. Ausführliche Informatione
 ## Sponsoring
 
 Wenn Sie das Projekt fördern wollen, [spenden](https://www.paypal.com/paypalme/AlexanderWiechert) Sie uns doch bitte einen kleinen Betrag
-
