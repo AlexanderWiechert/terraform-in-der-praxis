@@ -1,6 +1,6 @@
 ---
 description: >-
-Die offizielle Terraform-Dokumentation beschreibt alle Aspekte der Konfiguration im Detail. Lesen Sie es sorgfältig durch, um den Rest dieses Abschnitts zu verstehen. In diesem Abschnitt werden Schlüsselkonzepte beschrieben, die im Buch verwendet werden.
+  Die offizielle Terraform-Dokumentation beschreibt alle Aspekte der Konfiguration im Detail. Lesen Sie es sorgfältig durch, um den Rest dieses Abschnitts zu verstehen. In diesem Abschnitt werden Schlüsselkonzepte beschrieben, die im Buch verwendet werden.
 ---
 
 # Schlüsselkonzepte

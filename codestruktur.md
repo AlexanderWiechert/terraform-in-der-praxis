@@ -1,7 +1,7 @@
 ---
 description: >-
-Fragen zur Terraform-Codestruktur sind in der Community bei weitem am häufigsten. Über die beste Codestruktur hat sich wahrscheinlich auch schon jeder Gedanken gemacht.
-Dies ist eine der Fragen, für die es viele Lösungen gibt und es sehr schwierig ist, allgemeine Ratschläge zu erteilen.
+  Fragen zur Terraform-Codestruktur sind in der Community bei weitem am häufigsten. Über die beste Codestruktur hat sich wahrscheinlich auch schon jeder Gedanken gemacht.
+  Dies ist eine der Fragen, für die es viele Lösungen gibt und es sehr schwierig ist, allgemeine Ratschläge zu erteilen.
 ---
 
 ## Wie soll ich meine Terraform-Konfigurationen strukturieren?
