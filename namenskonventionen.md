@@ -3,7 +3,7 @@ description: >-
   Welche Namenskonventionen bei der Verwendung von Terraform sind bewährt. Warum
   es sinnvoll ist eine einheitliche  Schreibweise für Resourcen zu verwenden.
 author: AWiechert
-canonical: https://www.terraform-in-der-praxis.de  
+canonical: <link rel=canonical href=”https://www.terraform-in-der-praxis.de ” />  
 ---
 
 # Namenskonventionen in Terraform
