@@ -44,3 +44,9 @@ Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann
 [Überprüfung und Validierung](schluessel-konzepte/validierung.md)
 
 Befolgen Sie eine strikte Richtlinie zur Überprüfung der Terraform-Validierung und der Planergebnisse, bevor Sie erlauben, dass Terraform Änderungen auf eine Umgebung angewendet werden.
+
+## Rückverfolgbarkeit von Änderungen
+
+[Rückverfolgbarkeit von Änderungen](schluessel-konzepte/rückverfolgbarkeit-von-aenderungen.md)
+
+Erforderlich sind ein einheitliches Authentifizierungsschema und ein Audit-Mechanismus, der eindeutig nachverfolgt, welcher Auftraggeber eine Terraform-Operation ausgelöst hat, insbesondere in Produktionsumgebungen.

@@ -9,6 +9,7 @@
     * [Kompositionen](schluessel-konzepte/kompositionen.md "Kompositionen")
     * [Remote State](state.md "Remote State")
     * [Überprüfung und Validierung](schluessel-konzepte/validierung.md)
+    * [Rückverfolgbarkeit von Änderungen](schluessel-konzepte/rückverfolgbarkeit-von-aenderungen.md)
   * [Codestruktur](codestruktur.md "Codestruktur")
     * [Beispiele für die Codestruktur](beispiele/README.md "Beispiele für die Codestruktur")
       * [Terragrunt](beispiele/terragrunt.md "Beispiele für Terragrunt")
