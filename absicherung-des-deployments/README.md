@@ -7,7 +7,7 @@ description: >-
 
 ## State
 
-[Remote State](absicherung-des-deployments/state.md "Remote State")
+[Remote State](state.md "Remote State")
 
 Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen werden müssen. |
 
@@ -15,18 +15,18 @@ Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann
 
 ## Überprüfung und Validierung
 
-[Überprüfung und Validierung](absicherung-des-deployments/validierung.md)
+[Überprüfung und Validierung](validierung.md)
 
 Befolgen Sie eine strikte Richtlinie zur Überprüfung der Terraform-Validierung und der Planergebnisse, bevor Sie erlauben, dass Terraform Änderungen auf eine Umgebung angewendet werden.
 
 ## Rückverfolgbarkeit von Änderungen
 
-[Rückverfolgbarkeit von Änderungen](absicherung-des-deployments/rückverfolgbarkeit-von-aenderungen.md)
+[Rückverfolgbarkeit von Änderungen](rückverfolgbarkeit-von-aenderungen.md)
 
 Erforderlich sind ein einheitliches Authentifizierungsschema und ein Audit-Mechanismus, der eindeutig nachverfolgt, welcher Auftraggeber eine Terraform-Operation ausgelöst hat, insbesondere in Produktionsumgebungen.
 
 ## Rückverfolgbarkeit von Änderungen
 
-[CI/CD Pipelines zur Absicherung der Cloudumgebung](absicherung-des-deployments/cd-ci-integration.md)
+[CI/CD Pipelines zur Absicherung der Cloudumgebung](cd-ci-integration.md)
 
 Verwenden Sie ein Continuous Delivery / Continuous Integration oder ein gemeinsames Orchestrierungswerkzeug, um Ihre Terraform-Operationen von einem einzigen gemeinsamen Standort aus auszuführen.
