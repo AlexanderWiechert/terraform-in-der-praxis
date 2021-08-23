@@ -2,10 +2,10 @@
 
   * [Terraform in der Praxis](README.md "Terraform in der Praxis")
   * [Schlüsselkonzepte](schluessel-konzepte/README.md "Schlüsselkonzepte")
+    * [Ressourcen](schluessel-konzepte/resource.md "Ressourcen")
     * [Ressourcenmodule](schluessel-konzepte/ressourcenmodule.md "Ressourcenmodule")
     * [Infrastrukturmodule](schluessel-konzepte/infrastrukturmodule.md "Infrastrukturmodule")
     * [Kompositionen](schluessel-konzepte/kompositionen.md "Kompositionen")
-    * [Ressourcen](schluessel-konzepte/resource.md "Ressourcen")
     * [Datenquellen](schluessel-konzepte/datenquelle.md "Datenquellen")
     * [Remote State](state.md "Remote State")
   * [Codestruktur](codestruktur.md "Codestruktur")

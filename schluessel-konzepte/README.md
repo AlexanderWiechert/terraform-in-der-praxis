@@ -11,6 +11,15 @@ Die offizielle Terraform-Dokumentation beschreibt [alle Aspekte der Konfiguratio
 Zerlegen und abstrahieren Sie Ihren terraform Code, um die Wiederverwendung zu maximieren.
 {% endhint %}
 
+| Typ | Beschreibung |
+| :--- | :--- |
+| [Resourcen](schluessel-konzepte/resource.md "Ressourcen") | Ein Terraform Ressource ist z.B. `aws_vpc`, `aws_db_instance` usw. |
+| [Datenquellen](schluessel-konzepte/datenquelle.md "Datenquellen") | Mehrere AWS-Konten und -Umgebungen, Standard-Infrastrukturmodule mit Terraform. |
+| [Ressourcenmodule](schluessel-konzepte/ressourcenmodule.md "Ressourcenmodule") | Das Ressourcenmodul ist eine Sammlung verbundener Ressourcen, die zusammen eine gemeinsame Aktion ausführen. |
+| [Infrastrukturmodule](schluessel-konzepte/infrastrukturmodule.md "Infrastrukturmodule") | Infrastrukturmodul ist eine Sammlung von Ressourcenmodulen, die logischerweise nicht verbunden werden können, aber in der aktuellen Situation/Projekt/Setup denselben Zweck erfüllen. |
+| [Komposition](schluessel-konzepte/kompositionen.md "Kompositionen") | Kompositionen sind eine Sammlung von Infrastrukturmodulen, die sich über mehrere logisch getrennte Bereiche erstrecken kann. |
+| [Remote State](schluessel-konzepte/state.md "Remote State") | Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen werden müssen. |
+
 Wie jedes andere Framework kann auch Terraform-Code schlecht oder gut geschrieben sein. Schlecht geschriebener Infrastruktur-Code ist langsam, fehleranfällig und schwer zu warten. Viele der Grundsätze, die einem guten Anwendungscode zugrunde liegen, gelten auch für den Infrastrukturcode. Konzepte wie [DRY](https://www.xtivia.com/blog/cloud/terraform-best-practices/#:~:text=code%3B%20concepts%20like-,DRY,-%2C%20the%20Single%20Responsibility), das [Single Responsibility Principle](https://www.xtivia.com/blog/cloud/terraform-best-practices/#:~:text=Single%20Responsibility%20Principle) und [YAGNI](https://martinfowler.com/bliki/Yagni.html) gelten für Terraform-Code genauso wie für traditionellen Anwendungscode. Um einen guten Entwurf zu erleichtern, können Sie mit Terraform Ihre Infrastruktur in Module aufteilen, d.h. in atomare Infrastrukturkomponenten, die klar definierte Inputs und Outputs haben. Sie können diese Module verwenden, um wiederverwendbare Komponenten zu erstellen, die auf Ihre Anwendungsimplementierung zugeschnitten sind, und dann diese Komponenten verwenden, um eine Darstellung Ihrer Infrastruktur zu erstellen, die wiederverwendbar und leicht wartbar ist.
 
 {% hint style="info" %}
