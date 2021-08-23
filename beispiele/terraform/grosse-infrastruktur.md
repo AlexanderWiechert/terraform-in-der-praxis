@@ -1,6 +1,6 @@
 # Große Infrastruktur mit Terraform
 
-Quelle: [https://github.com/AlexanderWiechert/terraform-in-der-praxis/tree/master/beispiele/grosse-umgebung](https://github.com/AlexanderWiechert/terraform-in-der-praxis/tree/master/beispiele/grosse-umgebung)
+Quelle: [/tree/master/beispiele/grosse-umgebung](/tree/master/beispiele/grosse-umgebung)
 
 Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform-Konfigurationen für eine große Infrastruktur, die Folgendes verwendet:
 
