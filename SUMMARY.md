@@ -11,6 +11,7 @@
     * [Remote State](state.md "Remote State")
     * [Überprüfung und Validierung](schluessel-konzepte/validierung.md "Überprüfung und Validierung")
     * [Rückverfolgbarkeit von Änderungen](schluessel-konzepte/rückverfolgbarkeit-von-aenderungen.md "Rückverfolgbarkeit von Änderungen")
+    * [CI/CD Pipelines zur Absicherung der Cloudumgebung](absicherung-des-deployments/cd-ci-integration.md)
   * [Codestruktur](codestruktur.md "Codestruktur")
     * [Beispiele für die Codestruktur](beispiele/README.md "Beispiele für die Codestruktur")
       * [Terragrunt](beispiele/terragrunt.md "Beispiele für Terragrunt")

@@ -24,3 +24,9 @@ Befolgen Sie eine strikte Richtlinie zur Überprüfung der Terraform-Validierung
 [Rückverfolgbarkeit von Änderungen](schluessel-konzepte/rückverfolgbarkeit-von-aenderungen.md)
 
 Erforderlich sind ein einheitliches Authentifizierungsschema und ein Audit-Mechanismus, der eindeutig nachverfolgt, welcher Auftraggeber eine Terraform-Operation ausgelöst hat, insbesondere in Produktionsumgebungen.
+
+## Rückverfolgbarkeit von Änderungen
+
+[CI/CD Pipelines zur Absicherung der Cloudumgebung](absicherung-des-deployments/cd-ci-integration.md)
+
+Verwenden Sie ein Continuous Delivery / Continuous Integration oder ein gemeinsames Orchestrierungswerkzeug, um Ihre Terraform-Operationen von einem einzigen gemeinsamen Standort aus auszuführen.
