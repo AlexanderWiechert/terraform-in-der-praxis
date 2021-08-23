@@ -1,2 +1,0 @@
-# Überprüfung und Validierung
-

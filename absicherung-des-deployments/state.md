@@ -2,7 +2,7 @@
 description: >-
   Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen
   kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen
-  werden müssen, damit Ihre Cloud-Infrastruktur
+  werden müssen.
 ---
 
 # Remote State
@@ -32,4 +32,3 @@ Sie können alles nach Ihren Wünschen und Bedürfnissen implementieren, von ein
 {% hint style="info" %}
 Wenn Sie beispielsweise sowohl ein ERP-System als auch ein CMS-System in der Cloud hosten und jedes System eine Test-, eine Staging- und eine Produktionsumgebung hat, werden Sie sechs separate Terraform-Status-Speicherorte haben, einen für jede Umgebung und jede Anwendung.
 {% endhint %}
-
