@@ -1,3 +1,8 @@
+---
+description: >-
+  Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen werden müssen, damit Ihre Cloud-Infrastruktur mit Ihrem Terraform-Code übereinstimmt.
+---
+
 # Remote State
 
 {% hint style="info" %}
