@@ -38,3 +38,9 @@ Sie sollten nicht nur Ihre Logik in Module aufteilen und einen separaten Status 
 Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen werden müssen. |
 
 Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen werden müssen. Warum es besser ist, einen gemeinsamen Remote-State zu nutzen.
+
+## Überprüfung und Validierung
+
+[Überprüfung und Validierung](schluessel-konzepte/validierung.md)
+
+Befolgen Sie eine strikte Richtlinie zur Überprüfung der Terraform-Validierung und der Planergebnisse, bevor Sie erlauben, dass Terraform Änderungen auf eine Umgebung angewendet werden.
