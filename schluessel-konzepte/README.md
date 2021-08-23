@@ -17,11 +17,11 @@ Zerlegen und abstrahieren Sie Ihren terraform Code, um die Wiederverwendung zu m
 
 | Typ | Beschreibung |
 | :--- | :--- |
-| [Resourcen](schluessel-konzepte/schluessel-konzepte/resource.md) | Ein Terraform Ressource ist z.B. `aws_vpc`, `aws_db_instance` usw. |
-| [Datenquellen](schluessel-konzepte/schluessel-konzepte/datenquelle.md) | Mehrere AWS-Konten und -Umgebungen, Standard-Infrastrukturmodule mit Terraform. |
-| [Ressourcenmodule](schluessel-konzepte/schluessel-konzepte/ressourcenmodule.md) | Das Ressourcenmodul ist eine Sammlung verbundener Ressourcen, die zusammen eine gemeinsame Aktion ausführen. |
-| [Infrastrukturmodule](schluessel-konzepte/schluessel-konzepte/infrastrukturmodule.md) | Infrastrukturmodul ist eine Sammlung von Ressourcenmodulen, die logischerweise nicht verbunden werden können, aber in der aktuellen Situation/Projekt/Setup denselben Zweck erfüllen. |
-| [Komposition](schluessel-konzepte/schluessel-konzepte/kompositionen.md) | Kompositionen sind eine Sammlung von Infrastrukturmodulen, die sich über mehrere logisch getrennte Bereiche erstrecken kann. |
+| [Resourcen](schluessel-konzepte/resource.md) | Ein Terraform Ressource ist z.B. `aws_vpc`, `aws_db_instance` usw. |
+| [Datenquellen](schluessel-konzepte/datenquelle.md) | Mehrere AWS-Konten und -Umgebungen, Standard-Infrastrukturmodule mit Terraform. |
+| [Ressourcenmodule](schluessel-konzepte/ressourcenmodule.md) | Das Ressourcenmodul ist eine Sammlung verbundener Ressourcen, die zusammen eine gemeinsame Aktion ausführen. |
+| [Infrastrukturmodule](schluessel-konzepte/infrastrukturmodule.md) | Infrastrukturmodul ist eine Sammlung von Ressourcenmodulen, die logischerweise nicht verbunden werden können, aber in der aktuellen Situation/Projekt/Setup denselben Zweck erfüllen. |
+| [Komposition](schluessel-konzepte/kompositionen.md) | Kompositionen sind eine Sammlung von Infrastrukturmodulen, die sich über mehrere logisch getrennte Bereiche erstrecken kann. |
 
 Wie jedes andere Framework kann auch Terraform-Code schlecht oder gut geschrieben sein. Schlecht geschriebener Infrastruktur-Code ist langsam, fehleranfällig und schwer zu warten. Viele der Grundsätze, die einem guten Anwendungscode zugrunde liegen, gelten auch für den Infrastrukturcode. Konzepte wie [DRY](http://c2.com/cgi/wiki?DontRepeatYourself), das [Single Responsibility Principle](https://codeburst.io/understanding-solid-principles-single-responsibility-b7c7ec0bf80) und [YAGNI](https://martinfowler.com/bliki/Yagni.html) gelten für Terraform-Code genauso wie für traditionellen Anwendungscode. Um einen guten Entwurf zu erleichtern, können Sie mit Terraform Ihre Infrastruktur in Module aufteilen, d.h. in atomare Infrastrukturkomponenten, die klar definierte Inputs und Outputs haben. Sie können diese Module verwenden, um wiederverwendbare Komponenten zu erstellen, die auf Ihre Anwendungsimplementierung zugeschnitten sind, und dann diese Komponenten verwenden, um eine Darstellung Ihrer Infrastruktur zu erstellen, die wiederverwendbar und leicht wartbar ist.
 
