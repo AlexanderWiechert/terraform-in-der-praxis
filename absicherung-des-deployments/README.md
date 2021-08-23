@@ -7,7 +7,7 @@ description: >-
 
 ## State
 
-[Remote State](schluessel-konzepte/state.md "Remote State")
+[Remote State](absicherung-des-deployments/state.md "Remote State")
 
 Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen werden müssen. |
 
@@ -15,13 +15,13 @@ Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann
 
 ## Überprüfung und Validierung
 
-[Überprüfung und Validierung](schluessel-konzepte/validierung.md)
+[Überprüfung und Validierung](absicherung-des-deployments/validierung.md)
 
 Befolgen Sie eine strikte Richtlinie zur Überprüfung der Terraform-Validierung und der Planergebnisse, bevor Sie erlauben, dass Terraform Änderungen auf eine Umgebung angewendet werden.
 
 ## Rückverfolgbarkeit von Änderungen
 
-[Rückverfolgbarkeit von Änderungen](schluessel-konzepte/rückverfolgbarkeit-von-aenderungen.md)
+[Rückverfolgbarkeit von Änderungen](absicherung-des-deployments/rückverfolgbarkeit-von-aenderungen.md)
 
 Erforderlich sind ein einheitliches Authentifizierungsschema und ein Audit-Mechanismus, der eindeutig nachverfolgt, welcher Auftraggeber eine Terraform-Operation ausgelöst hat, insbesondere in Produktionsumgebungen.
 
