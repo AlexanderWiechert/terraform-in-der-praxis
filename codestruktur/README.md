@@ -2,7 +2,7 @@
 description: >-
   Fragen zur Terraform-Codestruktur sind in der Community bei weitem am
   häufigsten. Über die beste Codestruktur hat sich wahrscheinlich auch schon
-  jeder Gedanken gemacht. Dies ist eine der Fragen, für d
+  jeder Gedanken gemacht.
 ---
 
 # Codestruktur
@@ -84,4 +84,3 @@ Es gibt mindestens 4 verschiedene Gruppen von Orchestrierungslösungen, die Entw
 Vor diesem Hintergrund werden wir die ersten beiden dieser Projektstrukturen überprüfen, Terraform only und Terragrunt.
 
 Siehe Beispiele für Codestrukturen für [Terraform](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/a50d25a124a0490f975085e0f9260c87b7ca3fd5/beispiele/terraform.md) oder [Terragrunt](beispiele/terragrunt.md) im nächsten Kapitel.
-
