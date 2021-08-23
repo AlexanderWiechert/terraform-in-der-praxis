@@ -1,9 +1,13 @@
 ---
 description: >-
-  Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen werden müssen, damit Ihre Cloud-Infrastruktur mit Ihrem Terraform-Code übereinstimmt.
+  Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen
+  kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen
+  werden müssen, damit Ihre Cloud-Infrastruktur
 ---
 
 # Remote State
+
+## Remote State
 
 {% hint style="info" %}
 Es gibt keinen Grund einen geteilten Remote-state nicht zu nutzen. In unserem Fall, da unsere Infrastruktur auf AWS läuft, wird ein S3 Bucket verwendet.
@@ -19,7 +23,7 @@ Unabhängig davon, für welche Variante Sie sich entscheiden, gilt es als Best P
 
 Es ist auch wichtig, dass Sie einen der verschiedenen verfügbaren Sperrmechanismen \(state lock\) nutzen, um sicherzustellen, dass immer nur ein einziger Vorgang zur Bereitstellung der Infrastruktur läuft. Mehrere Kopien Ihres Terraform-Status führen unweigerlich zu einem Abdriften des Infrastruktur-Codes und zu Kollisionen, und die Verwendung des geteilten Remote-States bietet Ihnen noch einen zweiten Vorteil. So können Sie Sicherheits- und Autorisierungsbeschränkungen durchsetzen, die festlegen, wer Ihre Infrastruktur aktualisieren darf und wie er dies tun kann.
 
-# Trennen des Remote-States in zusammengehörige Resourcen
+## Trennen des Remote-States in zusammengehörige Resourcen
 
 Technisch ist es für Terraform egal, wie Sie Ihren Infrastrukturcode strukturieren.
 
@@ -28,3 +32,4 @@ Sie können alles nach Ihren Wünschen und Bedürfnissen implementieren, von ein
 {% hint style="info" %}
 Wenn Sie beispielsweise sowohl ein ERP-System als auch ein CMS-System in der Cloud hosten und jedes System eine Test-, eine Staging- und eine Produktionsumgebung hat, werden Sie sechs separate Terraform-Status-Speicherorte haben, einen für jede Umgebung und jede Anwendung.
 {% endhint %}
+

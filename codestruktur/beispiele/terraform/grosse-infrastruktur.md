@@ -1,6 +1,6 @@
 # Große Infrastruktur mit Terraform
 
-Quelle: [/tree/master/beispiele/grosse-umgebung](/tree/master/beispiele/grosse-umgebung)
+Quelle: [/tree/master/beispiele/grosse-umgebung](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/5bf9f34e385bacc9d6cc742f0aea3178d23aaeab/tree/master/beispiele/grosse-umgebung/README.md)
 
 Dieses Beispiel enthält Code als Beispiel für die Strukturierung von Terraform-Konfigurationen für eine große Infrastruktur, die Folgendes verwendet:
 
