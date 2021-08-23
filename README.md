@@ -37,3 +37,4 @@ Dieses Werk ist unter der Apache 2-Lizenz lizenziert. Ausführliche Informatione
 ## Sponsoring
 
 Wenn Sie das Projekt fördern wollen, [spenden](https://www.paypal.com/paypalme/AlexanderWiechert) Sie uns doch bitte einen kleinen Betrag
+

@@ -1,6 +1,8 @@
 ---
 description: >-
-  Die offizielle Terraform-Dokumentation beschreibt alle Aspekte der Konfiguration im Detail. Lesen Sie es sorgfältig durch, um den Rest dieses Abschnitts zu verstehen. In diesem Abschnitt werden Schlüsselkonzepte beschrieben, die im Buch verwendet werden.
+  Die offizielle Terraform-Dokumentation beschreibt alle Aspekte der
+  Konfiguration im Detail. Lesen Sie es sorgfältig durch, um den Rest dieses
+  Abschnitts zu verstehen. In diesem Abschnitt werden Schlüs
 ---
 
 # Schlüsselkonzepte
@@ -15,11 +17,11 @@ Zerlegen und abstrahieren Sie Ihren terraform Code, um die Wiederverwendung zu m
 
 | Typ | Beschreibung |
 | :--- | :--- |
-| [Resourcen](schluessel-konzepte/resource.md "Ressourcen") | Ein Terraform Ressource ist z.B. `aws_vpc`, `aws_db_instance` usw. |
-| [Datenquellen](schluessel-konzepte/datenquelle.md "Datenquellen") | Mehrere AWS-Konten und -Umgebungen, Standard-Infrastrukturmodule mit Terraform. |
-| [Ressourcenmodule](schluessel-konzepte/ressourcenmodule.md "Ressourcenmodule") | Das Ressourcenmodul ist eine Sammlung verbundener Ressourcen, die zusammen eine gemeinsame Aktion ausführen. |
-| [Infrastrukturmodule](schluessel-konzepte/infrastrukturmodule.md "Infrastrukturmodule") | Infrastrukturmodul ist eine Sammlung von Ressourcenmodulen, die logischerweise nicht verbunden werden können, aber in der aktuellen Situation/Projekt/Setup denselben Zweck erfüllen. |
-| [Komposition](schluessel-konzepte/kompositionen.md "Kompositionen") | Kompositionen sind eine Sammlung von Infrastrukturmodulen, die sich über mehrere logisch getrennte Bereiche erstrecken kann. |
+| [Resourcen](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/a5504dccf3de7c36ee807ea5a2fd231a05eef7cb/schluessel-konzepte/schluessel-konzepte/resource.md) | Ein Terraform Ressource ist z.B. `aws_vpc`, `aws_db_instance` usw. |
+| [Datenquellen](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/a5504dccf3de7c36ee807ea5a2fd231a05eef7cb/schluessel-konzepte/schluessel-konzepte/datenquelle.md) | Mehrere AWS-Konten und -Umgebungen, Standard-Infrastrukturmodule mit Terraform. |
+| [Ressourcenmodule](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/a5504dccf3de7c36ee807ea5a2fd231a05eef7cb/schluessel-konzepte/schluessel-konzepte/ressourcenmodule.md) | Das Ressourcenmodul ist eine Sammlung verbundener Ressourcen, die zusammen eine gemeinsame Aktion ausführen. |
+| [Infrastrukturmodule](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/a5504dccf3de7c36ee807ea5a2fd231a05eef7cb/schluessel-konzepte/schluessel-konzepte/infrastrukturmodule.md) | Infrastrukturmodul ist eine Sammlung von Ressourcenmodulen, die logischerweise nicht verbunden werden können, aber in der aktuellen Situation/Projekt/Setup denselben Zweck erfüllen. |
+| [Komposition](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/a5504dccf3de7c36ee807ea5a2fd231a05eef7cb/schluessel-konzepte/schluessel-konzepte/kompositionen.md) | Kompositionen sind eine Sammlung von Infrastrukturmodulen, die sich über mehrere logisch getrennte Bereiche erstrecken kann. |
 
 Wie jedes andere Framework kann auch Terraform-Code schlecht oder gut geschrieben sein. Schlecht geschriebener Infrastruktur-Code ist langsam, fehleranfällig und schwer zu warten. Viele der Grundsätze, die einem guten Anwendungscode zugrunde liegen, gelten auch für den Infrastrukturcode. Konzepte wie [DRY](https://www.xtivia.com/blog/cloud/terraform-best-practices/#:~:text=code%3B%20concepts%20like-,DRY,-%2C%20the%20Single%20Responsibility), das [Single Responsibility Principle](https://www.xtivia.com/blog/cloud/terraform-best-practices/#:~:text=Single%20Responsibility%20Principle) und [YAGNI](https://martinfowler.com/bliki/Yagni.html) gelten für Terraform-Code genauso wie für traditionellen Anwendungscode. Um einen guten Entwurf zu erleichtern, können Sie mit Terraform Ihre Infrastruktur in Module aufteilen, d.h. in atomare Infrastrukturkomponenten, die klar definierte Inputs und Outputs haben. Sie können diese Module verwenden, um wiederverwendbare Komponenten zu erstellen, die auf Ihre Anwendungsimplementierung zugeschnitten sind, und dann diese Komponenten verwenden, um eine Darstellung Ihrer Infrastruktur zu erstellen, die wiederverwendbar und leicht wartbar ist.
 
@@ -30,3 +32,4 @@ Ein Beispiel: Sie haben eine Anwendung, die einen S3-Bucket, eine RDS-Instanz un
 ### Halten Sie Ihre Module und Ihren Umgebungsimplementierungscode getrennt.
 
 Sie sollten nicht nur Ihre Logik in Module aufteilen und einen separaten Status pro Umgebung und Anwendung aufrechterhalten, sondern auch den Terraform-Modulcode und den Terraform-Bereitstellungscode an separaten Stellen aufteilen. Im Allgemeinen tun wir dies, indem wir Module in ihrem eigenen Git Repository pflegen und für jede Anwendung, die wir bereitstellen müssen, ein eigenes Git Repository unterhalten. Dies erleichtert die Wiederverwendung und Zusammenarbeit, da Sie Ihre Modulbibliothek getrennt von Ihrem umgebungsspezifischen Code pflegen können.
+

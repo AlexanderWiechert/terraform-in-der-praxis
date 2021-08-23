@@ -5,3 +5,4 @@ Kompositionen sind eine Sammlung von Infrastrukturmodulen, die sich über mehrer
 Komposition besteht aus Infrastrukturmodulen, die aus Ressourcenmodulen bestehen, die einzelne Ressourcen implementieren.
 
 ![Einfache Infrastrukturzusammensetzung](../.gitbook/assets/composition-1.png)
+
