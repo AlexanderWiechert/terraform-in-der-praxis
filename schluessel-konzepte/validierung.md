@@ -19,3 +19,11 @@ Die Terraform-Plan-Aktion nimmt Ihren Terraform-Code, untersucht den Remote-Zust
 {% hint style="info" %}
 Die regelmäßige Verwendung der Aktionen validieren und planen hilft Ihnen, Fehler in Ihrem Infrastrukturcode zu finden, bevor sie sich auf Ihre Cloud-Infrastruktur auswirken.
 {% endhint %}
+
+# automatisierte Test-Frameworks
+
+{% hint style="info" %}
+Verwenden Sie ein automatisiertes Test-Framework, um Unit- und Funktionstests zu schreiben, die Ihre terraform Module validieren.
+{% endhint %}
+
+Automatisierte Tests sind für das Schreiben von Infrastrukturcode genauso wichtig wie für das Schreiben von Anwendungscode. Da Terraform an Popularität gewonnen hat, sind viele Optionen zum Testen von Terraform-Code verfügbar geworden. Mögliche Kandidaten für die Validierung von Terraform-Modulen könnten [Terratest](https://terratest.gruntwork.io/). Mit Terratest können Sie Tests in Go schreiben. Eine weitere Option für die automatisierte Terraform-Validierung ist die Verwendung der Kitchen-Terraform, [Test Kitchen](https://github.com/test-kitchen/test-kitchen) Plugins. Diese Tests können in z.B. in Ruby implementiert werden.
