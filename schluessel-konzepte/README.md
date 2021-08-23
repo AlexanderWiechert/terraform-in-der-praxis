@@ -33,9 +33,9 @@ Sie sollten nicht nur Ihre Logik in Module aufteilen und einen separaten Status 
 
 ## State
 
-| Typ | Beschreibung |
-| :--- | :--- |
-| [Remote State](schluessel-konzepte/state.md "Remote State") | Remote State
+| Beschreibung |
+| :--- |
+| [Remote State](schluessel-konzepte/state.md "Remote State") - Remote State
 Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen werden müssen. |
 
 Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen werden müssen. Warum es besser ist, einen gemeinsamen Remote-State zu nutzen.
