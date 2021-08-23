@@ -6,7 +6,7 @@ description: >-
 # Remote State
 
 {% hint style="info" %}
-Es gibt keinen Grund einen geteilten Remote-state nicht zu nutzen. In unserem Fall, da unsere Infrastruktur auf AWS läuft, wird eine S3 Bucket verwendet.
+Es gibt keinen Grund einen geteilten Remote-state nicht zu nutzen. In unserem Fall, da unsere Infrastruktur auf AWS läuft, wird ein S3 Bucket verwendet.
 {% endhint %}
 
 Terraform verwendet einen persistenten Datenspeicher, um den Zustands Ihrer Cloud-Infrastruktur vorzuhalten.
