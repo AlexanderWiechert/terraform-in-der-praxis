@@ -1,2 +1,0 @@
-# Namenskonventionen in Terraform
-
