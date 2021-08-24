@@ -1,10 +1,10 @@
 ---
 description: >-
-  Erwägen Sie die Verwendung einer separaten Abstraktionsschicht, um die Wiederverwendung und Abstraktion zu erleichtern.
+  Erwägen Sie die Verwendung einer separaten Abstraktionsschicht, um die
+  Wiederverwendung und Abstraktion zu erleichtern.
 ---
 
-# Warum noch eine Abstraktionsschicht?
-
+# Warum noch eine Abstraktionsschicht
 
 Viele der hier erwähnten Best Practices wurden bereits in bereits existierende Frameworks integriert, die auf Terraform aufsetzen.
 
@@ -15,3 +15,4 @@ Diese Tools bieten Strukturen und Prozesse, die den Prozess der Entwicklung von 
 {% hint style="info" %}
 Wir empfehlen dringend, eines dieser Frameworks zu verwenden, um die Lernkurve für gut konzipierte Terraform-Implementierungen zu reduzieren.
 {% endhint %}
+
