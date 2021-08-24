@@ -32,3 +32,4 @@ Sie können alles nach Ihren Wünschen und Bedürfnissen implementieren, von ein
 {% hint style="info" %}
 Wenn Sie beispielsweise sowohl ein ERP-System als auch ein CMS-System in der Cloud hosten und jedes System eine Test-, eine Staging- und eine Produktionsumgebung hat, werden Sie sechs separate Terraform-Status-Speicherorte haben, einen für jede Umgebung und jede Anwendung.
 {% endhint %}
+

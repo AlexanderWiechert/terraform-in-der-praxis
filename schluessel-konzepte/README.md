@@ -32,3 +32,4 @@ Ein Beispiel: Sie haben eine Anwendung, die einen S3-Bucket, eine RDS-Instanz un
 ### Halten Sie Ihre Module und Ihren Umgebungsimplementierungscode getrennt.
 
 Sie sollten nicht nur Ihre Logik in Module aufteilen und einen separaten Status pro Umgebung und Anwendung aufrechterhalten, sondern auch den Terraform-Modulcode und den Terraform-Bereitstellungscode an separaten Stellen aufteilen. Im Allgemeinen tun wir dies, indem wir Module in ihrem eigenen Git Repository pflegen und für jede Anwendung, die wir bereitstellen müssen, ein eigenes Git Repository unterhalten. Dies erleichtert die Wiederverwendung und Zusammenarbeit, da Sie Ihre Modulbibliothek getrennt von Ihrem umgebungsspezifischen Code pflegen können.
+
