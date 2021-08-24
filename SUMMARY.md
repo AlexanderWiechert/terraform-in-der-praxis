@@ -12,6 +12,7 @@
   * [Überprüfung und Validierung](absicherung-des-deployments/validierung.md)
   * [Rückverfolgbarkeit von Änderungen](absicherung-des-deployments/rueckverfolgbarkeit-von-aenderungen.md)
   * [CI/CD Pipelines zur Absicherung der Cloudumgebung](absicherung-des-deployments/cd-ci-integration.md)
+  * [Warum noch eine Abstraktionsschicht](absicherung-des-deployments/abstraktions-layer.md)
 * [Codestruktur](codestruktur/README.md)
   * [Beispiele für die Codestruktur](codestruktur/beispiele/README.md)
     * [Terragrunt](codestruktur/beispiele/terragrunt.md)
@@ -24,4 +25,3 @@
 * [Schreiben von Terraform-Konfigurationen](schreiben-von-terraform-konfigurationen.md)
 * [FAQ](faq.md)
 * [Weitere Links](weitere-informationen.md)
-
