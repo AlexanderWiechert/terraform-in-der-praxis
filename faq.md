@@ -23,3 +23,4 @@ Versionen von Ressourcen- und Infrastrukturmodulen sollten angegeben werden. Pro
 Es gibt kein Master-Dependency-Management-Tool, aber es gibt einige Tipps, um die Dependency-Hölle weniger problematisch zu machen. Beispielsweise kann [Dependabot](https://dependabot.com/) verwendet werden, um Abhängigkeitsaktualisierungen zu automatisieren. Dependabot erstellt Pull Requests, um Ihre Abhängigkeiten sicher und aktuell zu halten. Dependabot unterstützt Terraform-Konfigurationen.
 
 Ebenfalls ein gutest Tool um dem Versionsabhängigkeiten Herr zu werden ist [Terraspace](https://terraspace.cloud/).
+

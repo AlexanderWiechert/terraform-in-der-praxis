@@ -63,7 +63,7 @@ Bitte stellen Sie sicher, dass Sie die wichtigsten Konzepte verstehen - [Ressour
 * Starten Sie Ihr Projekt mit dem Remote-state
   * Ihr Laptop ist nicht der Platz, auf dem der State Ihrer Cloudumgebung liegen sollte.
   * Die Verwaltung einer tfstate-Datei in Git ist ebenso ein falscher Ansatz.
-* Versuchen Sie, eine konsistente Struktur und [Nameskonvention]() zu erstellen und zu pflegen.
+* Versuchen Sie, eine konsistente Struktur und [Nameskonvention](./) zu erstellen und zu pflegen.
   * Wie prozeduraler Code sollte Terraform-Code so geschrieben werden, dass er zuerst gelesen wird. Konsistenz wird helfen, wenn Änderungen in sechs Monaten nachvolzogen werden müssen.
 * Halten Sie Ressourcenmodule so einfach wie möglich
 * Werte nicht hartcodieren, die als Variablen übergeben oder mithilfe von Datenquellen eingefügt werden können.
