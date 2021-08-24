@@ -2,7 +2,6 @@
 
 {% hint style="info" %}
 * Beispiele und Terraform-Module sollten eine Dokumentation enthalten, in der die Funktionen und deren Verwendung erklärt werden.
-* Links auf der Terraform Registry-Website sind relevant und funktionieren nicht. Verwenden Sie daher absolute Pfade in README.md.
 * Die Dokumentation kann Diagramme enthalten, die mit \[mermaid\] \([https://github.com/knsv/mermaid](https://github.com/knsv/mermaid)\) erstellt wurden, und Blaupausen, die mit \[cloudcraft.co\] \([https://cloudcraft.co](https://cloudcraft.co)\) erstellt wurden.
 * Verwenden Sie [Terraform Pre-Commit-Hooks](https://github.com/antonbabenko/pre-commit-terraform), um sicherzustellen, dass der Code gültig, richtig formatiert und automatisch dokumentiert ist, bevor er an Git übertragen und von Menschen überprüft wird .
 {% endhint %}
@@ -26,4 +25,3 @@ Sehen Sie sich das [pre-commit-terraform-Repository](https://github.com/antonbab
 1. [Pre-Commit-Framework-Homepage](https://pre-commit.com/)
 2. [Sammlung von Git-Hooks für Terraform zur Verwendung mit dem Pre-Commit-Framework](https://github.com/antonbabenko/pre-commit-terraform)
 3. Blogpost von [Dean Wilson](https://github.com/deanwilson): [pre-commit Hooks and Terraform – a safety net for your Repositorys](https://www.unixdaemon.net/tools/terraform%20-precommit-Hooks/)
-
