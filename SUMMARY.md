@@ -24,5 +24,6 @@
   * [Code-Styling](codestruktur/code-styling.md)
 * [Projektstruktur](projektstruktur/README.md)
   * [Terraform Module](projektstruktur/terraform-module.md)
+  * [Monorepo oder nicht?](projektstruktur/monorepo-oder-multirepo.md)
 * [FAQ](faq.md)
 * [Weitere Links](weitere-informationen.md)
