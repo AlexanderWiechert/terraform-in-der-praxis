@@ -2,8 +2,8 @@
 https://blog.boltops.com/2020/10/18/terraspace-terrafile-using-git-repos-and-terraform-registry-modules
 
 
-# Git Rrepos als Terraform Modul?
-https://wahlnetwork.com/2020/08/11/using-private-git-repositories-as-terraform-modules/
+#  # Git Rrepos als Terraform Modul?
+#  https://wahlnetwork.com/2020/08/11/using-private-git-repositories-as-terraform-modules/
 
 # Wie schreibt man ein produktionsreifes Terraform Modul?
 https://cloudskills.io/blog/terraform-azure-05
@@ -18,6 +18,7 @@ https://github.com/bridgecrewio/checkov
 https://bridgecrew.io/blog/terraform-security-101-best-practices-for-secure-infrastructure-as-code/
 
 # Mono Repo vs. Multirepo setup
+https://www.hashicorp.com/blog/terraform-mono-repo-vs-multi-repo-the-great-debate
 Vor und Nachteile?
 Siehe Git Rrepos als Terraform Modul?
 DRY?
