@@ -30,7 +30,7 @@ Zur Klärung vorweg: In diesem Beitrag konzentrieren wir uns auf ein Mono-Repo a
 
 Mono-Repositorys funktionieren prima, wenn du ein persönliches Projekt oder ein kleineres Team hast. Es macht Sinn, in sogenannte Resourcenmodule, die kleinste logischste Gruppierung von Ressourcen und ihren Abhängigkeiten einzusortieren. In unserem Beispiel bieten sich hier an DNS, VPC, ECS.
 
-![Alt-Text](/img/monorepo-1.png "Monorepo")
+![Monorepo](/img/monorepo-1.png "Monorepo")
 
 
 ### Vorteile
