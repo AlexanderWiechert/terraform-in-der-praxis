@@ -6,7 +6,6 @@ https://blog.boltops.com/2020/10/18/terraspace-terrafile-using-git-repos-and-ter
 https://wahlnetwork.com/2020/08/11/using-private-git-repositories-as-terraform-modules/
 
 # Wie schreibt man ein produktionsreifes Terraform Modul?
-
 https://cloudskills.io/blog/terraform-azure-05
 
 
@@ -24,7 +23,9 @@ Siehe Git Rrepos als Terraform Modul?
 DRY?
 
 # Terragrunt warum?
-
 https://blog.gruntwork.io/terragrunt-how-to-keep-your-terraform-code-dry-and-maintainable-f61ae06959d8
 
 und hier verlinken absicherung-des-deployments/abstraktions-layer.md
+
+# pre commit hooks
+https://medium.com/@k.bujacek/best-practices-for-reusable-terraform-module-github-repository-1151c6821333?source=post_internal_links---------3----------------------------
