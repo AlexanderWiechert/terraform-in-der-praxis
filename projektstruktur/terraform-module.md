@@ -116,7 +116,7 @@ Das vorherige Git-Repository hostet ein einzelnes Modul. Git checkt das gesamte 
 In diesem neuen Szenario habe ich ein einzelnes Git-Repository mit dem Namen, module-library das mehrere Module in verschiedenen Ordnern hostet. Ich möchte speziell das Modul namens vpc, das in einem Ordner namens account-provision liegt nun auschecken. Durch die Verwendung des doppelten Slash ```//``` am Ende des Namens des Repositorys kann ich Terraform anweisen, einen bestimmten Ordner auszuchecken.
 
 ```text
-module "transit-gateway" {
+module "vpc" {
   source = "git::https://gitlab.com/elastic2ls/module-library.git//account-provision/vpc"
 }
 ```
@@ -129,12 +129,12 @@ Ich mache es mir zur Gewohnheit, Abhängigkeiten zu fixieren, um Breaking Change
 
 ```text
 # das Modul verwendet den Branch "production"
-module "transit-gateway" {
+module "vpc" {
   source = "git::https://gitlab.com/elastic2ls/module-library.git//account-provision/vpc?ref=production"
 }
 
 # das Modul verwendet den Tag "1.0.0"
-module "transit-gateway" {
+module "vpc" {
   source = "git::https://gitlab.com/elastic2ls/module-library.git//account-provision/vpc?ref=tags/v1.0.0"
 }
 ```
