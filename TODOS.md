@@ -30,3 +30,7 @@ und hier verlinken absicherung-des-deployments/abstraktions-layer.md
 
 # pre commit hooks
 https://medium.com/@k.bujacek/best-practices-for-reusable-terraform-module-github-repository-1151c6821333?source=post_internal_links---------3----------------------------
+
+
+# Schluesselkonzepte
+Überarbeiten
