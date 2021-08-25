@@ -28,7 +28,7 @@ Verwenden Sie KEINE Micro-Repos für Ihre Terraform-Module. Verwenden Sie ein Mo
 
 Zur Klärung vorweg: In diesem Beitrag konzentrieren wir uns auf ein Mono-Repo ausschliesslich für Infrastrukturkomponenten.
 
-Mono-Repositorys funktionieren prima, wenn du ein persönliches Projekt oder ein kleineres Team hast. Es macht Sinn, in sogenannte Infrastrukturmodule, die kleinste logischste Gruppierung von Ressourcen und ihren Abhängigkeiten einzusortieren. In unserem Beispiel bieten sich hier an DNS, VPC, ECS.
+Mono-Repositorys funktionieren prima, wenn du ein persönliches Projekt oder ein kleineres Team hast. Es macht Sinn, in sogenannte Resourcenmodule, die kleinste logischste Gruppierung von Ressourcen und ihren Abhängigkeiten einzusortieren. In unserem Beispiel bieten sich hier an DNS, VPC, ECS.
 
 ![Alt-Text](/img/monorepo-1.png "Monorepo")
 
@@ -44,7 +44,7 @@ Mono-Repositorys funktionieren prima, wenn du ein persönliches Projekt oder ein
 
 * Außerdem kann das Buildsystem nicht einfach skaliert werden, wenn weitere Unterverzeichnisse erstellen werden. Wenn Änderungen über eine Pipeline erfasst werden, muss jeder Ordner nach Änderungen abgesucht. Viele CI-Frameworks verwenden Changesets, um Unterschiede zu bewerten, was die Laufzeit der Pipeline erhöhen kann.
 
-* Die Zugriffskontrolle wird standardmäßig auf das gesamte Mono-Repository angewendet. Unter bestimmten Umständen möchtst du möglicherweise nur, dass ein Benutzer oder eine Gruppe auf bestimmte Unterverzeichnisse zugreifen kann. 
+* Die Zugriffskontrolle wird standardmäßig auf das gesamte Mono-Repository angewendet. Unter bestimmten Umständen möchtst du möglicherweise nur, dass ein Benutzer oder eine Gruppe auf bestimmte Unterverzeichnisse zugreifen kann.
 
 {% hint style="info" %}
 Wenn du mehr Zeit damit verbringest, die Build-Systemlogik zu pflegen, um Ihr Infrastruktur-Mono-Repository beizubehalten, solltest du das Mono-Repository möglicherweise in mehrere Repositorys aufteilen.
