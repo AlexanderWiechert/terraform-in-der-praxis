@@ -36,8 +36,11 @@ Terraform erkennt github.com URLs ohne Präfix und interpretiert sie automatisch
 module "terraform-ecs-jenkins" {
   source = "github.com/elastic2ls/terraform-ecs-jenkins.git"
 }
+```
+
 Das obige Adressschema wird über HTTPS geklont. Um über SSH zu klonen, verwenden Sie das folgende Formular:
 
+```text
 module "terraform-ecs-jenkins" {
   source = "git@github.com:elastic2ls/terraform-ecs-jenkins.git"
 }
@@ -46,7 +49,7 @@ module "terraform-ecs-jenkins" {
 Diese GitHub-Schemas werden als praktische Aliase für das allgemeine Git-Repository- Adressschema behandelt und erhalten daher auf dieselbe Weise Anmeldeinformationen und unterstützen das refArgument für die Auswahl einer bestimmten Revision. Sie müssen die Anmeldeinformationen insbesondere für den Zugriff auf private Repositorys konfigurieren.
 
 ### Generisches Git-Repository
-Beliebige Git-Repositorys können verwendet werden, indem der Adresse das spezielle git::Präfix vorangestellt wird. Nach diesem Präfix kann eine beliebige gültige Git-URL angegeben werden, um eines der von Git unterstützten Protokolle auszuwählen.
+Beliebige Git-Repositorys können verwendet werden, indem der Adresse das spezielle ```git::``` Präfix vorangestellt wird. Nach diesem Präfix kann eine beliebige gültige Git-URL angegeben werden, um eines der von Git unterstützten Protokolle auszuwählen.
 
 Um beispielsweise HTTPS oder SSH zu verwenden:
 
@@ -94,13 +97,13 @@ Git fügt sich dynamisch ```oauth2:TOKEN@``` in die ```https://gitlab.comURL``` 
 > terraform init
 
 Initializing modules...
-Downloading git::https://gitlab.com/elastic2ls/terraform-ecs-jenkins.git for site-deploy...
+Downloading git::https://gitlab.com/elastic2ls/terraform-ecs-jenkins.git for terraform-ecs-jenkins...
 ```
 
 Wenn das Token ungültig ist, wird der Initialisierungsvorgang durch einen Zugriffsverweigerungsfehler beendet.
 
 ```text
-Cloning into '.terraform/modules/site-deploy'...
+Cloning into '.terraform/modules/terraform-ecs-jenkins'...
 remote: HTTP Basic: Access denied
 fatal: Authentication failed for
 'https://gitlab.com/elastic2ls/terraform-ecs-jenkins.git'
