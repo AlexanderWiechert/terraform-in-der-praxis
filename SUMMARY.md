@@ -22,7 +22,5 @@
       * [Große Infrastruktur mit Terraform](codestruktur/beispiele/terraform/grosse-infrastruktur.md)
   * [Namenskonventionen in Terraform](codestruktur/namenskonventionen-in-terraform.md)
   * [Code-Styling](codestruktur/code-styling.md)
-* [Schreiben von Terraform-Konfigurationen](schreiben-von-terraform-konfigurationen.md)
 * [FAQ](faq.md)
 * [Weitere Links](weitere-informationen.md)
-
