@@ -23,7 +23,7 @@
   * [Namenskonventionen in Terraform](codestruktur/namenskonventionen-in-terraform.md)
   * [Code-Styling](codestruktur/code-styling.md)
 * [Projektstruktur](projektstruktur/README.md)
-  * [Terraform Module](projektstruktur/module-local-remote.md)
+  * [Terraform Module local vs. remote](projektstruktur/module-local-remote.md)
   * [Monorepo oder nicht?](projektstruktur/monorepo-oder-multirepo.md)
 * [FAQ](faq.md)
 * [Weitere Links](weitere-informationen.md)
