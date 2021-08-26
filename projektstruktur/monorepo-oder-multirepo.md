@@ -57,6 +57,19 @@ Es gibt viele Ansätze, ein Multi-Repository Setup zu organisieren. So kann beis
 
 ![Multirepo mit Produkt](/img/multirepo-2.png "Multirepo mit Produkt")
 
+Das verwenden von Release Tags, erleichtert die Versionierung von Modulen erheblich und macht Änderungen nachvollziehbar. Wenn die Module in ihre eigenen Quell-Repositorys aufgeteilen werden, können diese unabhängig getestet, auf gezielte Modulversion im Produkt Code verwiesen, und zum Beispiel die Providerversionen mit der Modulversion aktualisieren werden.
+
 ### Vorteile
+* Multi-Repositorys ermöglichen es Teams, schneller neue Infrastrukturen für Produkte aufzubauen und zu ändern.
+* Änderungen können von den Produktteams einfacher angefordert werden und individuell mittels Tags bereitgestellt werden.
+* Unabhängige Repositorys ermöglichen isolierte Tests für Modulsicherheit und -funktionalität.
+* Sie können die Modulversionierung mithilfe von Release Tags anwenden.
+* Individuelle Repositorys ermöglichen die Zugriffskontrolle von Modulen und Konfigurationen.
 
 ### Nachteile
+* Wenn das Produkt auf viele verschiedene Remote-Module verweist, benötigt Terraform einige Zeit, um diese herunterzuladen.
+* Wenn aus bestimmten Gründen Versionsupdates für einzelne Module ausgeführt werden müssen, kann das unter Umständen bedeuten, dass ich in allen davon abhängigen Repositories eine PR erstellen muss, was zu erheblichen Aufwand seitens der Entwickler führen kann. Insbesondere wenn diese im Peer Review geprüft werden müssen.
+
+### Zusammenfassung
+
+Es gibt keine richtige oder falsche Antwort, wenn es um die Verwendung von Mono-Repos und Multi-Repos geht. Indem wir einen Schritt zurücktreten und verschiedene Organisationsmuster beobachten, können wir feststellen, welche Umgebungsstruktur für uns am besten funktioniert. Man kann auch das Beste aus zwei Welten kombinieren. Sie können Ihr Multi-Repository mit separaten Repositorys für jede Geschäftsdomäne, jedes Produkt oder jedes Team weiter strukturieren. Verwenden Sie Unterverzeichnisse in diesen Repositorys, um Umgebungen zu trennen, wodurch die Konfigurationsunterschiede zwischen den Umgebungen sichtbar werden. 
