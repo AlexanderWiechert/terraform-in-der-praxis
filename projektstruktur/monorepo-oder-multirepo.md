@@ -1,6 +1,6 @@
 ---
 description: >-
-  Erfahren Sie mehr über die Vor- und Nachteile der Verwendung von Mono-Repositorys und Multi-Repositorys sowie den jeweils logischsten Anwendungsfall.
+  Erfahren Sie mehr über die Vor- und Nachteile der Verwendung von Mono-Repositories und Multi-Repositories sowie den jeweils logischsten Anwendungsfall.
 ---
 
 # Monorepo oder dann doch lieber ein Multirepo Setup
@@ -23,10 +23,10 @@ Eine Idee kann hier sein:
 Verwenden Sie KEINE Micro-Repos für Ihre Terraform-Module. Verwenden Sie ein Mono-Repo.
 {% endhint %}
 
-## Monolithische Repositorys
+## Monolithische Repositories
 Zur Klärung vorweg: In diesem Beitrag konzentrieren wir uns auf ein Mono-Repo ausschliesslich für Infrastrukturkomponenten.
 
-Mono-Repositorys funktionieren prima, wenn du ein persönliches Projekt oder ein kleineres Team hast. Es macht Sinn, in sogenannte Resourcenmodule, die kleinste logischste Gruppierung von Ressourcen und ihren Abhängigkeiten einzusortieren. In unserem Beispiel bieten sich hier an DNS, VPC, ECS.
+Mono-Repositories funktionieren prima, wenn du ein persönliches Projekt oder ein kleineres Team hast. Es macht Sinn, in sogenannte Resourcenmodule, die kleinste logischste Gruppierung von Ressourcen und ihren Abhängigkeiten einzusortieren. In unserem Beispiel bieten sich hier an DNS, VPC, ECS.
 
 ![Monorepo](/img/monorepo-1.png "Monorepo")
 
@@ -43,15 +43,19 @@ Mono-Repositorys funktionieren prima, wenn du ein persönliches Projekt oder ein
 * Die Zugriffskontrolle wird standardmäßig auf das gesamte Mono-Repository angewendet. Unter bestimmten Umständen möchtst du möglicherweise nur, dass ein Benutzer oder eine Gruppe auf bestimmte Unterverzeichnisse zugreifen kann.
 
 {% hint style="info" %}
-Wenn du mehr Zeit damit verbringest, die Build-Systemlogik zu pflegen, um Ihr Infrastruktur-Mono-Repository beizubehalten, solltest du das Mono-Repository möglicherweise in mehrere Repositorys aufteilen.
+Wenn du mehr Zeit damit verbringest, die Build-Systemlogik zu pflegen, um Ihr Infrastruktur-Mono-Repository beizubehalten, solltest du das Mono-Repository möglicherweise in mehrere Repositories aufteilen.
 {% endhint %}
 
 
 
-## Mehrere Quell-Repositorys
-Ein Multi-Repository Setup kann eine granulare Zugriffskontrolle und dadurch eine bessere Nachverfolgbarkeit von Konfigurationsänderungen gewährleisten. Wenn ein großes Team, das an einem komplexen Infrastruktursystem zusammenarbeitet, können mit mehreren Quell-Repositorys Änderungen einfacher lokalisiert und Versionsupdates der Module gezielter vorgenommen werden. So können gezielt Verantwortlichkeiten für Änderungen auf die Teams übertragen werden, die für die einzelnen Infrastrukturkomponenten verantwortlich sind.
+## Mehrere Quell-Repositories
+Ein Multi-Repository Setup kann eine granulare Zugriffskontrolle und dadurch eine bessere Nachverfolgbarkeit von Konfigurationsänderungen gewährleisten. Wenn ein großes Team, das an einem komplexen Infrastruktursystem zusammenarbeitet, können mit mehreren Quell-Repositories Änderungen einfacher lokalisiert und Versionsupdates der Module gezielter vorgenommen werden. So können gezielt Verantwortlichkeiten für Änderungen auf die Teams übertragen werden, die für die einzelnen Infrastrukturkomponenten verantwortlich sind.
 
-Es gibt viele Ansätze, ein Multi-Repository Setup zu organisieren. So kann beispielsweise jedes Modul in ein eigenes Repository ausgelagert werden. Im Fall der ```serverless``` Funktionen, der Warteschlange und des Netzwerks würden Sie einzelne Repositorys für AWS Lambda ( function), Warteschlange und virtuelles Netzwerk ( network) erstellen . Einzelne Geschäftseinheiten oder Produkte würden auf diese Remote-Module verweisen. Umgebungen würden durch Unterverzeichnisse in jedem Produkt- oder Geschäftsrepository erfasst.
+Es gibt viele Ansätze, ein Multi-Repository Setup zu organisieren. So kann beispielsweise jedes Modul in ein eigenes Repository ausgelagert werden. Im Fall der ```serverless``` Funktionen, der ```queues``` und des ```VPC``` bietet es sich an jeweils einzelne Repositories zu erstellen . Einzelne [Kompositionen](schluessel-konzepte/kompositionen.md) oder Produkte würden auf diese Remote-Module verweisen. [Umgebungen](schluessel-konzepte/infrastrukturmodule.md) würden durch Unterverzeichnisse in oben genannten Repositories abgebildet werden.
+
+![Multirepo](/img/multirepo-1.png "Multirepo")
+
+![Multirepo mit Produkt](/img/multirepo-2.png "Multirepo mit Produkt")
 
 ### Vorteile
 
