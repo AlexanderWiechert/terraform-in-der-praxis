@@ -4,7 +4,7 @@ description: >-
   die Möglichkeit diese remote z.B. per Git einzubinden.
 ---
 
-# Terraform Module
+# Terraform Module local vs. remote
 
 ## Lokale Module
 Am einfachsten ist es, wenn ich die zusammengehörigen Ressourcen in eine lokales Modul schreibe. Zum Beispiel für ein Modul mit Namen frontend.
