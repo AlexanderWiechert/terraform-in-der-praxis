@@ -14,8 +14,12 @@ Policy-as-code for everyone
 Checkov scans cloud infrastructure configurations to find misconfigurations before they're deployed.
 https://www.checkov.io/
 https://github.com/bridgecrewio/checkov
-
 https://bridgecrew.io/blog/terraform-security-101-best-practices-for-secure-infrastructure-as-code/
+https://terraform-compliance.com/
+
+https://medium.com/@emre.erkunt/terraform-mono-repo-and-compliance-as-code-109395659c3a
+Ab Absatz - Then, enter terraform-compliance.
+
 
 # Mono Repo vs. Multirepo setup
 https://www.hashicorp.com/blog/terraform-mono-repo-vs-multi-repo-the-great-debate

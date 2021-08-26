@@ -4,7 +4,6 @@ description: >-
 ---
 
 # Monorepo oder dann doch lieber ein Multirepo Setup
-
 Da du das hier liest verwendet ihr Terraform für Infrastruktur. Da hast du dir sicher die Fragen gestellt, wie das Ganze schneller und sicherer werden könnte.  Du bist nicht allein. Wir alle erstellen Konfigurationen, Codes in verschiedenen Tools und Sprachen und verbringen dann viel Zeit damit, sie lesbarer, erweiterbarer und skalierbarer zu machen.
 
 Der so erzeugte Code auch sollte ein oder mehrere verschiedene Probleme lösen, und soll auch im Interesse der Deduplizierung wiederverwendbar sein. Normalerweise endeten solche Diskussionen mit „Lass uns Module verwenden“.
@@ -25,13 +24,11 @@ Verwenden Sie KEINE Micro-Repos für Ihre Terraform-Module. Verwenden Sie ein Mo
 {% endhint %}
 
 ## Monolithische Repositorys
-
 Zur Klärung vorweg: In diesem Beitrag konzentrieren wir uns auf ein Mono-Repo ausschliesslich für Infrastrukturkomponenten.
 
 Mono-Repositorys funktionieren prima, wenn du ein persönliches Projekt oder ein kleineres Team hast. Es macht Sinn, in sogenannte Resourcenmodule, die kleinste logischste Gruppierung von Ressourcen und ihren Abhängigkeiten einzusortieren. In unserem Beispiel bieten sich hier an DNS, VPC, ECS.
 
 ![Monorepo](/img/monorepo-1.png "Monorepo")
-
 
 ### Vorteile
 * Ein Mono-Repo wird zu einer einzigen Quelle der Wahrheit, um die gesamte Infrastrukturkonfiguration zu erhalten.
@@ -39,8 +36,7 @@ Mono-Repositorys funktionieren prima, wenn du ein persönliches Projekt oder ein
 * Es konsolidiert die Infrastrukturkonfiguration zum Testen und Debuggen, was für Datenbanktests, Warteschlangen, Ereignisstreaming oder Datenpipelines wichtig sein kann.
 
 ### Nachteile
-
-* Wenn Sie Module im Laufe der Zeit aktualisieren, erhöht sich der Verwaltungsaufwand für Module. Versionsverwaltung und Abhängigkeiten von Modulen und Provider können in diesem Paradigma ziemlich verwirrend sein, um zu debuggen. Als bewährte Methode sollten Sie Providerversionen in jedem Modul fixieren. Das Trennen und Versionieren von Modulen nach Unterverzeichnissen kann es jedoch erschweren, zu debuggen, welche Anbieterversionen in den einzelnen Modulen verwendet werden.
+* Wenn die Module im Laufe der Zeit aktualisieren werden müssen, erhöht sich der Verwaltungsaufwand. Versionsverwaltung und Abhängigkeiten von Modulen und Provider können in diesem Paradigma ziemlich verwirrend sein, um zu debuggen. Als bewährte Methode sollten Providerversionen in jedem Modul fixieren werden. Das Trennen und Versionieren von Modulen nach Unterverzeichnissen kann es jedoch erschweren, zu debuggen, welche Anbieterversionen in den einzelnen Modulen verwendet werden.
 
 * Außerdem kann das Buildsystem nicht einfach skaliert werden, wenn weitere Unterverzeichnisse erstellen werden. Wenn Änderungen über eine Pipeline erfasst werden, muss jeder Ordner nach Änderungen abgesucht. Viele CI-Frameworks verwenden Changesets, um Unterschiede zu bewerten, was die Laufzeit der Pipeline erhöhen kann.
 
@@ -53,6 +49,9 @@ Wenn du mehr Zeit damit verbringest, die Build-Systemlogik zu pflegen, um Ihr In
 
 
 ## Mehrere Quell-Repositorys
+Ein Multi-Repository Setup kann eine granulare Zugriffskontrolle und dadurch eine bessere Nachverfolgbarkeit von Konfigurationsänderungen gewährleisten. Wenn ein großes Team, das an einem komplexen Infrastruktursystem zusammenarbeitet, können mit mehreren Quell-Repositorys Änderungen einfacher lokalisiert und Versionsupdates der Module gezielter vorgenommen werden. So können gezielt Verantwortlichkeiten für Änderungen auf die Teams übertragen werden, die für die einzelnen Infrastrukturkomponenten verantwortlich sind.
+
+Es gibt viele Ansätze, ein Multi-Repository Setup zu organisieren. So kann beispielsweise jedes Modul in ein eigenes Repository ausgelagert werden. Im Fall der ```serverless``` Funktionen, der Warteschlange und des Netzwerks würden Sie einzelne Repositorys für AWS Lambda ( function), Warteschlange und virtuelles Netzwerk ( network) erstellen . Einzelne Geschäftseinheiten oder Produkte würden auf diese Remote-Module verweisen. Umgebungen würden durch Unterverzeichnisse in jedem Produkt- oder Geschäftsrepository erfasst.
 
 ### Vorteile
 
