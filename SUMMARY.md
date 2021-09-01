@@ -25,5 +25,6 @@
 * [Projektstruktur](projektstruktur/README.md)
   * [Terraform Module local vs. remote](projektstruktur/module-local-remote.md)
   * [Monorepo oder nicht?](projektstruktur/monorepo-oder-multirepo.md)
+  * [produktionsreife Terraform Module](projektstruktur/produktionsreife-terraform-module.md)
 * [FAQ](faq.md)
 * [Weitere Links](weitere-informationen.md)

@@ -2,8 +2,19 @@
 https://blog.boltops.com/2020/10/18/terraspace-terrafile-using-git-repos-and-terraform-registry-modules
 
 
-# DONE-  Git Rrepos als Terraform Modul?
-https://wahlnetwork.com/2020/08/11/using-private-git-repositories-as-terraform-modules/
+# Terragrunt warum?
+https://blog.gruntwork.io/terragrunt-how-to-keep-your-terraform-code-dry-and-maintainable-f61ae06959d8
+
+und hier verlinken absicherung-des-deployments/abstraktions-layer.md
+
+# pre commit hooks
+https://medium.com/@k.bujacek/best-practices-for-reusable-terraform-module-github-repository-1151c6821333?source=post_internal_links---------3----------------------------
+
+
+# Schluesselkonzepte
+Überarbeiten
+
+
 
 
 # Wie schreibt man ein produktionsreifes Terraform Modul?
@@ -21,6 +32,7 @@ https://terraform-compliance.com/
 https://medium.com/@emre.erkunt/terraform-mono-repo-and-compliance-as-code-109395659c3a
 Ab Absatz - Then, enter terraform-compliance.
 
+#### DONE ###
 
 # DONE - Mono Repo vs. Multirepo setup
 https://www.hashicorp.com/blog/terraform-mono-repo-vs-multi-repo-the-great-debate
@@ -28,15 +40,5 @@ Vor und Nachteile?
 Siehe Git Rrepos als Terraform Modul?
 DRY?
 
-
-# Terragrunt warum?
-https://blog.gruntwork.io/terragrunt-how-to-keep-your-terraform-code-dry-and-maintainable-f61ae06959d8
-
-und hier verlinken absicherung-des-deployments/abstraktions-layer.md
-
-# pre commit hooks
-https://medium.com/@k.bujacek/best-practices-for-reusable-terraform-module-github-repository-1151c6821333?source=post_internal_links---------3----------------------------
-
-
-# Schluesselkonzepte
-Überarbeiten
+# DONE-  Git Rrepos als Terraform Modul?
+https://wahlnetwork.com/2020/08/11/using-private-git-repositories-as-terraform-modules/
