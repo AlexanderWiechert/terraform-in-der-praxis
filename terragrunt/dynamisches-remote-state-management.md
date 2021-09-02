@@ -3,7 +3,7 @@ description: >-
   Eine Fähigkeit von Terragrunt muss man besonders hervorheoben: das spontane Generieren von Remote-States.
 ---
 
-# – Dynamisches Remote State Management
+# Dynamisches Remote State Management
 
 ## Der Ansatz von Terraform
 Um deinen Terraform State remote speichern zu können, muss wie folgt eine Back-End-Konfiguration erstellt werden:

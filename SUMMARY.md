@@ -26,5 +26,7 @@
   * [Terraform Module local vs. remote](projektstruktur/module-local-remote.md)
   * [Monorepo oder nicht?](projektstruktur/monorepo-oder-multirepo.md)
   * [produktionsreife Terraform Module](projektstruktur/produktionsreife-terraform-module.md)
+* [Terragrunt](terragrunt/README.md)
+  * [Dynamisches Remote State Management](terragrunt/dynamisches-remote-state-management.md)  
 * [FAQ](faq.md)
 * [Weitere Links](weitere-informationen.md)
