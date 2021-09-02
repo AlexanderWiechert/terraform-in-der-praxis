@@ -67,11 +67,25 @@ remote_state {
 
 Da sich die Konfigurationsdetails wiederholen, sind die Werte in eine YAML-Konfigurationsdatei ausgelagert, die zur Laufzeit eingelesen werden, um die entsprechenden Einstellungen abzurufen. Dies ist im Abschnitt `locals` zu sehen.
 
-In der Ressource `remote_state` gibt es eine `generate` - Anweisung, die die Datei `backend.tf` überschreibt, wenn sie vorhanden ist, und die Verwendung der vom System generierten erzwingt . Im Abschnitt config werden hier die Einstellungen des Basis-Backend-Objekts bereitgestellt. Die meisten Einstellungen stammen aus den YAML Dateien.
-
-
-Zu beachten ist die Verwendung des `Key` Attributs . Dieser Wert wird basierend auf der Ordnerhierarchie generiert, in der diese HCL-Datei gespeichert ist. Es verwendet eine Terragrunt-Funktion `path_relative_to_include()` (diese Funktion ist nicht Teil von Terraform).
+In der Ressource `remote_state` gibt es eine `generate` - Anweisung, die die Datei `backend.tf` überschreibt, wenn sie vorhanden ist, und die Verwendung der vom System generierten erzwingt . Im Abschnitt config werden hier die Einstellungen des Basis-Backend-Objekts bereitgestellt. Die meisten Einstellungen stammen aus den YAML Dateien. Zu beachten ist die Verwendung des `Key` Attributs . Dieser Wert wird basierend auf der Ordnerhierarchie generiert, in der diese HCL-Datei gespeichert ist. Es verwendet eine Terragrunt-Funktion `path_relative_to_include()` (diese Funktion ist nicht Teil von Terraform).
 
 {% hint style="danger" %}
 WARNUNG – Nachdem der Wert für den Schlüssel festgelegt wurde und die Infrastruktur bereitgestellt wurde; sollte der Wert nicht mehr geändert werden. Wenn sich der Pfad in der Konfiguration ändern, sehen zukünftige Ausführungen die Statusdatei nicht mehr und stellen die Infrastruktur von Grund auf neu bereit.
 {% endhint %}
+
+In jeder der Child Dateien terragrunt.hcl, wie z.B. `prod/terragrunt.hcl` können  wir nun Terragrunt anweisen, automatisch alle Einstellungen von der Parent Datei zu übernehmen.
+
+
+```
+include {
+  path = find_in_parent_folders()
+}
+```
+
+Der `include` Block weist Terragrunt an, genau dieselbe Konfiguration aus der über den `path` Parameter angegebenen Datei zu verwenden. Es verhält sich genau so, als ob Sie die Terraform-Konfiguration aus der enthaltenen Anweisung `remote_state` kopiert hätten, aber dieser Ansatz ist viel einfacher zu pflegen!
+
+Die beiden `terragrunt.hcl` Dateien verwenden zwei integrierte Terragrunt-Funktionen:
+
+`find_in_parent_folders()`: Diese Funktion gibt den absoluten Pfad zur ersten `terragrunt.hcl` Datei zurück, die sie in den Root Ordnern des Projektes findet. Auf diese Weise müssen Sie den pathParameter nicht in jedem Modul hart codieren.
+
+`path_relative_to_include()`: Diese Funktion gibt den relativen Pfad zwischen der aktuellen `terragrunt.hcl` Datei und dem in ihrem includeBlock angegebenen Pfad zurück . Normalerweise verwenden wir dies in der `terragrunt.hcl` im Root Ordner Datei, damit jedes untergeordnete Terraform-Modul für die verschiedenen Stages seinen Terraform-Status mit mit anderen Schlüssel im Remote-Storage ablegt. Zum Beispiel sieht die Struktur dann im S3 Bucket folgendermassen aus: prod/terraform.tfstate sowie qa/terraform.tfstate und dev/terraform.tfstate.
