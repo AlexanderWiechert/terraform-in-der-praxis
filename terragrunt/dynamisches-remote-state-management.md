@@ -86,6 +86,25 @@ Der `include` Block weist Terragrunt an, genau dieselbe Konfiguration aus der ü
 
 Die beiden `terragrunt.hcl` Dateien verwenden zwei integrierte Terragrunt-Funktionen:
 
-`find_in_parent_folders()`: Diese Funktion gibt den absoluten Pfad zur ersten `terragrunt.hcl` Datei zurück, die sie in den Root Ordnern des Projektes findet. Auf diese Weise müssen Sie den pathParameter nicht in jedem Modul hart codieren.
+`find_in_parent_folders()`: Diese Funktion gibt den absoluten Pfad zur ersten `terragrunt.hcl` Datei zurück, die sie in den Root Modul des Projektes findet. Auf diese Weise müssen Sie den pathParameter nicht in jedem Modul hart codieren.
 
 `path_relative_to_include()`: Diese Funktion gibt den relativen Pfad zwischen der aktuellen `terragrunt.hcl` Datei und dem in ihrem includeBlock angegebenen Pfad zurück . Normalerweise verwenden wir dies in der `terragrunt.hcl` im Root Ordner Datei, damit jedes untergeordnete Terraform-Modul für die verschiedenen Stages seinen Terraform-Status mit mit anderen Schlüssel im Remote-Storage ablegt. Zum Beispiel sieht die Struktur dann im S3 Bucket folgendermassen aus: prod/terraform.tfstate sowie qa/terraform.tfstate und dev/terraform.tfstate.
+
+
+## Regeln für das Mergen der verschiedenen Terragrunt Konfigurationen
+
+Die Terraform Konfiguration der `.hcl`Datei des Modules wird dabei in die des Root Modules gemerged. Dafür gilt folgendes:
+
+* Wenn ein `extra_arguments` Block im untergeordneten Modul denselben Namen hat wie ein `extra_arguments` Block im Root Modul, dann überschreibt dieser die Werte im Root Modul.
+
+* Die Angabe eines leeren `extra_arguments` Blocks in einem untergeordneten Modul mit demselben Namen entfernt den Block des übergeordneten Moduls.
+
+* Wenn der Block `extra_arguments` unterschiedliche Namen hat, dann werden diese zusammengeführt.
+
+* Die Werte des untergeordneten Moduls werden dann nach dem des Root Moduls konfiguriert und ausgeführt.
+
+* Wenn gleichlautende Werte im `extra_arguments` Block über ein Include Statement für `.tfvars`Dateien hinzugefügt werden, gelten die des Submodules.
+
+{% hint style="info" %}
+Oben genanntes gilt für alle Anweisungen, die ich hier verwenden kann (before_hook, after_hook, source).
+{% endhint %}
