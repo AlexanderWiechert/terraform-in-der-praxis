@@ -108,3 +108,18 @@ Die Terraform Konfiguration der `.hcl`Datei des Modules wird dabei in die des Ro
 {% hint style="info" %}
 Oben genanntes gilt für alle Anweisungen, die ich hier verwenden kann (before_hook, after_hook, source).
 {% endhint %}
+
+## Mittels generate den Terraform remote_state konfigurieren
+Der Standard, wie Terragrunt den remote_state managed ist, dass es Terraform mit `-backend-config`aufruft. Wir können aber Terragrunt mittels `generate` anweisen, die Backend Konfiguration autoatisch zu generieren.
+
+Die `generate` Funktion akzeptiert zwei Parameter:
+
+* `path`: Der Pfad, wo die generierte Datei abgelegt werden soll.
+*  `if_exist`: Eien Anweisung, was Terragrunt machen soll, wenn bereits eine Datei vorhanden ist. Hier gibt es die Möglichkeit mit  `overwrite` die existierende Datei zu überschreiben oder diese per `skip`zu übernehmen oder per `error` abzubrechen.
+
+## automatisiertes Erstellen der Resourcen für den Remote State und Locking
+Wenn terragrunt mit der `remote_state` Konfiguration ausgeführt wird, erstellt es automatisch die folgenden Resourcen, wenn diese nocht bereits existieren:
+
+**S3 bucket**: Wenn ein S3 Bucket in der `remote_state`Konfiguration angegebenen wurde und dieser noch nicht existiert, wird dieser automatisch mit Versionierung, Verschlüsselung und Zugriffsprotokollierung angelegt. Der Bucket lässt sich auch mittels `remote_state.config.s3_bucket_tags` individuell taggen.
+
+**DynamoDB table**: Die DynamoDB Tabelle, welche für Locking des `remote_state`verwenden wird, kann ebenfalls automatisiert von Terragrunt erstellt werden. Diese wird mit Verschlüsselung erstellt und der Primary Key als `LockID` angelegt. Die Tabelle kann ebenfalls mittels `remote_state.config.dynamodb_table_tags` individuell getaggt werden.
