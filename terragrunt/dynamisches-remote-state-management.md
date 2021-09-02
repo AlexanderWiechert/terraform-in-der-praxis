@@ -57,7 +57,8 @@ In der Ressource `remote_state` habe ich eine `generate` - Anweisung, die die Da
 
 
 
-Zu beachten ist die Verwendung des `Key` Attributs . Dieser Wert wird basierend auf der Ordnerhierarchie generiert, in der diese HCL-Datei gespeichert ist. Es verwendet eine Terragrunt-Funktion (diese Funktion ist nicht Teil von Terraform). 
+Zu beachten ist die Verwendung des `Key` Attributs . Dieser Wert wird basierend auf der Ordnerhierarchie generiert, in der diese HCL-Datei gespeichert ist. Es verwendet eine Terragrunt-Funktion (diese Funktion ist nicht Teil von Terraform).
 
-
-WARNUNG – Nachdem der Wert für den Schlüssel festgelegt wurde und Sie die Infrastruktur bereitgestellt haben; ÄNDERN SIE es NICHT. Wenn Sie den Pfad in der Konfiguration ändern, sehen zukünftige Pläne keine Statusdatei und stellen die Infrastruktur von Grund auf neu bereit.
+{% hint style="danger" %}
+WARNUNG – Nachdem der Wert für den Schlüssel festgelegt wurde und die Infrastruktur bereitgestellt wurde; sollte der Wert nicht mehr geändert werden. Wenn sich der Pfad in der Konfiguration ändern, sehen zukünftige Ausführungen die Statusdatei nicht mehr und stellen die Infrastruktur von Grund auf neu bereit.
+{% endhint %}
