@@ -123,3 +123,9 @@ Wenn terragrunt mit der `remote_state` Konfiguration ausgeführt wird, erstellt 
 **S3 bucket**: Wenn ein S3 Bucket in der `remote_state`Konfiguration angegebenen wurde und dieser noch nicht existiert, wird dieser automatisch mit Versionierung, Verschlüsselung und Zugriffsprotokollierung angelegt. Der Bucket lässt sich auch mittels `remote_state.config.s3_bucket_tags` individuell taggen.
 
 **DynamoDB table**: Die DynamoDB Tabelle, welche für Locking des `remote_state`verwenden wird, kann ebenfalls automatisiert von Terragrunt erstellt werden. Diese wird mit Verschlüsselung erstellt und der Primary Key als `LockID` angelegt. Die Tabelle kann ebenfalls mittels `remote_state.config.dynamodb_table_tags` individuell getaggt werden.
+
+{% hint style="info" %}
+Hinweis : Wenn Sie einen profile Wert in der remote_state.config angeben, verwendet Terragrunt dieses AWS-Profil automatisch beim Erstellen des S3-Buckets oder der DynamoDB-Tabelle.
+
+Hinweis : Die automatische `remote_state` Initialisierung kann deaktiviert werden, indem remote_state.disable_init gesetzt wird, dies überspringt die automatische Erstellung von `remote_state` Ressourcen und führt die `terraform init` Übergabe der `backend=false` Option aus. Dies kann praktisch sein, wenn Sie Befehle ausführen, z. B. `validate-all` als Teil eines CI-Prozesses, bei dem Sie den Remote-Status nicht initialisieren möchten.
+{% endhint %}
