@@ -100,7 +100,7 @@ Auch diese geschieht typischerweise in der `terraform.hcl` Datei. Hier geben wir
 
 
 ```
-# Read common variables
+# Importieren der für das Modul VPC spezifischen Variablen
 locals {
   vpc = yamldecode(file("settings.yaml"))
 }
