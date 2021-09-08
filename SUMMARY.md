@@ -28,6 +28,7 @@
   * [produktionsreife Terraform Module](projektstruktur/produktionsreife-terraform-module.md)
 * [Terragrunt](terragrunt/README.md)
   * [Dynamisches Remote State Management](terragrunt/dynamisches-remote-state-management.md)  
-  * [Before und After Hooks](terragrunt/hooks.md)    
+  * [Before und After Hooks](terragrunt/hooks.md)
+  * [Konfigurationsdateien mergen](terragrunt/konfigurationsdateien-mergen.md)
 * [FAQ](faq.md)
 * [Weitere Links](weitere-informationen.md)
