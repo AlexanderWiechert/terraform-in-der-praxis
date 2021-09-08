@@ -10,6 +10,7 @@ Before Hooks oder After Hooks sind eine Funktion von terragrunt, die es ermögli
 
 Hier ist ein Beispiel:
 
+```
 terraform {
   before_hook "before_hook" {
     commands     = ["apply", "plan"]
@@ -22,11 +23,14 @@ terraform {
     run_on_error = true
   }
 }
+```
+
 In dieser Beispielkonfiguration passieren immer, wenn Terragrunt `terraform apply` oder ausgeführt wird `terraform plan`, folgende Dinge:
 
 Bevor Terragrunt `terraform` ausgeführt wird , wird mittels in diesem Beispiel [awsume](https://awsu.me/) der login in eine mittels MFA geschütztes Profile durchgeführt.
 Nachdem Terragrunt `terraform` ausgeführt hat, wird die automatisch erstellte terraform.tf Datei gelöscht, unabhängig davon, ob der Befehl fehlgeschlagen ist oder nicht.
 Es können mehrere Vorher- und Nachher-Hooks verwendet werden. Jeder Hook wird in der Reihenfolge ausgeführt, in der er definiert wurde. Zum Beispiel:
+
 ```
 terraform {
   before_hook "before_hook_1" {
