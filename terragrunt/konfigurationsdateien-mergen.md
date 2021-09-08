@@ -93,3 +93,20 @@ locals {
 {% hint style="info" %}
 Falls gleichlautenden Variablen verwendet werden in beiden Dateien werden diese immer mit dem Wert aus der letzten hier angegebenen Datei überschrieben.
 {% endhint %}
+
+## Zugriff auf die Variablen aus den Konfigurationsdateien
+
+Auch diese geschieht typischerweise in der `terraform.hcl` Datei. Hier geben wir über die locals an welche Datei die von uns benötigten Variablen enthält und weisen sie in dem Fall `vpc` zu. Diese werden dann über die Anweisung inputs an das Modul übergeben und können dort in der variables.tf als Input Variable genutzt werden.
+
+
+```
+# Read common variables
+locals {
+  vpc = yamldecode(file("settings.yaml"))
+}
+
+...
+
+# Pass required inputs to module
+inputs = local.vpc
+```
