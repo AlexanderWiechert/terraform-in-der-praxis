@@ -17,8 +17,7 @@ https://medium.com/@k.bujacek/best-practices-for-reusable-terraform-module-githu
 
 
 
-# Wie schreibt man ein produktionsreifes Terraform Modul?
-https://cloudskills.io/blog/terraform-azure-05
+
 
 
 # Static Code Analysis for terraform
@@ -40,5 +39,8 @@ Vor und Nachteile?
 Siehe Git Rrepos als Terraform Modul?
 DRY?
 
-# DONE-  Git Rrepos als Terraform Modul?
+# DONE -  Git Rrepos als Terraform Modul?
 https://wahlnetwork.com/2020/08/11/using-private-git-repositories-as-terraform-modules/
+
+# DONE - Wie schreibt man ein produktionsreifes Terraform Modul?
+https://cloudskills.io/blog/terraform-azure-05
