@@ -30,5 +30,6 @@
   * [Dynamisches Remote State Management](terragrunt/dynamisches-remote-state-management.md)  
   * [Before und After Hooks](terragrunt/hooks.md)
   * [Konfigurationsdateien mergen](terragrunt/konfigurationsdateien-mergen.md)
+  * [Abhängigkeiten verwalten](terragrunt/dependency_managment.md)
 * [FAQ](faq.md)
 * [Weitere Links](weitere-informationen.md)

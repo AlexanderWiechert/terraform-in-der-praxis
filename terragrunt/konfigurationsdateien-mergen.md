@@ -1,6 +1,6 @@
 ---
 description: >-
-  Before Hooks oder After Hooks ermöglichen es Dinge, wie z.B. eine Authentifizierung in den Prozess zu integrieren.
+  Das Mergen verschiedenster Konfigurationsdateien ermöglicht es recht einfach den Code Dry zu halten.
 ---
 
 # Mit Terragrunt Konfigurationsdateien mergen
