@@ -14,12 +14,50 @@ Beides kann Terraform nun mittlerweile selbst über die `tfbackends` und der Sta
 
 Dazu gibt es folgende Ansätze:
 
-* [Backend-Konfiguration](terragrunt/dynamisches-remote-state-management.md)
+* [Backend-Konfiguration](#backend-config)
 * [Terraform-CLI-Argumente](#terraform-cli-argumente)
 * [immutable Terraform Module](projektstruktur/module-local-remote.md)
 
-CLI-Flags sind ein Part in deinem Terraform Projekt, wo die eigentlich nicht nahc dem Prinzip DRY arbeiten kannst. Ein typisches Muster bei Terraform besteht beispielsweise darin, die Variablen für deinen Account in einer eigenen Datei zu definieren :
+CLI-Flags sind ein Part in deinem Terraform Projekt, wo die eigentlich nicht nahc dem Prinzip DRY arbeiten kannst. Ein typisches Muster bei Terraform besteht beispielsweise darin, die Variablen für deinen Account in einer eigenen Datei zu definieren:
 
+
+## Backend-Konfiguration
+Terraform-Back-Ends ermöglichen es Ihnen, den Terraform-Status remote zu speichern, damit man diesen gemeinsam verwenden kann.
+Um ein Terraform-Back-End zu verwenden, fügen Sie backendIhrem Terraform-Code eine Konfiguration hinzu:
+
+```
+# stage/frontend/main.tf
+terraform {
+  backend "s3" {
+    Bucket = "terraform-state"
+    key = "stage/frontend/terraform.tfstate"
+    region = "eu-central-1"
+    encrypt = true
+    dynamodb_table = "lock-table"
+  }
+}
+```
+Der obige Code weist Terraform an, den state in einem S3-Bucket zu speichern und eine DynamoDB-Tabelle zu verwenden, um einen state-lock durchzuführen. Dies ist eine großartige Funktion, aber es hat einen großen Nachteil - die backend Konfiguration unterstützt keine Variablen. Das heißt, Folgendes wird NICHT funktionieren:
+
+```
+# stage/frontend/main.tf
+terraform {
+  backend "s3" {
+    Bucket = var.terraform_state_bucket
+    key = var.terraform_state_key
+    region = var.terraform_state_region
+    encrypt = var.terraform_state_encrypt
+    dynamodb_table = var.terraform_state_dynamodb_table
+  }
+}
+```
+
+Das bedeutet, dass dieselbe backend Konfiguration in jedes Module kopiert werden muss. Hier muss man aber sehr achtsam vorgehen und die Werte unbedingt ändern, damit nicht zwei Module in den selben state schreiben und sich so jedesmal gegenseitig überschreiben würden.
+
+
+[weiter](terragrunt/dynamisches-remote-state-management.md)
+
+## Terraform-CLI-Argumente
 
 ```
 # account.tfvars
@@ -61,7 +99,7 @@ terraform {
   }
 }
 ```
-
+Wenn du  nun die Befehle `plan` oder `apply` ausführst, fügt Terragrunt diese Argumente automatisch hinzu:
 
 ```
 terragrunt apply
