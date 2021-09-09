@@ -69,7 +69,7 @@ Da sich die Konfigurationsdetails wiederholen, sind die Werte in eine YAML-Konfi
 
 In der Ressource `remote_state` gibt es eine `generate` - Anweisung, die die Datei `backend.tf` überschreibt, wenn sie vorhanden ist, und die Verwendung der vom System generierten erzwingt . Im Abschnitt config werden hier die Einstellungen des Basis-Backend-Objekts bereitgestellt. Die meisten Einstellungen stammen aus den YAML Dateien. Zu beachten ist die Verwendung des `Key` Attributs . Dieser Wert wird basierend auf der Ordnerhierarchie generiert, in der diese HCL-Datei gespeichert ist. Es verwendet eine Terragrunt-Funktion `path_relative_to_include()` (diese Funktion ist nicht Teil von Terraform).
 
-{% hint style="danger" %}
+
 WARNUNG – Nachdem der Wert für den Schlüssel festgelegt wurde und die Infrastruktur bereitgestellt wurde; sollte der Wert nicht mehr geändert werden. Wenn sich der Pfad in der Konfiguration ändern, sehen zukünftige Ausführungen die Statusdatei nicht mehr und stellen die Infrastruktur von Grund auf neu bereit.
 
 
@@ -128,4 +128,3 @@ Wenn terragrunt mit der `remote_state` Konfiguration ausgeführt wird, erstellt 
 Hinweis : Wenn Sie einen profile Wert in der remote_state.config angeben, verwendet Terragrunt dieses AWS-Profil automatisch beim Erstellen des S3-Buckets oder der DynamoDB-Tabelle.
 
 Hinweis : Die automatische `remote_state` Initialisierung kann deaktiviert werden, indem remote_state.disable_init gesetzt wird, dies überspringt die automatische Erstellung von `remote_state` Ressourcen und führt die `terraform init` Übergabe der `backend=false` Option aus. Dies kann praktisch sein, wenn Sie Befehle ausführen, z. B. `validate-all` als Teil eines CI-Prozesses, bei dem Sie den Remote-Status nicht initialisieren möchten.
-
