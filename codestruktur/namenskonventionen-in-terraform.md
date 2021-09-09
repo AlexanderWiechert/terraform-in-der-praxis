@@ -45,7 +45,7 @@ Ressource "aws_route_table" "public" {
 }
 ```
 
-{% hint style="danger" %}
+
 
 ```text
 Ressource "aws_route_table" "public" {
@@ -79,7 +79,7 @@ Ressource "aws_nat_gateway" "this" {
 }
 ```
 
-{% hint style="danger" %}
+
 
 ```text
 Ressource "aws_nat_gateway" "this" {
@@ -148,7 +148,7 @@ output "this_security_group_id" {
 
 Wenn mehrere Ressourcen des gleichen Typs vorhanden sind, sollte `this` bevorzugt werden und es sollte Teil des Namens in der Ausgabe sein, auch `another_security_group_id` sollte `web_security_group_id` heißen:
 
-{% hint style="danger" %}
+
 
 ```text
 output "security_group_id" {
