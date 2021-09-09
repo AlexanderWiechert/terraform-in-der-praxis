@@ -29,7 +29,6 @@ Dies ist eine der Fragen, für die es viele Lösungen gibt und es sehr schwierig
 
 
 Logische Provider arbeiten vollständig innerhalb der Logik von Terraform und interagieren nicht mit anderen Diensten. Zu den gängigsten logischen Anbietern gehören [random](https://www.terraform.io/docs/providers/random/index.html), [template](https://www.terraform.io/docs/providers/template/%20index.html), [terraform](https://www.terraform.io/docs/providers/terraform/index.html), [null](https://www.terraform.io/docs/providers/null/%20index.html).
-{% endhint %}
 
 ### Erste Schritte mit der Strukturierung von Terraform-Konfigurationen
 
