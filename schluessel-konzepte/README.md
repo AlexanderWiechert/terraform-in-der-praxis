@@ -11,9 +11,9 @@ Die offizielle Terraform-Dokumentation beschreibt [alle Aspekte der Konfiguratio
 
 ## Module und Strukturierung
 
-{{{% hint style="info" %}}}
+{% hint style="info" %}
 Zerlegen und abstrahieren Sie Ihren terraform Code, um die Wiederverwendung zu maximieren.
-{{{% endhint %}}}
+{% endhint %}
 
 | Typ | Beschreibung |
 | :--- | :--- |
@@ -25,9 +25,9 @@ Zerlegen und abstrahieren Sie Ihren terraform Code, um die Wiederverwendung zu m
 
 Wie jedes andere Framework kann auch Terraform-Code schlecht oder gut geschrieben sein. Schlecht geschriebener Infrastruktur-Code ist langsam, fehleranfällig und schwer zu warten. Viele der Grundsätze, die einem guten Anwendungscode zugrunde liegen, gelten auch für den Infrastrukturcode. Konzepte wie [DRY](http://c2.com/cgi/wiki?DontRepeatYourself), das [Single Responsibility Principle](https://codeburst.io/understanding-solid-principles-single-responsibility-b7c7ec0bf80) und [YAGNI](https://martinfowler.com/bliki/Yagni.html) gelten für Terraform-Code genauso wie für traditionellen Anwendungscode. Um einen guten Entwurf zu erleichtern, können Sie mit Terraform Ihre Infrastruktur in Module aufteilen, d.h. in atomare Infrastrukturkomponenten, die klar definierte Inputs und Outputs haben. Sie können diese Module verwenden, um wiederverwendbare Komponenten zu erstellen, die auf Ihre Anwendungsimplementierung zugeschnitten sind, und dann diese Komponenten verwenden, um eine Darstellung Ihrer Infrastruktur zu erstellen, die wiederverwendbar und leicht wartbar ist.
 
-{{% hint style="info" %}}
+{% hint style="info" %}
 Ein Beispiel: Sie haben eine Anwendung, die einen S3-Bucket, eine RDS-Instanz und eine EC2-Instanz verwendet. Eine geeignete Darstellung in Terraform wäre die Erstellung separater Module, die den S3-Bucket, die RDS-Instanz und die EC2-Instanz darstellen. Dann erstellen Sie ein weiteres Modul, das jedes dieser Module nutzt, um die Anwendung zu repräsentieren; dieses letzte Modul würde in der eigentlichen Logik der Umgebungsbereitstellung referenziert werden. Mit einer mehrstufigen Darstellung wie dieser können Sie die grundlegenden Ressourcenmodule für andere Anwendungen und die vollständig komponierten Anwendungsmodule für mehrere Umgebungen wiederverwenden.
-{{% endhint %}}
+{% endhint %}
 
 ### Halten Sie Ihre Module und Ihren Umgebungsimplementierungscode getrennt.
 

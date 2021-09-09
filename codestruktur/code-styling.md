@@ -1,10 +1,10 @@
 # Code-Styling
 
-{{% hint style="info" %}}
+{% hint style="info" %}
 * Beispiele und Terraform-Module sollten eine Dokumentation enthalten, in der die Funktionen und deren Verwendung erklärt werden.
 * Die Dokumentation kann Diagramme enthalten, die mit \[mermaid\] \([https://github.com/knsv/mermaid](https://github.com/knsv/mermaid)\) erstellt wurden, und Blaupausen, die mit \[cloudcraft.co\] \([https://cloudcraft.co](https://cloudcraft.co)\) erstellt wurden.
 * Verwenden Sie [Terraform Pre-Commit-Hooks](https://github.com/antonbabenko/pre-commit-terraform), um sicherzustellen, dass der Code gültig, richtig formatiert und automatisch dokumentiert ist, bevor er an Git übertragen und von Menschen überprüft wird .
-{{% endhint %}}
+{% endhint %}
 
 ## Dokumentation
 

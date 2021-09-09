@@ -2,9 +2,9 @@
 
 ## Terraform-Codestrukturen
 
-{{% hint style="info" %}}
+{% hint style="info" %}
 Diese Beispiele zeigen AWS-Anbieter, aber die meisten der in den Beispielen gezeigten Prinzipien können auf andere öffentliche Cloud-Anbieter sowie andere Arten von Anbietern angewendet werden \(DNS, DB, Überwachung usw.\).
-{{% endhint %}}
+{% endhint %}
 
 | Typ | Beschreibung |
 | :--- | :--- |
