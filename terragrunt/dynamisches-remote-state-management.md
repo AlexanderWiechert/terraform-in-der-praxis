@@ -1,6 +1,6 @@
 ---
 description: >-
-  Eine Fähigkeit von Terragrunt muss man besonders hervorheoben: das spontane Generieren von Remote-States.
+  Eine Fähigkeit von Terragrunt muss man besonders hervorheben: das spontane Generieren von Remote-States.
 ---
 
 # Dynamisches Remote State Management
