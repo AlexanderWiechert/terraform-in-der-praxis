@@ -19,7 +19,7 @@ Dies ist eine der Fragen, für die es viele Lösungen gibt und es sehr schwierig
 * Wie oft ändert sich Ihre Infrastruktur?
   * **Ab** einmal im Monat/Woche/Tag
   * **An** kontinuierlich \(jedes Mal, wenn es einen neuen Commit gibt\)
-* Initiatoren der Codeänderung? _Lassen Sie den CI-Server das Repository aktualisieren, wenn ein neues Artefakt erstellt wird?_
+* Initiatoren der Codeänderung? Lassen Sie den CI-Server das Repository aktualisieren, wenn ein neues Artefakt erstellt wird?
   * Nur Entwickler können ins Infrastruktur-Repository pushen
   * Jeder kann Änderungen vorschlagen, indem er einen PR öffnet  \(einschließlich automatisierter Aufgaben, die auf dem CI-Server ausgeführt werden\)
 * Welche Bereitstellungsplattform oder Bereitstellungsdienst verwenden Sie?
