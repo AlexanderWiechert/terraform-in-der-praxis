@@ -14,7 +14,7 @@ Beides kann Terraform nun mittlerweile selbst über die `tfbackends` und der Sta
 
 Dazu gibt es folgende Ansätze:
 
-* [Backend-Konfiguration](#backend-config)
+* [Backend-Konfiguration](#backend-konfiguration)
 * [Terraform-CLI-Argumente](#terraform-cli-argumente)
 * [immutable Terraform Module](projektstruktur/module-local-remote.md)
 
