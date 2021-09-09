@@ -19,9 +19,9 @@ Zurück zu den Grundlagen. Was sind die allgemeinen Voraussetzungen für ein Rep
 
 Eine Idee kann hier sein:
 
-{% hint style="info" %}
+{{% hint style="info" %}}
 Verwenden Sie KEINE Micro-Repos für Ihre Terraform-Module. Verwenden Sie ein Mono-Repo.
-{% endhint %}
+{{% endhint %}}
 
 ## Monolithische Repositories
 Zur Klärung vorweg: In diesem Beitrag konzentrieren wir uns auf ein Mono-Repo ausschliesslich für Infrastrukturkomponenten.
@@ -42,9 +42,9 @@ Mono-Repositories funktionieren prima, wenn du ein persönliches Projekt oder ei
 
 * Die Zugriffskontrolle wird standardmäßig auf das gesamte Mono-Repository angewendet. Unter bestimmten Umständen möchtst du möglicherweise nur, dass ein Benutzer oder eine Gruppe auf bestimmte Unterverzeichnisse zugreifen kann.
 
-{% hint style="info" %}
+{{% hint style="info" %}}
 Wenn du mehr Zeit damit verbringest, die Build-Systemlogik zu pflegen, um Ihr Infrastruktur-Mono-Repository beizubehalten, solltest du das Mono-Repository möglicherweise in mehrere Repositories aufteilen.
-{% endhint %}
+{{% endhint %}}
 
 
 

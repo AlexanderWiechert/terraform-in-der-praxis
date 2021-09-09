@@ -71,7 +71,7 @@ In der Ressource `remote_state` gibt es eine `generate` - Anweisung, die die Dat
 
 {% hint style="danger" %}
 WARNUNG – Nachdem der Wert für den Schlüssel festgelegt wurde und die Infrastruktur bereitgestellt wurde; sollte der Wert nicht mehr geändert werden. Wenn sich der Pfad in der Konfiguration ändern, sehen zukünftige Ausführungen die Statusdatei nicht mehr und stellen die Infrastruktur von Grund auf neu bereit.
-{% endhint %}
+{{% endhint %}}
 
 In jeder der Child Dateien terragrunt.hcl, wie z.B. `prod/terragrunt.hcl` können  wir nun Terragrunt anweisen, automatisch alle Einstellungen von der Parent Datei zu übernehmen.
 
@@ -105,9 +105,9 @@ Die Terraform Konfiguration der `.hcl`Datei des Modules wird dabei in die des Ro
 
 * Wenn gleichlautende Werte im `extra_arguments` Block über ein Include Statement für `.tfvars`Dateien hinzugefügt werden, gelten die des Submodules.
 
-{% hint style="info" %}
+{{% hint style="info" %}}
 Oben genanntes gilt für alle Anweisungen, die ich hier verwenden kann (before_hook, after_hook, source).
-{% endhint %}
+{{% endhint %}}
 
 ## Mittels generate den Terraform remote_state konfigurieren
 Der Standard, wie Terragrunt den remote_state managed ist, dass es Terraform mit `-backend-config`aufruft. Wir können aber Terragrunt mittels `generate` anweisen, die Backend Konfiguration autoatisch zu generieren.
@@ -124,8 +124,8 @@ Wenn terragrunt mit der `remote_state` Konfiguration ausgeführt wird, erstellt 
 
 **DynamoDB table**: Die DynamoDB Tabelle, welche für Locking des `remote_state`verwenden wird, kann ebenfalls automatisiert von Terragrunt erstellt werden. Diese wird mit Verschlüsselung erstellt und der Primary Key als `LockID` angelegt. Die Tabelle kann ebenfalls mittels `remote_state.config.dynamodb_table_tags` individuell getaggt werden.
 
-{% hint style="info" %}
+{{% hint style="info" %}}
 Hinweis : Wenn Sie einen profile Wert in der remote_state.config angeben, verwendet Terragrunt dieses AWS-Profil automatisch beim Erstellen des S3-Buckets oder der DynamoDB-Tabelle.
 
 Hinweis : Die automatische `remote_state` Initialisierung kann deaktiviert werden, indem remote_state.disable_init gesetzt wird, dies überspringt die automatische Erstellung von `remote_state` Ressourcen und führt die `terraform init` Übergabe der `backend=false` Option aus. Dies kann praktisch sein, wenn Sie Befehle ausführen, z. B. `validate-all` als Teil eines CI-Prozesses, bei dem Sie den Remote-Status nicht initialisieren möchten.
-{% endhint %}
+{{% endhint %}}

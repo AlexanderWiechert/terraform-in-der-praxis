@@ -90,9 +90,9 @@ locals {
 }
 ```
 
-{% hint style="info" %}
+{{% hint style="info" %}}
 Falls gleichlautenden Variablen verwendet werden in beiden Dateien werden diese immer mit dem Wert aus der letzten hier angegebenen Datei überschrieben.
-{% endhint %}
+{{% endhint %}}
 
 ## Zugriff auf die Variablen aus den Konfigurationsdateien
 
