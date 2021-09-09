@@ -44,7 +44,7 @@ Den gesamten Code in `main.tf` abzulegen ist eine gute Idee, wenn Sie anfangen o
 
 
 Bitte stellen Sie sicher, dass Sie die wichtigsten Konzepte verstehen - [Ressourcenmodul](../schluessel-konzepte/#komposition) und [composition](../schluessel-konzepte/#komposition), wie sie in den folgenden Beispielen verwendet werden.
-{% endhint %}
+
 
 #### Gemeinsame Empfehlungen für die Strukturierung von Code
 
