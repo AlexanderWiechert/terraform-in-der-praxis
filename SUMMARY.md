@@ -21,6 +21,7 @@
       * [Mittelgroße Infrastruktur mit Terraform](codestruktur/beispiele/terraform/mittlere-infrastruktur.md)
       * [Große Infrastruktur mit Terraform](codestruktur/beispiele/terraform/grosse-infrastruktur.md)
   * [Namenskonventionen in Terraform](codestruktur/namenskonventionen-in-terraform.md)
+  <!-- * [Strukturelle Konventionen](codestruktur/strukturelle-konventionen.md) -->
   * [Code-Styling](codestruktur/code-styling.md)
 * [Projektstruktur](projektstruktur/README.md)
   * [Terraform Module local vs. remote](projektstruktur/module-local-remote.md)
