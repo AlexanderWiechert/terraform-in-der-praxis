@@ -161,4 +161,4 @@ Das sind in Summe
 - 2 x Outputs anpassen
 - 2 x module Definition anpassen
 
-Das ist auf jeden Fall fehleranfällig.
+Das ist auf jeden Fall fehleranfällig. Mit terragrunt habe ich das gleiche Problem, die Variablen werden dort statt in der `variables.tf` in eine Yaml Datei ausgelagert. Allerdings muss ich diese dann ebenfalls in die Module hinein und herausreichen. Einziger Vorteil ist, das dies in einer Datei pro Modul/Submodul konfigriert wird und nicht an drei Stellen.
