@@ -38,4 +38,5 @@ Weitere Links
   * Ein paar Antworten zum Thema, wie ich die Terraform Konfiguration strukturieren kann.
   * [https://stackoverflow.com/questions/50737880/terraform-folder-structure-modules-vs-files](https://stackoverflow.com/questions/50737880/terraform-folder-structure-modules-vs-files)
   * [https://stackoverflow.com/questions/43201497/terraform-state-management-for-multi-tenancy](https://stackoverflow.com/questions/43201497/terraform-state-management-for-multi-tenancy)
-
+* Wie man einen Terraform Provider schreibt 
+  * [https://www.infracloud.io/blogs/developing-terraform-custom-provider/](https://www.infracloud.io/blogs/developing-terraform-custom-provider/)
