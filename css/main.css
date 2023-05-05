@@ -1,0 +1,9 @@
+---
+layout: null
+---
+.book-summary ul.summary li {
+    list-style: devanagari;
+}
+
+
+/*.book-summary ul.summary li{list-style:none}.book-summary ul.summary li.header{padding:10px 15px;padding-top:20px;text-transform:uppercase;color:#939da3}.book-summary ul.summary li.divider{height:1px;margin:7px 0;overflow:hidden;background:rgba(0,0,0,.07)}.book-summary ul.summary li i.fa-check{display:none;position:absolute;right:9px;top:16px;font-size:9px;color:#3c3}.book-summary ul.summary li.done>a{color:#364149;font-weight:400}.book-summary ul.summary li.done>a i{display:inline}.book-summary ul.summary li a,.book-summary ul.summary li span{display:block;padding:10px 15px;border-bottom:none;color:#364149;background:0 0;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;position:relative}*/
