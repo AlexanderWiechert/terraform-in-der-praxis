@@ -1,6 +1,8 @@
 ---
-description: >-
-  Erfahren Sie mehr über die Vor- und Nachteile der Verwendung von Mono-Repositories und Multi-Repositories sowie den jeweils logischsten Anwendungsfall.
+layout: home
+title: Projektstruktur
+subtitle: Erfahren Sie mehr über die Vor- und Nachteile der Verwendung von Mono-Repositories und Multi-Repositories sowie den jeweils logischsten Anwendungsfall.
+cover: /img/projectstructure.jpg
 ---
 
 # Monorepo oder dann doch lieber ein Multirepo Setup
@@ -19,9 +21,8 @@ Zurück zu den Grundlagen. Was sind die allgemeinen Voraussetzungen für ein Rep
 
 Eine Idee kann hier sein:
 
-{% hint style="info" %}
-Verwenden Sie KEINE Micro-Repos für Ihre Terraform-Module. Verwenden Sie ein Mono-Repo.
-{% endhint %}
+>Verwenden Sie KEINE Micro-Repos für Ihre Terraform-Module. Verwenden Sie ein Mono-Repo.
+
 
 ## Monolithische Repositories
 Zur Klärung vorweg: In diesem Beitrag konzentrieren wir uns auf ein Mono-Repo ausschliesslich für Infrastrukturkomponenten.
@@ -42,9 +43,8 @@ Mono-Repositories funktionieren prima, wenn du ein persönliches Projekt oder ei
 
 * Die Zugriffskontrolle wird standardmäßig auf das gesamte Mono-Repository angewendet. Unter bestimmten Umständen möchtst du möglicherweise nur, dass ein Benutzer oder eine Gruppe auf bestimmte Unterverzeichnisse zugreifen kann.
 
-{% hint style="info" %}
-Wenn du mehr Zeit damit verbringest, die Build-Systemlogik zu pflegen, um Ihr Infrastruktur-Mono-Repository beizubehalten, solltest du das Mono-Repository möglicherweise in mehrere Repositories aufteilen.
-{% endhint %}
+>Wenn du mehr Zeit damit verbringest, die Build-Systemlogik zu pflegen, um Ihr Infrastruktur-Mono-Repository beizubehalten, solltest du das Mono-Repository möglicherweise in mehrere Repositories aufteilen.
+
 
 
 

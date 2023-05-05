@@ -1,9 +1,10 @@
 ---
-description: >-
-  Before Hooks oder After Hooks ermöglichen es Dinge, wie z.B. eine Authentifizierung in den Prozess zu integrieren.
+layout: home
+title: Terragrunt
+subtitle: Before Hooks oder After Hooks ermöglichen es Dinge, wie z.B. eine Authentifizierung in den Prozess zu integrieren.
 ---
 
-# Before Hooks oder After Hooks
+## Before Hooks oder After Hooks
 
 
 Before Hooks oder After Hooks sind eine Funktion von terragrunt, die es ermöglicht, benutzerdefinierte Aktionen zu definieren, die entweder vor oder nach der Ausführung des `terraform`  Befehls aufgerufen werden .

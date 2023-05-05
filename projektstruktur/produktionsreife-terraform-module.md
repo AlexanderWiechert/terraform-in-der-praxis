@@ -1,6 +1,8 @@
 ---
-description: >-
-  Erfahren Sie mehr über die Vor- und Nachteile der Verwendung von Mono-Repositories und Multi-Repositories sowie den jeweils logischsten Anwendungsfall.
+layout: home
+title: Projektstruktur
+subtitle: Erfahren Sie mehr über die Vor- und Nachteile der Verwendung von Mono-Repositories und Multi-Repositories sowie den jeweils logischsten Anwendungsfall.
+cover: /img/projectstructure.jpg
 ---
 
 # Wie schreibt man ein produktionsreifes Terraform Modul?

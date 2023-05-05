@@ -1,4 +1,9 @@
-# Datenquellen
+---
+layout: home
+title: Schlüßelkonzepte
+subtitle: Datenquellen
+cover: /img/keyconcept.jpeg
+---
 
 Die Datenquelle führt einen schreibgeschützten Vorgang aus und ist von der Providerkonfiguration abhängig. Sie wird in einem Ressourcenmodul und einem Infrastrukturmodul verwendet.
 

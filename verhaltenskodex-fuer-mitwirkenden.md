@@ -1,4 +1,8 @@
-# Verhaltenskodex für Mitwirkenden
+---
+layout: home
+title: Verhaltenskodex für Mitwirkenden
+subtitel: Respektvoller Umgang miteinander.
+---
 
 ## Unser Versprechen
 

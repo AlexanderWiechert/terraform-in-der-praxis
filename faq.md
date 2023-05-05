@@ -1,11 +1,9 @@
 ---
-description: >-
-  Welche Tools rund um Terraform solltest du kennen und verwenden? Wie vermeidet
-  man das umständliche Konfigurieren von Versionsabhängigkeiten, die sogenannte
-  dependency hell.
+layout: home
+title: FAQ
+subtitle: Welche Tools rund um Terraform solltest du kennen und verwenden? Wie vermeidet man das umständliche Konfigurieren von Versionsabhängigkeiten, die sogenannte dependency hell.
 ---
 
-# FAQ
 
 ## Welche Tools sollte ich kennen und verwenden?
 
