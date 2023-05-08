@@ -1,14 +1,61 @@
 ---
 ---
+/*dropdown menu*/
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.menu{
+    position: relative;
+    display: none;
+}
+
+.hovermenu{
+    position: relative;
+}
+
+.hovermenu:hover .menu{
+    display: block;
+}
+/*dropdown menu*/
+
+@media screen and (min-width: 200px) and (max-width: 767px) and (orientation: portrait)
+    .navbar-toggle {
+        margin-right: 0px;
+    }
+
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+        background-color: #333;
+    }
+
+    .book-header .btn {
+        display: block;
+        height: 50px;
+        padding: 0 6px;
+        border-bottom: none;
+        color: #ccc;
+        text-transform: uppercase;
+        line-height: 50px;
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important;
+        position: relative;
+        font-size: 14px;
+    }
+
+    .book-body .book-header {
+        position: fixed;
+        width: 100%;
+    }
+}
+
 
 .book-body {
     overflow-y: scroll;
 }
 
-.book-body .book-header {
-    position: fixed;
-    width: 30%;
-}
+
 
 .book.with-summary .book-body .book-header {
     position: fixed;
