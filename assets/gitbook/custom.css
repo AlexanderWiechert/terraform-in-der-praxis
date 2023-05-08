@@ -21,21 +21,15 @@
 }
 /*dropdown menu*/
 
-@media screen and (min-width: 200px) and (max-width: 767px) and (orientation: portrait)
-    .navbar-toggle {
-        margin-right: 0px;
-    }
+@media (min-width: 200px) and (max-width: 375px) {
 
-    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-        background-color: #333;
-    }
 
     .book-header .btn {
         display: block;
         height: 50px;
         padding: 0 6px;
         border-bottom: none;
-        color: #ccc;
+        color: #393838;
         text-transform: uppercase;
         line-height: 50px;
         -webkit-box-shadow: none!important;
@@ -50,6 +44,27 @@
     }
 }
 
+@media (min-width: 1200px) {
+
+    .book-header .btn {
+        display: block;
+        height: 50px;
+        padding: 0 25px;
+        border-bottom: none;
+        color: #393838;
+        text-transform: uppercase;
+        line-height: 50px;
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important;
+        position: relative;
+        font-size: 14px;
+    }
+
+    .book-body .book-header {
+        position: fixed;
+        width: 100%;
+    }
+}
 
 .book-body {
     overflow-y: scroll;

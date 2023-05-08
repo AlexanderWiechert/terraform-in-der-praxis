@@ -31,7 +31,7 @@
   border-color: #272a3a;
 }
 .color-theme-2 .dropdown-menu .button {
-  color: #62677f;
+  color: #ccc;
 }
 .color-theme-2 .dropdown-menu .button:hover {
   color: #f4f4f5;
@@ -194,7 +194,7 @@
   background: transparent;
 }
 .book.color-theme-2 .book-header .btn {
-  color: #3b3f54;
+  color: #ccc;
 }
 .book.color-theme-2 .book-header .btn:hover {
   color: #fffff5;
