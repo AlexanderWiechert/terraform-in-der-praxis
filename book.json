@@ -1,8 +1,0 @@
-{
-    "plugins": ["sitemap"],
-    "pluginsConfig": {
-        "sitemap": {
-            "hostname": "https://www.terraform-in-der-praxis.de/"
-        }
-    }
-}
