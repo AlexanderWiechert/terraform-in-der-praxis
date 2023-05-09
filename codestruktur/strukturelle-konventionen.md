@@ -1,10 +1,11 @@
 ---
-description: >-
-  Welche Strukturelle Konventionen bei der Verwendung von Terraform sind sinnvoll. Wie findet
-  man die verwendeten Resourcen am schnellsten wieder.
+layout: home
+title: Codestruktur
+subtitle: Welche Strukturelle Konventionen bei der Verwendung von Terraform sind sinnvoll. Wie findet  man die verwendeten Resourcen am schnellsten wieder.
+cover: /img/morse.jpg
 ---
 
-# Strukturelle Konventionen
+## Strukturelle Konventionen
 
 Erstellen einer main.tf oder nicht?
 > Unbedingt, da das die zentrale Anlaufstelle ist um sich einen Überblick über das Projekt zu verschaffen.
@@ -14,9 +15,9 @@ In jedem Submodule Ordner?
 
 was gehört in die main.tf?
 > 1. terraform backends, required providers
-2. locals wie z.B. project, account_id, environment, tags
-3. provider Konfigurationen
-4. Module Konfigurationen, Variablen die in die Module übergeben werden müssen
+> 2. locals wie z.B. project, account_id, environment, tags
+> 3. provider Konfigurationen
+> 4. Module Konfigurationen, Variablen die in die Module übergeben werden müssen
 
 ### Beispiel
 ```

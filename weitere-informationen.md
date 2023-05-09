@@ -1,12 +1,8 @@
 ---
-description: >-
-  Ein bunte Sammlung von Links rund um terraform. Die Liste wird ständig
-  erweitert und aktualisiert.
+layout: home
+title: Weitere Links
+subtitle: Ein bunte Sammlung von Links rund um terraform. Die Liste wird ständig erweitert und aktualisiert.
 ---
-
-# Weitere Links
-
-Weitere Links
 
 * Monorepo vs. mehrere Repos für Terraform-Code
   * Sollen App und Infrastruktur Code in einem Repository gespeichert werden? Wann ja und wann nein? [https://apparently.me.uk/terraform-environment-application-pattern/overview.html](https://apparently.me.uk/terraform-environment-application-pattern/overview.html)

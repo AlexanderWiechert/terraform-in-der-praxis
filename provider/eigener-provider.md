@@ -1,6 +1,7 @@
 ---
-description: >-
-Ein kurzes Howto, wie sie einen eignene Terraform Provider schreiben können.
+layout: home
+title: Dein eigener Provider
+subtitle: Ein kurzes Howto, wie sie einen eignene Terraform Provider schreiben können.
 ---
 
 # Was sind Terraform-Provider?

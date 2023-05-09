@@ -1,6 +1,7 @@
 ---
-description: >-
-  Das Mergen verschiedenster Konfigurationsdateien ermöglicht es recht einfach den Code Dry zu halten.
+layout: home
+title: Terragrunt
+subtitle: Das Mergen verschiedenster Konfigurationsdateien ermöglicht es recht einfach den Code Dry zu halten.
 ---
 
 # Mit Terragrunt Konfigurationsdateien mergen
@@ -90,9 +91,9 @@ locals {
 }
 ```
 
-{% hint style="info" %}
+>
 Falls gleichlautenden Variablen verwendet werden in beiden Dateien werden diese immer mit dem Wert aus der letzten hier angegebenen Datei überschrieben.
-{% endhint %}
+
 
 ## Zugriff auf die Variablen aus den Konfigurationsdateien
 

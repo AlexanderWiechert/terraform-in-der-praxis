@@ -1,16 +1,14 @@
 ---
-description: >-
-  Welche Namenskonventionen bei der Verwendung von Terraform sind bewährt. Warum
-  es sinnvoll ist eine einheitliche  Schreibweise für Resourcen zu verwenden.
+layout: home
+title: Codestruktur
+subtitle: Welche Namenskonventionen bei der Verwendung von Terraform sind bewährt. Warum es sinnvoll ist eine einheitliche  Schreibweise für Resourcen zu verwenden.
+cover: /img/morse.jpg
 ---
 
-# Namenskonventionen in Terraform
+## Allgemeine Namenskonventionen
 
-## Allgemeine Konventionen
+>Es sollte keinen Grund geben, diesen nicht zu folgen.
 
-{% hint style="info" %}
-Es sollte keinen Grund geben, diesen nicht zu folgen.
-{% endhint %}
 
 1. Verwenden Sie `_` \(Unterstrich\) anstelle von `-` \(Bindestrich\) in allen: Ressourcennamen, Datenquellennamen, Variablennamen, Ausgaben.
    * Beachten Sie, dass tatsächliche Cloud-Ressourcen viele versteckte Einschränkungen in ihren Namenskonventionen aufweisen. Einige dürfen keine Bindestriche enthalten, andere müssen am Anfang gross geschrieben werden. Diese Konventionen beziehen sich auf den Namen von Terraform Ressourcen.
@@ -34,8 +32,6 @@ Es sollte keinen Grund geben, diesen nicht zu folgen.
 
 ### Verwendung von `count`
 
-{% hint style="info" %}
-
 ```text
 Ressource "aws_route_table" "public" {
   count = "2"
@@ -45,7 +41,7 @@ Ressource "aws_route_table" "public" {
 }
 ```
 
-{% hint style="danger" %}
+
 
 ```text
 Ressource "aws_route_table" "public" {
@@ -57,8 +53,6 @@ Ressource "aws_route_table" "public" {
 ```
 
 ### Platzierung von `Tags`
-
-{% hint style="info" %}
 
 ```text
 Ressource "aws_nat_gateway" "this" {
@@ -79,7 +73,7 @@ Ressource "aws_nat_gateway" "this" {
 }
 ```
 
-{% hint style="danger" %}
+
 
 ```text
 Ressource "aws_nat_gateway" "this" {
@@ -100,7 +94,6 @@ Ressource "aws_nat_gateway" "this" {
 
 ### Bedingungen in `count`
 
-{% hint style="info" %}
 ```text
   count = "${length(var.public_subnets) > 0 ? 1 : 0}"
 ```
@@ -108,7 +101,7 @@ Ressource "aws_nat_gateway" "this" {
 ```text
   count = "${var.create_public_subnets}"
 ```
-{% endhint %}
+
 
 ## Variablen
 
@@ -137,7 +130,6 @@ Der Name für die Outputs ist wichtig, um sie außerhalb ihres Geltungsbereichs 
 
 Gibt die ID der Sicherheitsgruppe zurück:
 
-{% hint style="info" %}
 
 ```text
 output "this_security_group_id" {
@@ -148,7 +140,7 @@ output "this_security_group_id" {
 
 Wenn mehrere Ressourcen des gleichen Typs vorhanden sind, sollte `this` bevorzugt werden und es sollte Teil des Namens in der Ausgabe sein, auch `another_security_group_id` sollte `web_security_group_id` heißen:
 
-{% hint style="danger" %}
+
 
 ```text
 output "security_group_id" {
@@ -164,7 +156,6 @@ output "another_security_group_id" {
 
 ### Verwenden Sie Pluralnamen, wenn der Rückgabewert eine Liste ist
 
-{% hint style="info" %}
 
 ```text
 output "this_rds_cluster_instance_endpoints" {
@@ -177,12 +168,11 @@ output "this_rds_cluster_instance_endpoints" {
 
 Es gibt zwei Ressourcen vom Typ `aws_db_instance` mit den Namen `this` und `this_mssql`, bei denen maximal eine Ressource gleichzeitig erstellt werden kann.
 
-{% hint style="info" %}
 ```text
 output "this_db_instance_id" {
   description = "Die RDS-Instanz-ID"
   value = "${element(concat(coalescelist(aws_db_instance.this_mssql.*.id, aws_db_instance.this.*.id), list("")), 0)}"
 }
 ```
-{% endhint %}
+
 

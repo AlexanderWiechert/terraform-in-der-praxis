@@ -1,0 +1,89 @@
+<div class="book-summary">
+    <nav role="navigation">
+<!--        <div id="book-search-input" role="search">-->
+<!--            <input type="text" placeholder="Type to search" />-->
+<!--        </div>-->
+<!--        <div id="book-search-input-link" role="search">-->
+<!--            <a href="{{site.baseurl}}/assets/search.html">Click to Search</a>-->
+<!--        </div>-->
+        <ul class="summary">
+            {% if page.url == "/index.html" or page.url == "/" %}
+            <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
+            {% else %}
+            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}">
+            {% endif %}
+                <a href="{{site.baseurl}}/">
+                    {{ site.title | escape }}
+                </a>
+            </li>
+
+            <li class="divider"></li>
+            <div class="hovermenu">
+                <li ><a href="/schluessel-konzepte/"><span>Schlüsselkonzepte &#10562;</span> </a></li>
+                    <ul class="menu">
+                        <li ><a href="/schluessel-konzepte/resource.html">Ressourcen</a></li>
+                        <li ><a href="/schluessel-konzepte/datenquelle.html">Datenquellen</a></li>
+                        <li ><a href="/schluessel-konzepte/ressourcenmodule.html">Ressourcenmodule</a></li>
+                        <li ><a href="/schluessel-konzepte/infrastrukturmodule.html">Infrastrukturmodule</a></li>
+                        <li ><a href="/schluessel-konzepte/kompositionen.html">Kompositionen</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="hovermenu">
+                <li ><a href="/absicherung-des-deployments/" ><span>Absicherung des Deployments &#10562;</span> </a></li>
+                    <ul class="menu">
+                        <li ><a href="/absicherung-des-deployments/state.html">Remote State</a></li>
+                        <li ><a href="/absicherung-des-deployments/validierung.html">Überprüfung und Validierung</a></li>
+                        <li ><a href="/absicherung-des-deployments/rueckverfolgbarkeit-von-aenderungen.html">Rückverfolgbarkeit von Änderungen</a></li>
+                        <li ><a href="/absicherung-des-deployments/ci-cd-integration.html">CI/CD Pipelines zur Absicherung der Cloudumgebung</a></li>
+                        <li ><a href="/absicherung-des-deployments/abstraktions-layer.html">Warum noch eine Abstraktionsschicht</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="hovermenu">
+                <li><a href="/codestruktur/"><span>Codestruktur &#10562;</span> </a>
+                    <ul class="menu">
+                        <li><a href="/codestruktur/namenskonventionen.html">Namenskonventionen in Terraform</a></li>
+                        <li><a href="/codestruktur/strukturelle-konventionen.html">Strukturelle Konventionen</a></li>
+                        <li><a href="/codestruktur/code-styling.html">Code-Styling</a></li>
+                        <li><a href="/codestruktur/beispiele/">Beispiele für die Codestruktur</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="hovermenu">
+                <li><a href="/projektstruktur/"><span>Projektstruktur &#10562;</span> </a>
+                    <ul class="menu">
+                        <li><a href="/projektstruktur/module-local-remote.html">Terraform Module local vs. remote</a></li>
+                        <li><a href="/projektstruktur/monorepo-oder-multirepo.html">Monorepo oder nicht?</a></li>
+                        <li><a href="/projektstruktur/produktionsreife-terraform-module.html">produktionsreife Terraform Module</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="hovermenu">
+                <li><a href="/terragrunt/"><span>Terragrunt &#10562;</span> </a>
+                    <ul class="menu">
+                        <li><a href="/terragrunt/dynamisches-remote-state-management.html">Dynamisches Remote State Management</a>  </li>
+                        <li><a href="/terragrunt/hooks.html">Before und After Hooks</a></li>
+                        <li><a href="/terragrunt/konfigurationsdateien-mergen.html">Konfigurationsdateien mergen</a></li>
+                        <li><a href="/terragrunt/dependency_managment.html">Abhängigkeiten verwalten</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="hovermenu">
+                <li><a href="/dynamische-resourcen/"><span>Dynamische Resourcen &#10562;</span> </a> </li>
+            </div>
+            <div class="hovermenu">
+                <li><a href="/provider/eigener-provider.html"><span>Terraform Provider &#10562;</span> </a> </li>
+            </div>
+            <div class="hovermenu">
+                <li><a href=""><span>Anderes &#10562;</span> </a>
+                    <ul class="menu">
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/weitere-informationen.html">Weitere Links</a></li>
+                        <li><a href="/verhaltenskodex-fuer-mitwirkenden.html">code of conduct</a></li>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+    </nav>
+</div>
