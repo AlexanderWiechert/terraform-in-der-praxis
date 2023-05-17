@@ -28,7 +28,7 @@ Die README.md liegt ebenfalls im Stammordner. Dies ist eine Markdown-Datei, die 
 
 Als nächstes legen wir den `modules` Ordner an, der alle Untermodule enthält, die benötigt werden, um zusätzliche Aufgaben auszuführen, beispielsweise die Konfiguration von Private Link oder das Einrichten einer statischen Website. Wir legen das `examples` Verzeichnis, das Beispiele für jedes mögliche Szenario unseres Moduls enthalten sollte. Zum Schluss legen wir das `test` Verzeichnis an, das die Testkonfiguration enthält, um unser Modul mit den Beispielen aus dem Beispielordner zu testen.
 
-![produktionsreifes Terraform Modul](/img/production_ready_module_1.png "produktionsreifes Terraform Modul")
+![produktionsreifes Terraform Modul](/img/production_ready_module_1.webp "produktionsreifes Terraform Modul")
 
 Mit dieser Modulstruktur können wir Terraform-Module in Produktionsqualität erstellen, die für jedes Projekt verwendet werden können. Wie man sieht ist das erstellen des Beispiel Ordners mit testbarem Terraform unerlässlich für ein sauberes Testen. Man könnte argumentieren, dass der Code dan doppelt vorläge, was aber nicht ganz stimmt, da in dem Beispielcode u.a. fixe Werte für bestimmte Dinge angenommen werden können.
 

@@ -67,7 +67,7 @@ public_subnets:
   - "10.16.12.0/24"
 ```  
 
-![Konfigurationsdateien mergen](/img/konfigurationsdateien.png "Konfigurationsdateien mergen")
+![Konfigurationsdateien mergen](/img/konfigurationsdateien.webp "Konfigurationsdateien mergen")
 
 
 ## Das eigentlich Mergen der Dateien

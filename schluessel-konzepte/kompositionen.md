@@ -9,4 +9,4 @@ Kompositionen sind eine Sammlung von Infrastrukturmodulen, die sich über mehrer
 
 Komposition besteht aus Infrastrukturmodulen, die aus Ressourcenmodulen bestehen, die einzelne Ressourcen implementieren.
 
-![Einfache Infrastrukturzusammensetzung](/img/komposition.png "Übersicht Konzept")
+![Einfache Infrastrukturzusammensetzung](/img/komposition.webp "Übersicht Konzept")

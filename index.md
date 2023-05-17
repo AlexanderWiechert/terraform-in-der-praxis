@@ -2,7 +2,7 @@
 layout: home
 title: Terraform in der Praxis
 subtitle: Ich möchte hier zeigen, wie man Terraform in der Praxis einsetzt, um verschiedene Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch gibt entschied ich diese Seite zu erstellen.
-cover: /img/241694426_104127188681891_5515935068248133348_n.png
+cover: /img/rails.webp
 ---
 
 Da die Cloud-Infrastruktur für große und kleine Unternehmen immer wichtiger wird, sind verschiedene Tools entstanden, die Unternehmen bei der Verwaltung ihrer schnell wachsenden Cloudumgebung unterstützen u.a. Terraform. Die Bereitstellung und Verwaltung von Cloud-Ressourcen ist schneller und einfacher als je zuvor dank Infrastructure as Code \(IaC\). Mit IaC gehören langwierige manuelle Konfigurationen und einmalige Skripte der Vergangenheit an. Stattdessen verwalten Sie die Infrastruktur mit Code auf die gleiche Weise wie Anwendungen und Dienste. Diese Infrastruktur kann alles sein, von Servern und Datenbanken bis hin zu Netzwerken, Kubernetes-Clustern und ganzen Anwendungsstacks.

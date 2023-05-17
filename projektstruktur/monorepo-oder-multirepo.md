@@ -29,7 +29,7 @@ Zur Klärung vorweg: In diesem Beitrag konzentrieren wir uns auf ein Mono-Repo a
 
 Mono-Repositories funktionieren prima, wenn du ein persönliches Projekt oder ein kleineres Team hast. Es macht Sinn, in sogenannte Resourcenmodule, die kleinste logischste Gruppierung von Ressourcen und ihren Abhängigkeiten einzusortieren. In unserem Beispiel bieten sich hier an DNS, VPC, ECS.
 
-![Monorepo](/img/monorepo-1.png "Monorepo")
+![Monorepo](/img/monorepo-1.webp "Monorepo")
 
 ### Vorteile
 * Ein Mono-Repo wird zu einer einzigen Quelle der Wahrheit, um die gesamte Infrastrukturkonfiguration zu erhalten.
@@ -53,9 +53,9 @@ Ein Multi-Repository Setup kann eine granulare Zugriffskontrolle und dadurch ein
 
 Es gibt viele Ansätze, ein Multi-Repository Setup zu organisieren. So kann beispielsweise jedes Modul in ein eigenes Repository ausgelagert werden. Im Fall der ```serverless``` Funktionen, der ```queues``` und des ```VPC``` bietet es sich an jeweils einzelne Repositories zu erstellen . Einzelne [Kompositionen](schluessel-konzepte/kompositionen.md) oder Produkte würden auf diese Remote-Module verweisen. [Umgebungen](schluessel-konzepte/infrastrukturmodule.md) würden durch Unterverzeichnisse in oben genannten Repositories abgebildet werden.
 
-![Multirepo](/img/multirepo-1.png "Multirepo")
+![Multirepo](/img/multirepo-1.webp "Multirepo")
 
-![Multirepo mit Produkt](/img/multirepo-2.png "Multirepo mit Produkt")
+![Multirepo mit Produkt](/img/multirepo-2.webp "Multirepo mit Produkt")
 
 Das verwenden von Release Tags, erleichtert die Versionierung von Modulen erheblich und macht Änderungen nachvollziehbar. Wenn die Module in ihre eigenen Quell-Repositorys aufgeteilen werden, können diese unabhängig getestet, auf gezielte Modulversion im Produkt Code verwiesen, und zum Beispiel die Providerversionen mit der Modulversion aktualisieren werden.
 

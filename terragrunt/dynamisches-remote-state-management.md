@@ -27,7 +27,7 @@ Wir benutzen hier den S3 Bucket um die State Dateien zu speichern. Dies wird üb
 ### Setup mit mehreren Stages pro Stack
 Um mehr als eine Umgebung des gleichen Stacks zu provisionieren muss man mehrerer backend Konfigurationsdateien vorhalten. Das geht zwar recht einfach, aber entspricht nicht dem DRY Prinzip. Um die Duplizierung zu reduzieren, würde man wahrscheinlich die Konfiguration im Backend- Objekt mithilfe von Variablen übergeben wollen.  Leider unterstützt die `backend` Konfiguration keine RegEX, Variablen oder Funktionen.
 
-![Terragrunt Multi Stage](/img/terragrunt_multi_stage.png "Terragrunt Multi Stage Setup")
+![Terragrunt Multi Stage](/img/terragrunt_multi_stage.webp "Terragrunt Multi Stage Setup")
 
 
 
