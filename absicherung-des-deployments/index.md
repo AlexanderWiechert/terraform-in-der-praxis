@@ -2,7 +2,6 @@
 layout: home
 title: Absicherung des Deployments
 subtitle: Terraform benötigt ein Konzept, wie das Deployment in Ihre Cloudumgebung abgesichert werden soll. Dies beinhaltet neben Authentifizierung auch Tests und Validierung des Infrastruktur Codes.
-cover: /img/safeguarding.jpg
 ---
 
 ## State

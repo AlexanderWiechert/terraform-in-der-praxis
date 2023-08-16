@@ -2,7 +2,6 @@
 layout: home
 title: Absicherung des Deployments
 subtitle: Erwägen Sie die Verwendung einer separaten Abstraktionsschicht, um die Wiederverwendung und Abstraktion zu erleichtern.
-cover: /img/safeguarding.jpg
 ---
 
 Viele der hier erwähnten Best Practices wurden bereits in bereits existierende Frameworks integriert, die auf Terraform aufsetzen.

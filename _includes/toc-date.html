@@ -1,11 +1,5 @@
 <div class="book-summary">
     <nav role="navigation">
-<!--        <div id="book-search-input" role="search">-->
-<!--            <input type="text" placeholder="Type to search" />-->
-<!--        </div>-->
-<!--        <div id="book-search-input-link" role="search">-->
-<!--            <a href="{{site.baseurl}}/assets/search.html">Click to Search</a>-->
-<!--        </div>-->
         <ul class="summary">
             {% if page.url == "/index.html" or page.url == "/" %}
             <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
@@ -28,6 +22,15 @@
                         <li ><a href="/schluessel-konzepte/kompositionen.html">Kompositionen</a></li>
                     </ul>
                 </li>
+            </div>
+            <div class="hovermenu">
+                <li ><a href="/variablen/"><span>Variablen &#10562;</span> </a></li>
+                    <ul class="menu">
+                        <li ><a href="/variablen/lokale-variablen.html">Lokale Variablen</a></li>
+                        <li ><a href="/variablen/eingabe-variablen.html">Eingabevariablen</a></li>
+                        <li ><a href="/variablen/umgebungsvariablen.html">Umgebungsvariablen</a></li>
+                        <li ><a href="/variablen/ausgabevariablen.html">Ausgabevariablen</a></li>
+                    </ul>
             </div>
             <div class="hovermenu">
                 <li ><a href="/absicherung-des-deployments/" ><span>Absicherung des Deployments &#10562;</span> </a></li>

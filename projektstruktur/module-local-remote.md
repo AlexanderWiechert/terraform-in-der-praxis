@@ -2,7 +2,6 @@
 layout: home
 title: Projektstruktur
 subtitle: Kurze Erklärung zu den verschieden Möglichkeiten Terraform Module einzubinden in Ihr Projekt. Es gibt neben lokalen Modulen die Möglichkeit diese remote z.B. per Git einzubinden.
-cover: /img/projectstructure.jpg
 ---
 
 # Terraform Module local vs. remote

@@ -4,7 +4,8 @@ title: Terragrunt
 subtitle: So halten Sie Ihren Terraform-Code DRY und wartbar.
 ---
 
-## Warum Terragrunt?
+# Warum Terragrunt?
+
 
 Im Jahr 2016 wurdeTerragrunt als Notlösung für zwei Probleme in Terraform veröffentlicht:
 

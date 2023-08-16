@@ -2,7 +2,6 @@
 layout: home
 title: Codestruktur
 subtitle: Mittelgroße Infrastruktur mit Terraform
-cover: /img/morse.jpg
 ---
 
 

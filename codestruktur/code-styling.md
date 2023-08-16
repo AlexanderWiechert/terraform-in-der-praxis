@@ -2,7 +2,6 @@
 layout: home
 title: Codestruktur
 subtitle: Code-Styling
-cover: /img/morse.jpg
 ---
 
 

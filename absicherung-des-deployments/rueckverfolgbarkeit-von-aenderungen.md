@@ -2,7 +2,6 @@
 layout: home
 title: Absicherung des Deployments
 subtitle: Erforderlich sind ein einheitliches Authentifizierungsschema und ein Audit-Mechanismus, der eindeutig nachverfolgt, wer eine Terraform-Operation ausgelöst hat.
-cover: /img/safeguarding.jpg
 ---
 
 Dies ist eine Best Practice, die auf mehreren Ebenen einer Infrastructure-as-Code-Implementierung gehandhabt werden kann.

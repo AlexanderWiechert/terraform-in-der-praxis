@@ -2,7 +2,6 @@
 layout: home
 title: Codestruktur
 subtitle: grosse Infrastruktur mit Terraform
-cover: /img/morse.jpg
 ---
 
 Quelle: [/tree/master/beispiele/grosse-umgebung](https://github.com/elastic2ls-awiechert/terraform-in-der-praxis/tree/5bf9f34e385bacc9d6cc742f0aea3178d23aaeab/tree/master/beispiele/grosse-umgebung/README.md)

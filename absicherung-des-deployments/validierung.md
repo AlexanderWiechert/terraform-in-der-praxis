@@ -2,7 +2,6 @@
 layout: home
 title: Absicherung des Deployments
 subtitle: Befolgen Sie eine strikte Richtlinie zur Überprüfung der Terraform-Validierung und der Planergebnisse, bevor Sie erlauben, dass Terraform-Änderungen auf eine  Umgebung angewendet werden.
-cover: /img/safeguarding.jpg
 ---
 
 

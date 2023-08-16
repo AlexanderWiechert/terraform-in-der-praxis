@@ -2,7 +2,6 @@
 layout: home
 title: Codestruktur
 subtitle: Welche Namenskonventionen bei der Verwendung von Terraform sind bewährt. Warum es sinnvoll ist eine einheitliche  Schreibweise für Resourcen zu verwenden.
-cover: /img/morse.jpg
 ---
 
 ## Allgemeine Namenskonventionen

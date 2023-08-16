@@ -2,7 +2,6 @@
 layout: home
 title: Terraform-Codestrukturen
 subtitle: Beispiele für die Codestruktur
-cover: /img/morse.jpg
 ---
 
 

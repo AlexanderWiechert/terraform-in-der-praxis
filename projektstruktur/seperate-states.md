@@ -2,7 +2,6 @@
 layout: home
 title: Projektstruktur
 subtitle: Alles in einen State oder doch lieber trennen? Aber wo genau?
-cover: /img/projectstructure.jpg
 ---
 
 # Warum es Sinn macht logische Einheiten des Stacks in seperaten States zu speichern

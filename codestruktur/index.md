@@ -2,7 +2,6 @@
 layout: home
 title: Codestruktur
 subtitle: Fragen zur Terraform-Codestruktur sind in der Community bei weitem am häufigsten. Über die beste Codestruktur hat sich wahrscheinlich auch schon jeder Gedanken gemacht.
-cover: /img/morse.jpg
 ---
 
 # Codestruktur

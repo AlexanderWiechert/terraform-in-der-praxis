@@ -2,7 +2,6 @@
 layout: home
 title: Projektstruktur
 subtitle: Fragen zur Terraform-Projektstruktur sind in der Community bei weitem am häufigsten. Über die beste Strukturierung hat sich wahrscheinlich auch schon jeder Gedanken gemacht.
-cover: /img/projectstructure.jpg
 ---
 
 # Projektstruktur

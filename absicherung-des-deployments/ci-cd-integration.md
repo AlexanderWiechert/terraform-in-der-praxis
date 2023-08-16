@@ -2,7 +2,6 @@
 layout: home
 title: Absicherung des Deployments
 subtitle: Verwenden Sie ein Continuous Delivery / Continuous Integration oder ein gemeinsames Orchestrierungswerkzeug, um Ihre Terraform-Operationen von einem einzigen gemeinsamen Standort aus auszuführen.
-cover: /img/safeguarding.jpg
 ---
 
 Continuous Integration \(CI\) und Continuous Delivery \(CD\) sind für Infrastructure-as-Code-Projekte bestens geeignet. Die Nutzung eines zentralisierten CI/CD-Tools zur Ausführung Ihrer Terraform-Befehle gegen Ihre Umgebung bietet Ihnen eine einfache Möglichkeit, um sicherzustellen, dass Sie mehrere der Best Practices in diesem Dokument befolgen.

@@ -10,14 +10,8 @@
                         {% if page.title %}
                         <h1 id="{{ page.id }}">{{ page.title | escape }}</h1>
 
-                        {% if page.cover %}
-                        <img src="{{ page.cover }}"
-                             width="{{ page.cover_width | default: '100%' }}"
-                             height="{{ page.cover_height | default: '100%' }}"
-                             alt="{{ page.title | escape }}"
-                             style="vertical-align: middle;"
-                        />
-                        {% endif %}
+                        <img src="/img/rails.webp" width="100%" height="100%" style="vertical-align: middle;" />
+
 
                         {% if page.subtitle %}
                         <h2 class="description" id="{{ page.id }}">{{ page.subtitle | escape }}</h2>

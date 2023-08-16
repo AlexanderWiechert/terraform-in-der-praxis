@@ -2,7 +2,6 @@
 layout: home
 title: Schlüßelkonzepte
 subtitle: Kompositionen
-cover: /img/keyconcept.jpeg
 ---
 
 Kompositionen sind eine Sammlung von Infrastrukturmodulen, die sich über mehrere logisch getrennte Bereiche erstrecken kann \(z. B. AWS-Regionen, mehrere AWS-Konten\). Komposition wird verwendet, um die vollständige Infrastruktur zu beschreiben, die für die gesamte Organisation oder das gesamte Projekt erforderlich ist.

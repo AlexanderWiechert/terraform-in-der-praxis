@@ -2,7 +2,6 @@
 layout: home
 title: Absicherung des Deployments
 subtitle: Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen  kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen werden müssen.
-cover: /img/safeguarding.jpg
 ---
 
 >Es gibt keinen Grund einen geteilten Remote-state nicht zu nutzen. In unserem Fall, da unsere Infrastruktur auf AWS läuft, wird ein S3 Bucket verwendet.

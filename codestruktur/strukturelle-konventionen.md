@@ -2,7 +2,6 @@
 layout: home
 title: Codestruktur
 subtitle: Welche Strukturelle Konventionen bei der Verwendung von Terraform sind sinnvoll. Wie findet  man die verwendeten Resourcen am schnellsten wieder.
-cover: /img/morse.jpg
 ---
 
 ## Strukturelle Konventionen
