@@ -1,8 +1,8 @@
 # Configurations
 title:            Terraform in der Praxis
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+longtitle:        terraform-in-der-praxis
+author:           Alexander Wiechert
+email:            info@terraform-in-der-praxis.de
 description: >
   Ich möchte hier zeigen, wie man Terraform in der Praxis einsetzt, um
   verschiedene Vorteile auszuschöpfen. Da es kaum ein Tutorial auf Deutsch gibt
@@ -11,7 +11,7 @@ description: >
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://sighingnow.github.io'
+url:              'https://www.terraform-in-der-praxis.de'
 baseurl:          ''
 rss:              RSS
 

@@ -12,7 +12,7 @@
             "fontsettings": {
                 "family": "sans",
                 "size": 2,
-                "theme": "white"
+                "theme": "night"
             },
             "highlight": {},
             "livereload": {},
@@ -22,7 +22,6 @@
             },
             "search": {},
 
-            {%- include gitbook-sharing.json.tpl -%}
 
             "theme-default": {
                 "showLevel": false,
