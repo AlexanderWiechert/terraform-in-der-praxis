@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Dynamische Resourcen
-subtitle: Was tun, wenn man resourcen dynamisch erstellen muss?
+title: Dynamische aus Yaml Dateien erstellen
+subtitle: Was tun, wenn man Ressourcen dynamisch erstellen muss?
 ---
 
 # Beispiele
