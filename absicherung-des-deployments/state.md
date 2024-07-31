@@ -4,6 +4,24 @@ title: Absicherung des Deployments
 subtitle: Der Terraform-Status dient im Wesentlichen dazu, dass Terraform feststellen  kann, welche Ressourcen sich geändert haben und welche Änderungen vorgenommen werden müssen.
 ---
 
+Terraform verwendet eine State-Datei, um den aktuellen Status Ihrer Infrastruktur zu speichern und Änderungen daran zu verfolgen. Wenn Sie in einem Team arbeiten oder Ihre Infrastruktur in verschiedenen Umgebungen oder von verschiedenen Maschinen aus verwalten, bietet die Verwendung eines gemeinsamen Remote-States erhebliche Vorteile:
+
+    Zentralisierung: Ein Remote-State stellt sicher, dass der Zustand der Infrastruktur an einem zentralen Ort gespeichert wird, auf den alle Teammitglieder zugreifen können.
+
+    Konsistenz: Durch die Zentralisierung verhindern Sie Diskrepanzen, die auftreten können, wenn mehrere lokale State-Dateien verwendet werden. Dies kann zu Konflikten führen, wenn verschiedene Personen gleichzeitig Änderungen an der Infrastruktur vornehmen.
+
+    Sicherheit: Viele Remote-State-Lösungen, wie z. B. Amazon S3 in Kombination mit DynamoDB oder Terraform Cloud, bieten Versionierung, Verschlüsselung und automatische Backups. Dies erhöht die Sicherheit und Nachvollziehbarkeit Ihrer Infrastrukturänderungen.
+
+    Sperrmechanismus (Locking): Wenn Sie einen Remote-State verwenden, können Sie auch einen Sperrmechanismus verwenden. Dies verhindert, dass zwei Personen gleichzeitig Änderungen an derselben Infrastruktur vornehmen, was zu unerwünschten Zuständen oder Konflikten führen könnte.
+
+    Integration und Automatisierung: Mit einem Remote-State können Sie einfacher CI/CD-Pipelines (Continuous Integration/Continuous Deployment) einrichten. Da der State zentralisiert ist, können Automatisierungstools darauf zugreifen und sicherstellen, dass die Infrastruktur in einem bekannten Zustand bleibt.
+
+    Teilen von Daten: Mit einem Remote-State können Sie Ausgaben (Outputs) zwischen verschiedenen Terraform-Projekten teilen. Dies ist nützlich, wenn ein Projekt Daten aus einem anderen Projekt benötigt.
+
+    Performance: Bei großen Terraform-Projekten kann das Laden und Schreiben von lokalen State-Dateien langsamer werden. Ein Remote-State kann in solchen Fällen oft performanter sein.
+
+Während ein Remote-State viele Vorteile hat, ist es wichtig, darauf zu achten, wer Zugriff auf diesen State hat, da er wertvolle Informationen über Ihre Infrastruktur enthalten kann. Es ist ratsam, den Zugriff entsprechend zu beschränken und sicherzustellen, dass der State verschlüsselt gespeichert wird.
+
 >Es gibt keinen Grund einen geteilten Remote-state nicht zu nutzen. In unserem Fall, da unsere Infrastruktur auf AWS läuft, wird ein S3 Bucket verwendet.
 
 

@@ -4,61 +4,42 @@ title: Dynamische Resourcen
 subtitle: Was tun, wenn man resourcen dynamisch erstellen muss?
 ---
 
-# Beispiele
+In Terraform können Sie mithilfe von count und for_each mehrere ähnliche Ressourcen auf einmal erstellen, ohne für jede Ressource separate Blöcke schreiben zu müssen. Hier ist eine kurze Erklärung und einige Beispiele für beide:
 
-Nehmen wir an wir wollen Route53 Zonen und dazugehörige Records anlegen. Wir könnten nun alle Einträge nacheinander in eine `route53.tf`eintragen. Da wir aber versuchen nach dem `DRY`Prinzip zu arbeiten müssen wir uns nach anderen Lösungen umschauen.
+    count
+        Mit count können Sie eine bestimmte Anzahl von Instanzen einer Ressource erstellen.
+        Die Ressourcen werden mit Indexen von 0 bis count-1 nummeriert.
+        Beispiel:
 
-## Die Yaml Struktur.
-Grundsätzlich bietet sich die Möglichkeit an Variablen aus Yaml Dateien auszulesen. Json funktioniert selbstverständlich auch. Wir haben uns eine Map mit Objekten angelegt, die wir in Keys `apex_name` und Values `records` unterteilt haben. Damit ordnen wir die Subdomains immer eine Apex Domain zu.
+        hcl
 
-```
-source_domains:
-  - apex_name: elastic2ls.com
-    records:
-      - elastic2ls.com
-      - www.elastic2ls.com
-  - apex_name: elastic2ls.ch
-    records:
-    - elastic2ls.ch
-    - www.elastic2ls.ch
-    - image.elastic2ls.ch
-    - m.elastic2ls.ch
-    - static.elastic2ls.ch
-```
+    resource "aws_instance" "example" {
+      count = 5  # Erstellt 5 Instanzen
 
-### Route53
-Wir wollen nun zwei Route53 Zonen sowie die Subdomains als A Records mit jeweils einer IPv4 Adresse anlegen.
+      # ... weitere Konfiguration ...
+    }
 
-```
-locals {
-  zone_records = flatten([
-    for d in var.source_domains : [
-      for r in d.records : {
-        zone_name = d.apex_name
-        zone_id   = aws_route53_zone.this[d.apex_name].id
-        record    = r
-      }
-    ]
-  ])
-}
+for_each
 
-resource "aws_route53_zone" "this" {
-  for_each = {
-    for d in var.source_domains : d.apex_name => d
-  }
+    Mit for_each können Sie eine Menge von Werten angeben und für jeden Wert eine Ressource erstellen.
+    Jede Ressource wird mit einem eindeutigen Schlüssel anstatt eines numerischen Index identifiziert.
+    Beispiel:
 
-  name = each.value.apex_name
-}
+    hcl
 
-resource "aws_route53_record" "this" {
-  for_each = {
-    for zr in local.zone_records : zr.record => zr
-  }
+        resource "aws_instance" "example" {
+          for_each = {
+            a = "Wert1"
+            b = "Wert2"
+            c = "Wert3"
+          }
 
-  zone_id = each.value.zone_id
-  name    = each.value.record
-  type    = "A"
-  ttl     = "300"
-  records = ["192.168.0.1"]
-}
-```
+          # Zugriff auf den aktuellen Wert:
+          ami = each.value
+
+          # ... weitere Konfiguration ...
+        }
+
+        Im obigen Beispiel wird für jeden Eintrag im Map (a, b und c) eine Instanz erstellt. Der Zugriff auf den aktuellen Schlüssel erfolgt über each.key und auf den aktuellen Wert über each.value.
+
+Es ist zu beachten, dass count und for_each nicht zusammen in derselben Ressource verwendet werden können. Welche Methode Sie verwenden sollten, hängt von Ihrem speziellen Anwendungsfall und den Anforderungen ab. Generell ist for_each flexibler und besser für Fälle geeignet, in denen Sie eine dynamische Menge von Werten haben und jeder Wert eindeutig identifiziert werden muss.

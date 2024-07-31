@@ -6,6 +6,9 @@ subtitle: Kurze Erklärung zu den verschieden Möglichkeiten Terraform Module ei
 
 # Terraform Module local vs. remote
 
+
+
+
 ## Lokale Module
 Am einfachsten ist es, wenn ich die zusammengehörigen Ressourcen in eine lokales Modul schreibe. Zum Beispiel für ein Modul mit Namen frontend.
 
