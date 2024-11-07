@@ -25,7 +25,7 @@ terraform {
 Wir benutzen hier den S3 Bucket um die State Dateien zu speichern. Dies wird über die Werte `bucket`und `key` erledigt. Um den Inhalt des Buckets entsprechend abzusichern legen wir noch einen KMS Key an. Die Dynamo Tabelle wird schliesslich verwendet um zu verhindern, dass zwei parallel laufenden Prozesse gleichzeitig in den Terraform State schreiben können. Für jede Umgebung, in der du Terraform verwendest muss im Grunde genommen den Code kopieren und die einzelne Werte anpassen.
 
 ### Setup mit mehreren Stages pro Stack
-Um mehr als eine Umgebung des gleichen Stacks zu provisionieren muss man mehrerer backend Konfigurationsdateien vorhalten. Das geht zwar recht einfach, aber entspricht nicht dem DRY Prinzip. Um die Duplizierung zu reduzieren, würde man wahrscheinlich die Konfiguration im Backend- Objekt mithilfe von Variablen übergeben wollen.  Leider unterstützt die `backend` Konfiguration keine RegEX, Variablen oder Funktionen.
+Um mehr als eine Umgebung des gleichen Stacks zu provisionieren muss man mehrere backend Konfigurationsdateien vorhalten. Das geht zwar recht einfach, aber entspricht nicht dem DRY Prinzip. Um die Duplizierung zu reduzieren, würde man wahrscheinlich die Konfiguration im Backend- Objekt mithilfe von Variablen übergeben wollen.  Leider unterstützt die `backend` Konfiguration keine RegEX, Variablen oder Funktionen.
 
 ![Terragrunt Multi Stage](/img/terragrunt_multi_stage.webp "Terragrunt Multi Stage Setup")
 

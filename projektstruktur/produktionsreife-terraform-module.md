@@ -6,7 +6,7 @@ subtitle: Erfahren Sie mehr über die Vor- und Nachteile der Verwendung von Mono
 
 # Wie schreibt man ein produktionsreifes Terraform Modul?
 
-Wie bereits in [Terraform Module local vs. remote](projektstruktur/module-local-remote.md "Terraform Module local vs. remote") bereits beschrieben ist es sinnvoll, nach dem Prinzip DRY einmal geschriebenen Code nach Möglichkeit nicht zu kopieren, wenn man diesen in einem anderen Projekt braucht. ein gutes Beispiel ist hier das VPC bei AWS. Das VPC muss ich immer in allen Account konfigurieren. Hier bietet es sich an, dieses per GIT einzubinden.
+Wie bereits in [Terraform Module local vs. remote](projektstruktur/module-local-remote.md "Terraform Module local vs. remote") bereits beschrieben ist es sinnvoll, nach dem Prinzip DRY einmal geschriebenen Code nach Möglichkeit nicht zu kopieren, wenn man diesen in einem anderen Projekt braucht. ein gutes Beispiel ist hier das VPC bei AWS. Das VPC muss ich immer in allen Accounts konfigurieren. Hier bietet es sich an, dieses per GIT einzubinden.
 
 ```text
 module "vpc" {
