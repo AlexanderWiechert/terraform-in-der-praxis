@@ -25,7 +25,7 @@ CLI-Flags sind ein Part in deinem Terraform Projekt, wo die eigentlich nicht nah
 
 ### Backend-Konfiguration
 Terraform-Back-Ends ermöglichen es Ihnen, den Terraform-Status remote zu speichern, damit man diesen gemeinsam verwenden kann.
-Um ein Terraform-Back-End zu verwenden, fügen Sie backendIhrem Terraform-Code eine Konfiguration hinzu:
+Um ein Terraform-Back-End zu verwenden, fügen Sie backend Ihrem Terraform-Code eine Konfiguration hinzu:
 
 ```
 # stage/frontend/main.tf
