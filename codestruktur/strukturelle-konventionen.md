@@ -35,7 +35,7 @@ locals {
 ```
 
 ## Generelle Projektstruktur
-Module sollten möglichts unabhängig voneinander deployed werden können. Das reflektiert den Gedanken des Services, bzw. Microservices. Man kann diese zwar in einzelne Repos auslagern, aber das haben wir [bereits](schluessel-konzepte/kompositionen.md) diskutiert. Wir werden diese in diesem Beispiel in einem Repository speichern, wobei das Repository genau einem Produkt oder Service entspricht. Zum Beispiel ein Customer Interface.
+Module sollten möglichst unabhängig voneinander deployed werden können. Das reflektiert den Gedanken des Services, bzw. Microservices. Man kann diese zwar in einzelne Repos auslagern, aber das haben wir [bereits](../schluessel-konzepte/kompositionen.md) diskutiert. Wir werden diese in diesem Beispiel in einem Repository speichern, wobei das Repository genau einem Produkt oder Service entspricht. Zum Beispiel ein Customer Interface.
 
 Dieses besteht aus frontend, backend und einem DNS Modul.
 

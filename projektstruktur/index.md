@@ -56,4 +56,4 @@ Best Practices für wiederverwendbare Terraform-Module GitHub-Repository. Der ü
 Da du das hier liest verwendet ihr Terraform für Infrastruktur. Da hast du dir sicher die Fragen gestellt, wie das Ganze schneller und sicherer werden könnte.  Du bist nicht allein. Wir alle erstellen Konfigurationen, Codes in verschiedenen Tools und Sprachen und verbringen dann viel Zeit damit, sie lesbarer, erweiterbarer und skalierbarer zu machen. Es ist eine bekannte Praxis, den Code zu taggen, um sicherzustellen, dass die damit erzeugte Infrastruktur immer auf die gleiche Weise funktioniert, selbst wenn der Modulcode irgendwann einmal geändert wird. Diese Arbeitsweise sollte sich nach dem Teamprinzip richten, bei dem geeignete Module getaggt und entsprechend eingesetzt werden müssen. Nun aber haben wir so viele verschiedenste Abhängigkeiten, erzeugt ... willkommen in der Dependency-hell!
 
 ## Wrapper und Tools
-[Terragrunt](codestruktur/beispiele/terragrunt.html)
+[Terragrunt](/codestruktur/beispiele/terragrunt.html)
